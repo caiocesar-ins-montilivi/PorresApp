@@ -7,4 +7,41 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\android-chrome-512x512.png" />
+    <None Remove="Assets\B-LOGO-Predixtor.png" />
+    <None Remove="Assets\favicon-16x16.png" />
+    <None Remove="Assets\favicon-32x32.png" />
+    <None Remove="Assets\favicon.ico" />
+    <None Remove="Assets\home.png" />
+    <None Remove="Assets\LOGO - Predixtor.png" />
+    <None Remove="Assets\soccer-pitch.png" />
+    <None Remove="Assets\T-LOGO-Predixtor-.png" />
+    <None Remove="Assets\T-LOGO-Predixtor.png" />
+    <None Remove="Assets\W-LOGO-Predixtor.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignExtensions" Version="3.3.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\android-chrome-512x512.png" />
+    <Resource Include="Assets\B-LOGO-Predixtor.png" />
+    <Resource Include="Assets\favicon-16x16.png" />
+    <Resource Include="Assets\favicon-32x32.png" />
+    <Resource Include="Assets\favicon.ico" />
+    <Resource Include="Assets\home.png" />
+    <Resource Include="Assets\LOGO - Predixtor.png" />
+    <Resource Include="Assets\soccer-pitch.png" />
+    <Resource Include="Assets\T-LOGO-Predixtor.png" />
+    <Resource Include="Assets\W-LOGO-Predixtor.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
 </Project>
