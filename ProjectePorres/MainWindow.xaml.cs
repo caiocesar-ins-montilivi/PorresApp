@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +23,14 @@ namespace ProjectePorres
     /// </summary>
     public partial class MainWindow : MaterialWindow
     {
-
         public MainWindow()
         {
             InitializeComponent();
+        }
 
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
