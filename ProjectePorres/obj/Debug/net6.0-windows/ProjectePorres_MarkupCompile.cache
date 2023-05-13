@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Caio\Desktop\PorresApp\ProjectePorres\App.xaml
-11407045341
+3822753879
 
-8-1545148728
-198-1273500724
-MainWindow.xaml;
+11-1642269420
+2081920516115
+MainWindow.xaml;Views\LoginView.xaml;Views\SettingsView.xaml;
 
 False
 

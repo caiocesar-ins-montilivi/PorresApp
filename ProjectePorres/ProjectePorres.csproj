@@ -24,6 +24,7 @@
   <ItemGroup>
     <PackageReference Include="MaterialDesignExtensions" Version="3.3.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,10 +38,6 @@
     <Resource Include="Assets\soccer-pitch.png" />
     <Resource Include="Assets\T-LOGO-Predixtor.png" />
     <Resource Include="Assets\W-LOGO-Predixtor.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>

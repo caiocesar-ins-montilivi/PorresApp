@@ -135,8 +135,9 @@
                         Margin="10,0"
                         Background="Red"
                         BorderBrush="Transparent"
+                        Click="ButtonExit_Click"
                         Cursor="Hand"
-                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Click="ButtonExit_Click">
+                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
                         <materialDesign:PackIcon
                             Width="24"
                             Height="24"
@@ -219,6 +220,7 @@
                         Height="45"
                         Padding="0"
                         Cursor="Hand"
+                        MouseUp="ItemHome_MouseUp"
                         ToolTip="Home">
                         <StackPanel Margin="10,0" Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -236,6 +238,7 @@
                         Height="45"
                         Padding="0"
                         Cursor="Hand"
+                        MouseUp="ItemPorres_MouseUp"
                         ToolTip="Porres">
                         <StackPanel Margin="10,0" Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -253,6 +256,7 @@
                         Height="45"
                         Padding="0"
                         Cursor="Hand"
+                        MouseUp="ItemEquips_MouseUp"
                         ToolTip="Equips">
                         <StackPanel Margin="10,0" Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -270,6 +274,7 @@
                         Height="45"
                         Padding="0"
                         Cursor="Hand"
+                        MouseUp="ItemRecomanar_MouseUp"
                         ToolTip="Recomanar">
                         <StackPanel Margin="10,0" Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -287,6 +292,7 @@
                         Height="45"
                         Padding="0"
                         Cursor="Hand"
+                        MouseUp="ItemExit_MouseUp"
                         ToolTip="Tanca sessió">
                         <StackPanel Margin="10,0" Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -304,6 +310,7 @@
                         Height="45"
                         Padding="0"
                         Cursor="Hand"
+                        MouseUp="ItemSettings_MouseUp"
                         ToolTip="Configuració">
                         <StackPanel Margin="10,0" Orientation="Horizontal">
                             <materialDesign:PackIcon

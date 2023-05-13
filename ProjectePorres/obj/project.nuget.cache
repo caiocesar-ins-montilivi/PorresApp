@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "onCnfrEwHy8sgB+PYDjY8oEn6R9VINB4GKClzmEfOAu4qPzah800JgDqnDJ3ONJDtNddxgJzmrQRZ8vlw+84Hw==",
+  "dgSpecHash": "7ym6HMjDnP/92IjSUve1wzoXaB4IE4SLPHsrnKXtxH1/t3jXdISA1TPOZq+FfExu5QQNXhluuTbUHTKr6czV4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Caio\\.nuget\\packages\\materialdesigncolors\\2.1.2\\materialdesigncolors.2.1.2.nupkg.sha512",
     "C:\\Users\\Caio\\.nuget\\packages\\materialdesignextensions\\3.3.0\\materialdesignextensions.3.3.0.nupkg.sha512",
     "C:\\Users\\Caio\\.nuget\\packages\\materialdesignthemes\\4.8.0\\materialdesignthemes.4.8.0.nupkg.sha512",
-    "C:\\Users\\Caio\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    "C:\\Users\\Caio\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\Caio\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }
