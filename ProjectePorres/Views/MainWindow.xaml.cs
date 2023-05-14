@@ -17,7 +17,7 @@ using MaterialDesignExtensions.Controls;
 using MaterialDesignExtensions.Model;
 using Ookii.Dialogs.Wpf;
 
-namespace ProjectePorres
+namespace ProjectePorres.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectePorres.Model
 {
-    class Administrador : Usuari
+    public class AdministradorModel : UsuariModel
     {
-        public Administrador(string dni, string nom, string cognom, int puntuacio, bool esAdmin) : base(dni, nom, cognom, puntuacio, esAdmin) { }
-        
+        public AdministradorModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin) : base(id, dni, nom, cognom, puntuacio, esAdmin) { }
+
         public bool EliminarUsuari()
         {
             return true;

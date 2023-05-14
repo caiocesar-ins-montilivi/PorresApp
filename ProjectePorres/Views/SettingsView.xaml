@@ -1,5 +1,5 @@
 ﻿<mde:MaterialWindow
-    x:Class="ProjectePorres.Views.Settings"
+    x:Class="ProjectePorres.Views.SettingsView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -17,64 +17,69 @@
     <Grid>
         <Border Margin="20">
             <Grid>
-                <TabControl>
-                    <TabItem Header="Tema">
-                        <Grid Margin="20">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
+                <TabControl Style="{StaticResource MaterialDesignFilledTabControl}">
+                    <TabItem Cursor="Hand" Header="Tema">
+                        <materialDesign:Card
+                            Margin="0,20"
+                            VerticalAlignment="Center"
+                            materialDesign:ShadowAssist.ShadowDepth="Depth3">
+                            <Grid Margin="25">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
 
-                            <TextBlock
-                                Grid.Row="0"
-                                Grid.Column="0"
-                                Margin="10"
-                                VerticalAlignment="Center"
-                                Text="Color primari" />
-
-                            <ComboBox
-                                Grid.Row="0"
-                                Grid.Column="1"
-                                Margin="10"
-                                VerticalAlignment="Center"
-                                Style="{StaticResource MaterialDesignFilledComboBox}" />
-                            <ComboBox
-                                Grid.Row="1"
-                                Grid.Column="1"
-                                Margin="10"
-                                VerticalAlignment="Center"
-                                Style="{StaticResource MaterialDesignFilledComboBox}" />
-
-                            <TextBlock
-                                Grid.Row="1"
-                                Grid.Column="0"
-                                Margin="10"
-                                VerticalAlignment="Center"
-                                Text="Color accent" />
-
-                            <StackPanel
-                                Grid.Row="2"
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Orientation="Horizontal">
-                                <ToggleButton
-                                    Grid.Row="2"
-                                    Grid.Column="0"
-                                    Margin="0,10" />
                                 <TextBlock
-                                    Margin="10,0"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="10"
                                     VerticalAlignment="Center"
-                                    Text="Mode fosc" />
-                            </StackPanel>
-                        </Grid>
+                                    Text="Color primari" />
+
+                                <ComboBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Margin="10"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource MaterialDesignFilledComboBox}" />
+                                <ComboBox
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Margin="10"
+                                    VerticalAlignment="Center"
+                                    Style="{StaticResource MaterialDesignFilledComboBox}" />
+
+                                <TextBlock
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    VerticalAlignment="Center"
+                                    Text="Color accent" />
+
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    HorizontalAlignment="Right"
+                                    Orientation="Horizontal">
+                                    <ToggleButton
+                                        Grid.Row="2"
+                                        Grid.Column="0"
+                                        Margin="0,10" />
+                                    <TextBlock
+                                        Margin="10,0"
+                                        VerticalAlignment="Center"
+                                        Text="Mode fosc" />
+                                </StackPanel>
+                            </Grid>
+                        </materialDesign:Card>
                     </TabItem>
-                    <TabItem Header="Aplicació">
+                    <TabItem Cursor="Hand" Header="Aplicació">
                         <Grid />
                     </TabItem>
                 </TabControl>

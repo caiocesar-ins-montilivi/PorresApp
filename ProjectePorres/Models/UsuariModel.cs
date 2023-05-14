@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectePorres.Model
 {
-    class Usuari
+    public class UsuariModel
     {
+        public int Id { get; set; }
+
         public string Dni { get; set; }
 
         public string Nom { get; set; }
@@ -18,10 +20,9 @@ namespace ProjectePorres.Model
 
         public bool EsAdmin { get; set; }
 
-        public Usuari() { }
-
-        public Usuari(string dni, string nom, string cognom, int puntuacio, bool esAdmin)
+        public UsuariModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin)
         {
+            Id = id;
             Dni = dni;
             Nom = nom;
             Cognom = cognom;
@@ -31,7 +32,8 @@ namespace ProjectePorres.Model
 
         public override string ToString()
         {
-            return $"{Dni}, " +
+            return $"{Id}, " +
+                   $"{Dni}, " +
                    $"{Nom}, " +
                    $"{Cognom}, " +
                    $"{Puntuacio}, " +

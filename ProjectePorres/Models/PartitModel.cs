@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjectePorres.Model
 {
-    class Partit
+    public class PartitModel
     {
-        public Equip EquipLocal { get; set; }
+        public EquipModel EquipLocal { get; set; }
 
-        public Equip EquipVisitant { get; set; }
+        public EquipModel EquipVisitant { get; set; }
 
         public DateTime DataHoraPartit { get; set; }
 
@@ -22,7 +22,7 @@ namespace ProjectePorres.Model
 
         public bool ResultatsComplerts { get; set; }
 
-        public Partit(Equip equipLocal, Equip equipVisitant, DateTime dataHoraPartit, string temporada, int golsLocal, int golsVisitant, bool resultatsComplerts)
+        public PartitModel(EquipModel equipLocal, EquipModel equipVisitant, DateTime dataHoraPartit, string temporada, int golsLocal, int golsVisitant, bool resultatsComplerts)
         {
             EquipLocal = equipLocal;
             EquipVisitant = equipVisitant;

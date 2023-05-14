@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectePorres.Model
 {
-    class Equip
+    public class EquipModel
     {
         public string Nom { get; set; }
 
@@ -18,9 +18,9 @@ namespace ProjectePorres.Model
 
         public string Categoria { get; set; }
 
-        public Equip() { }
+        public EquipModel() { }
 
-        public Equip(string nom, string ciutat, string camp, string foto, string categoria)
+        public EquipModel(string nom, string ciutat, string camp, string foto, string categoria)
         {
             Nom = nom;
             Ciutat = ciutat;

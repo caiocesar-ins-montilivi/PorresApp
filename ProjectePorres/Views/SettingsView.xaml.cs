@@ -19,9 +19,9 @@ namespace ProjectePorres.Views
     /// <summary>
     /// Lógica de interacción para Settings.xaml
     /// </summary>
-    public partial class Settings : MaterialWindow
+    public partial class SettingsView : MaterialWindow
     {
-        public Settings()
+        public SettingsView()
         {
             InitializeComponent();
         }
