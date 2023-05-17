@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MySql.Data.MySqlClient;
+using ProjectePorres.Data;
+using ProjectePorres.Model;
+using ProjectePorres.Views;
+using System;
 using System.Diagnostics;
-using System.Linq;
 using System.Security;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
 
@@ -19,11 +20,17 @@ namespace ProjectePorres.ViewModels
         private int _indexTabActual;
         private bool _isViewVisible = true;
         private bool _mantenirSessio;
+        private bool _iniciatSessio;
 
         private string r_nomUsuari;
-        private string r_email;
+        private string r_dni;
+        private string r_nom;
+        private string r_cognom;
+        private string r_correu;
         private SecureString r_password;
         private SecureString r_password2;
+
+         private readonly DatabaseContext databaseContext;
 
         // Propietats
         public string NomUsuari
@@ -33,6 +40,16 @@ namespace ProjectePorres.ViewModels
             {
                 _nomUsuari = value;
                 OnPropertyChanged(nameof(NomUsuari));
+            }
+        }
+
+        public string Dni
+        {
+            get => r_dni;
+            set
+            {
+                r_dni = value;
+                OnPropertyChanged(nameof(Dni));
             }
         }
 
@@ -55,15 +72,37 @@ namespace ProjectePorres.ViewModels
                 OnPropertyChanged(nameof(RNomUsuari));
             }
         }
-        public string REmail
+
+        public string RNom
         {
-            get => r_email;
+            get => r_nom;
             set
             {
-                r_email = value;
-                OnPropertyChanged(nameof(REmail));
+                r_nom = value;
+                OnPropertyChanged(nameof(RNom));
             }
         }
+
+        public string RCognom
+        {
+            get => r_cognom;
+            set
+            {
+                r_cognom = value;
+                OnPropertyChanged(nameof(RCognom));
+            }
+        }
+
+        public string RCorreu
+        {
+            get => r_correu;
+            set
+            {
+                r_correu = value;
+                OnPropertyChanged(nameof(RCorreu));
+            }
+        }
+
         public SecureString RPassword
         {
             get => r_password;
@@ -73,6 +112,7 @@ namespace ProjectePorres.ViewModels
                 OnPropertyChanged(nameof(RPassword));
             }
         }
+
         public SecureString RPassword2
         {
             get => r_password2;
@@ -86,7 +126,7 @@ namespace ProjectePorres.ViewModels
         public string ErrorMessage
         {
             get => _errorMessage;
-            set 
+            set
             {
                 _errorMessage = value;
                 OnPropertyChanged(nameof(ErrorMessage));
@@ -123,6 +163,18 @@ namespace ProjectePorres.ViewModels
             }
         }
 
+        public static LoginViewModel Instance { get { return new(); } }
+
+        public bool IniciatSessio
+        {
+            get { return _iniciatSessio; }
+            set
+            {
+                _iniciatSessio = value;
+                OnPropertyChanged(nameof(IniciatSessio));
+            }
+        }
+
         // Commands
         public ICommand LoginCommand { get; }
         public ICommand RegisterCommand { get; }
@@ -135,6 +187,10 @@ namespace ProjectePorres.ViewModels
         // Constructor 
         public LoginViewModel()
         {
+            // Ens connectem a la base de dades.
+            const string connectionString = "Server=localhost; Database=PorraGirona; Uid=root; Pwd=;";
+            databaseContext = new DatabaseContext(connectionString);
+
             LoginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
             RegisterCommand = new CommandViewModel(ExecuteRegisterCommand, CanExecuteRegisterCommand);
             ChangeTabCommand = new CommandViewModel(ExecuteChangeTab);
@@ -144,8 +200,20 @@ namespace ProjectePorres.ViewModels
 
         private void ExecuteLoginCommand(object obj)
         {
-            // IsViewVisible = false;
-            Trace.WriteLine($"{NomUsuari} {SecurePassword} {MantenirSessio}");
+            // Convertim SecureString en string TODO: NO ÉS LA MILLOR OPCIÓ
+            string password = new System.Net.NetworkCredential(string.Empty, SecurePassword).Password;
+            UsuariModel usuari = databaseContext.RetornarUsuariPerNom(NomUsuari);
+            if (databaseContext.ValidarUsuari(NomUsuari, password))
+            {
+                IniciatSessio = true;
+                IsViewVisible = false;
+                MainWindowViewModel.Instance.IsViewVisible = true;
+            }
+            else
+            {
+                ErrorMessage = "Usuari o contrasenya incorrecte.";
+                MessageBox.Show(ErrorMessage, "Error | Autenticació", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private bool CanExecuteLoginCommand(object obj)
@@ -162,24 +230,79 @@ namespace ProjectePorres.ViewModels
 
         private void ExecuteRegisterCommand(object obj)
         {
-            Trace.WriteLine($"{RNomUsuari} {REmail}");
+            string password = new System.Net.NetworkCredential(string.Empty, RPassword).Password;
+            if (databaseContext.RegistrarUsuari(RNomUsuari, Dni, RNom, RCognom, RCorreu, password))
+            {
+                IndexTabActual = 0;
+                MessageBox.Show("Has sigut registrat correctament", "Registre correcte", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+                MessageBox.Show("No s'ha pogut registrar-te", "Registre incorrecte", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private bool CanExecuteRegisterCommand(object obj)
         {
+            string password = new System.Net.NetworkCredential(string.Empty, RPassword).Password;
+            string password2 = new System.Net.NetworkCredential(string.Empty, RPassword2).Password;
+
             if (!string.IsNullOrWhiteSpace(RNomUsuari) && RNomUsuari.Length > 3
-                && !string.IsNullOrWhiteSpace(REmail) && REmail.Length > 3
+                && !string.IsNullOrWhiteSpace(RCorreu) && RCorreu.Length > 3
+                && !string.IsNullOrWhiteSpace(RNom) && RNom.Length > 3
+                && !string.IsNullOrWhiteSpace(RCognom) && RCognom.Length > 3
+                && ValidarCorreu() && ValidarDni()
+                && password == password2
                 && RPassword != null && RPassword2 != null
                 && RPassword.Length > 3 && RPassword2.Length > 3)
                 return true;
+
             return false;
+        }
+        
+        private bool ValidarDni()
+        {
+            bool esValid = false;
+            const string dniPattern = @"^\d{8}[A-HJ-NP-TV-Z]$";
+            const string niePattern = @"^[XYZ]\d{7}[A-HJ-NP-TV-Z]$";
+
+            // Verificar si es un DNI
+            if (!string.IsNullOrWhiteSpace(Dni))
+            {
+                if (Regex.IsMatch(Dni, dniPattern))
+                {
+                    string dniDigits = Dni.Substring(0, Dni.Length - 1);
+                    char dniLetter = char.ToUpper(Dni[Dni.Length - 1]);
+
+                    // Verificar que la lletra sigui vàlida
+                    char calculatedLetter = "TRWAGMYFPDXBNJZSQVHLCKE"[int.Parse(dniDigits) % 23];
+                    if (calculatedLetter != dniLetter) esValid = false;
+                    else esValid = true;
+                }
+
+                // Verificar si és un NIE
+                else if (Regex.IsMatch(Dni, niePattern))
+                {
+                    // Verificar que el número del NIE sigui vàlid
+                    if (!"XYZ".Contains(char.ToUpper(Dni[0]))) esValid = false;
+                    else esValid = true;
+                }
+
+                // No és cap
+                else esValid = false;
+            }
+            return esValid;
+        }
+
+        private bool ValidarCorreu()
+        {
+            const string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            return Regex.IsMatch(RCorreu, pattern);
         }
 
         private void ExecuteRecuperarPassCommand(string username, string email)
         {
-            throw new NotImplementedException();
+            MessageBox.Show("No implementat", "En desenvolupament", MessageBoxButton.OK, MessageBoxImage.Information);
         }
-        
+
         private void ExecuteChangeTab(object obj)
         {
             if (IndexTabActual == 0) IndexTabActual = 1;

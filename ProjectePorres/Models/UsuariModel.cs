@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace ProjectePorres.Model
 {
@@ -16,9 +19,15 @@ namespace ProjectePorres.Model
 
         public string Cognom { get; set; }
 
+        public string Correu { get; set; }
+
         public int Puntuacio { get; set; }
 
+        public string Contrasenya { get; set; }
+
         public bool EsAdmin { get; set; }
+
+        public UsuariModel() { }
 
         public UsuariModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin)
         {

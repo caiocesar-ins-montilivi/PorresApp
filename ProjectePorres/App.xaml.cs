@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-
+﻿using System.Windows;
+using ProjectePorres.ViewModels;
 using ProjectePorres.Views;
 
 namespace ProjectePorres
@@ -18,15 +11,26 @@ namespace ProjectePorres
     {
         protected void ApplicationStart(object sender, StartupEventArgs e)
         {
-            var loginView = new LoginView();
+            LoginView loginView = new();
             loginView.Show();
+
+            MainWindow mainWindow = new();
+
             loginView.IsVisibleChanged += (s, ev) =>
             {
-                if (loginView.IsVisible == false && loginView.IsLoaded)
+                if (!loginView.IsVisible && loginView.IsLoaded && !LoginViewModel.Instance.IniciatSessio)
                 {
-                    MainWindow mainWindow = new();
                     mainWindow.Show();
                     loginView.Hide();
+                }
+            };
+
+            mainWindow.IsVisibleChanged += (s, ev) =>
+            {
+                if (!mainWindow.IsVisible && mainWindow.IsLoaded)
+                {
+                    loginView.Show();
+                    mainWindow.Hide();
                 }
             };
         }

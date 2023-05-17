@@ -1979,6 +1979,7 @@
     "net6.0-windows7.0": [
       "MaterialDesignExtensions >= 3.3.0",
       "MaterialDesignThemes >= 4.8.0",
+      "Microsoft.Xaml.Behaviors.Wpf >= 1.1.39",
       "MySql.Data >= 8.0.33",
       "Ookii.Dialogs.Wpf >= 5.0.1"
     ]
@@ -2035,6 +2036,10 @@
           "MaterialDesignThemes": {
             "target": "Package",
             "version": "[4.8.0, )"
+          },
+          "Microsoft.Xaml.Behaviors.Wpf": {
+            "target": "Package",
+            "version": "[1.1.39, )"
           },
           "MySql.Data": {
             "target": "Package",
