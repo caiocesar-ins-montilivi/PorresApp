@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using ProjectePorres.ViewModels;
-using ProjectePorres.Views;
+using ProjectePorres.Views.Windows;
 
 namespace ProjectePorres
 {

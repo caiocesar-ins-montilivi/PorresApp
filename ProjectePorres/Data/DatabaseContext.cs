@@ -64,6 +64,7 @@ namespace ProjectePorres.Data
 
         public bool RegistrarUsuari(string nomUsuari, string dni, string nom, string cognom, string correu, string password)
         {
+            bool registreCorrecte;
             using var connection = new MySqlConnection(connectionString);
 
             try
@@ -79,20 +80,20 @@ namespace ProjectePorres.Data
                 command.Parameters.AddWithValue("@Correu", correu);
                 command.Parameters.AddWithValue("@Contrasenya", password);
                 command.ExecuteNonQueryAsync();
-                return true;
-
+                registreCorrecte = true;
             }
             catch (MySqlException ex)
             {
                 Trace.WriteLine($"Error al connectar a la base de dades: {ex.Message}");
+                registreCorrecte = false;
             }
 
-            return false;
+            return registreCorrecte;
         }
 
         public UsuariModel RetornarUsuariPerNom(string nomUsuari)
         {
-            UsuariModel usuariModel = null;
+            UsuariModel? usuariModel = null;
             using var connection = new MySqlConnection(connectionString);
 
             try

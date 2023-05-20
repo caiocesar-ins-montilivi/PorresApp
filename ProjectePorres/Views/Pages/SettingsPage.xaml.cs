@@ -10,18 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using MaterialDesignExtensions.Controls;
-
-namespace ProjectePorres.Views
+namespace ProjectePorres.Views.Pages
 {
     /// <summary>
-    /// Lógica de interacción para Settings.xaml
+    /// Lógica de interacción para SettingsPage.xaml
     /// </summary>
-    public partial class SettingsView : MaterialWindow
+    public partial class SettingsPage : Page
     {
-        public SettingsView()
+        public SettingsPage()
         {
             InitializeComponent();
         }

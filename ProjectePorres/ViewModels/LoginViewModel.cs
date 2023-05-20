@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using ProjectePorres.Data;
 using ProjectePorres.Model;
-using ProjectePorres.Views;
 using System;
 using System.Diagnostics;
 using System.Security;
@@ -163,7 +162,7 @@ namespace ProjectePorres.ViewModels
             }
         }
 
-        public static LoginViewModel Instance { get { return new(); } }
+        public static LoginViewModel Instance { get { return new LoginViewModel(); } }
 
         public bool IniciatSessio
         {
@@ -207,6 +206,8 @@ namespace ProjectePorres.ViewModels
             {
                 IniciatSessio = true;
                 IsViewVisible = false;
+                
+                Usuari = usuari;
                 MainWindowViewModel.Instance.IsViewVisible = true;
             }
             else

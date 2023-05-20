@@ -1,6 +1,10 @@
 ﻿
 FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\App.xaml;;
-FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\LoginView.xaml;;
-FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\MainWindow.xaml;;
-FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\SettingsView.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Pages\EquipsPage.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Pages\HomePage.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Pages\PorresPage.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Pages\RecomanarPage.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Pages\SettingsPage.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Windows\LoginView.xaml;;
+FC:\Users\Caio\Desktop\PorresApp\ProjectePorres\Views\Windows\MainWindow.xaml;;
 

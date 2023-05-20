@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
+﻿using System.ComponentModel;
+using ProjectePorres.Model;
 
 namespace ProjectePorres.ViewModels
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
+        public static UsuariModel? Usuari { get; set; }
+
         public event PropertyChangedEventHandler? PropertyChanged;
     
         public void OnPropertyChanged(string propertyName)

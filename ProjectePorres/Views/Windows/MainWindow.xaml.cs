@@ -1,6 +1,6 @@
 ﻿using MaterialDesignExtensions.Controls;
 
-namespace ProjectePorres.Views
+namespace ProjectePorres.Views.Windows
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

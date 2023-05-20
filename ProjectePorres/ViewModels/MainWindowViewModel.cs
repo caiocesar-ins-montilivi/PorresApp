@@ -1,6 +1,8 @@
 ﻿using Ookii.Dialogs.Wpf;
 using ProjectePorres.Model;
 using ProjectePorres.Views;
+using ProjectePorres.Views.Pages;
+using System.Configuration;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
@@ -9,22 +11,18 @@ namespace ProjectePorres.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
-        private UsuariModel _usuari;
         private bool _tancantSessio;
-        private bool _isViewVisible = false;
-        private string _textBenvinguda;
+        private bool _isViewVisible;
+
+        // Pàgines
+        private object? _vistaActual;
+        private HomePage? homePage;
+        private PorresPage? porresPage;
+        private EquipsPage? equipsPage;
+        private RecomanarPage? recomanarPage;
+        private SettingsPage? settingsPage;
 
         // Propietats
-        public UsuariModel Usuari
-        {
-            get => _usuari;
-            set
-            {
-                _usuari = value;
-                OnPropertyChanged(nameof(Usuari));
-            }
-        }
-
         public bool TancantSessio
         {
             get => _tancantSessio;
@@ -45,29 +43,89 @@ namespace ProjectePorres.ViewModels
             }
         }
 
-        public string TextBenvinguda
+        public object? VistaActual
         {
-            get => _textBenvinguda;
+            get => _vistaActual;
             set
             {
-                _textBenvinguda = value;
-                OnPropertyChanged(nameof(TextBenvinguda));
+                _vistaActual = value;
+                OnPropertyChanged(nameof(VistaActual));
             }
         }
 
-        public static MainWindowViewModel Instance { get { return new(); } }
+        public static MainWindowViewModel Instance { get { return new MainWindowViewModel(); } }
 
         // Commands
+        public ICommand CarregaHomeViewCommand { get; }
+        public ICommand CarregaPorresViewCommand { get; }
+        public ICommand CarregaEquipsViewCommand { get; }
+        public ICommand CarregaRecomanarViewCommand { get; }
+        public ICommand CarregaSettingsViewCommand { get; }
+
         public ICommand SortirCommand { get; }
 
         // Constructor
         public MainWindowViewModel()
         {
+            CarregaHomeViewCommand = new CommandViewModel(ExecuteCarregaHome);
+            CarregaPorresViewCommand = new CommandViewModel(ExecuteCarregaPorres);
+            CarregaEquipsViewCommand = new CommandViewModel(ExecuteCarregaEquips);
+            CarregaRecomanarViewCommand = new CommandViewModel(ExecuteCarregaRecomanar);
+            CarregaSettingsViewCommand = new CommandViewModel(ExecuteCarregaSettings);
             SortirCommand = new CommandViewModel(ExecuteSortir);
-            TextBenvinguda = $"Benvingut {Usuari}";
         }
 
-        // Ooki dialog
+        private void ExecuteCarregaHome(object obj)
+        {
+            if (VistaActual != homePage || VistaActual is null)
+            {
+
+                if (Usuari != null) Trace.WriteLine(Usuari.ToString());
+                else Trace.WriteLine("Na");
+
+
+                homePage ??= new HomePage();
+                VistaActual = homePage;
+            }
+        }
+
+        private void ExecuteCarregaPorres(object obj)
+        {
+            if (VistaActual != porresPage || VistaActual is null)
+            {
+                porresPage ??= new PorresPage();
+                VistaActual = porresPage;
+            }
+        }
+
+        private void ExecuteCarregaEquips(object obj)
+        {
+            if (VistaActual != equipsPage || VistaActual is null)
+            {
+                equipsPage ??= new EquipsPage();
+                VistaActual = equipsPage;
+            }
+        }
+
+        private void ExecuteCarregaRecomanar(object obj)
+        {
+            if (VistaActual != recomanarPage || VistaActual is null)
+            {
+                recomanarPage ??= new RecomanarPage();
+                VistaActual = recomanarPage;
+            }
+        }
+
+        private void ExecuteCarregaSettings(object obj)
+        {
+            if (VistaActual != settingsPage || VistaActual is null)
+            {
+                settingsPage ??= new SettingsPage();
+                VistaActual = settingsPage;
+            }
+        }
+
+        // Utilitza un Ooki dialog
         private void ExecuteSortir(object obj)
         {
             using TaskDialog dialog = new();

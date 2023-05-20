@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using MaterialDesignExtensions.Controls;
 
-namespace ProjectePorres.Views
+namespace ProjectePorres.Views.Windows
 {
     /// <summary>
     /// Lógica de interacción para LoginView.xaml
