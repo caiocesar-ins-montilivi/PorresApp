@@ -1,8 +1,9 @@
-﻿using MySql.Data.MySqlClient;
-using System.Diagnostics;
+﻿using System;
 using System.Text;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using System.Security.Cryptography;
-using System;
+using MySql.Data.MySqlClient;
 using ProjectePorres.Model;
 
 namespace ProjectePorres.Data
@@ -14,6 +15,20 @@ namespace ProjectePorres.Data
         public DatabaseContext(string connectionString)
         {
             this.connectionString = connectionString;
+        }
+
+        public async Task<bool> ComprovarConnexio()
+        {
+            try
+            {
+                using var connection = new MySqlConnection(connectionString);
+                await connection.OpenAsync();
+                return true;
+            }
+            catch (MySqlException)
+            {
+                return false;
+            }
         }
 
         public bool ValidarUsuari(string nomUsuari, string contrasenya)
@@ -62,14 +77,14 @@ namespace ProjectePorres.Data
             return esValid;
         }
 
-        public bool RegistrarUsuari(string nomUsuari, string dni, string nom, string cognom, string correu, string password)
+        public async Task<bool> RegistrarUsuari(string nomUsuari, string dni, string nom, string cognom, string correu, string password)
         {
             bool registreCorrecte;
             using var connection = new MySqlConnection(connectionString);
 
             try
             {
-                connection.Open();
+                await connection.OpenAsync();
                 const string query = "INSERT INTO Usuaris(NomUsuari, Dni, Nom, Cognom, Correu, Contrasenya, Puntuacio, EsAdmin) " +
                     "VALUES(@NomUsuari, @Dni, @Nom, @Cognom, @Correu, SHA2(@Contrasenya, 256), 0, False)";
                 MySqlCommand command = new(query, connection);
@@ -79,7 +94,7 @@ namespace ProjectePorres.Data
                 command.Parameters.AddWithValue("@Cognom", cognom);
                 command.Parameters.AddWithValue("@Correu", correu);
                 command.Parameters.AddWithValue("@Contrasenya", password);
-                command.ExecuteNonQueryAsync();
+                await command.ExecuteNonQueryAsync();
                 registreCorrecte = true;
             }
             catch (MySqlException ex)
@@ -91,19 +106,19 @@ namespace ProjectePorres.Data
             return registreCorrecte;
         }
 
-        public UsuariModel RetornarUsuariPerNom(string nomUsuari)
+        public async Task<UsuariModel> RetornarUsuariPerNom(string nomUsuari)
         {
             UsuariModel? usuariModel = null;
             using var connection = new MySqlConnection(connectionString);
 
             try
             {
-                connection.Open();
+                await connection.OpenAsync();
                 const string query = "SELECT * FROM Usuaris WHERE NomUsuari = @NomUsuari";
                 MySqlCommand command = new(query, connection);
                 command.Parameters.AddWithValue("@NomUsuari", nomUsuari);
 
-                var reader = command.ExecuteReader();
+                var reader = await command.ExecuteReaderAsync();
                 if (reader.HasRows)
                 {
                     while (reader.Read())

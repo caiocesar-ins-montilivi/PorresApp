@@ -123,7 +123,50 @@
                         </materialDesign:Card>
                     </TabItem>
                     <TabItem Header="Aplicació">
-                        <Grid />
+                        <materialDesign:Card
+                            Margin="0,20"
+                            VerticalAlignment="Center"
+                            materialDesign:ElevationAssist.Elevation="Dp3">
+
+                            <Grid Margin="0,25">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="10"
+                                    VerticalAlignment="Center"
+                                    Text="Llenguatge de l'aplicació" />
+
+                                <ComboBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Margin="10"
+                                    VerticalAlignment="Center"
+                                    SelectedIndex="0"
+                                    Style="{StaticResource MaterialDesignFilledComboBox}">
+                                    <ComboBoxItem>
+                                        <ComboBoxItem.Content>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Español" />
+                                                <materialDesign:PackIcon Kind="Language" />
+                                            </StackPanel>
+                                        </ComboBoxItem.Content>
+                                    </ComboBoxItem>
+
+                                </ComboBox>
+
+                            </Grid>
+
+                        </materialDesign:Card>
                     </TabItem>
                 </TabControl>
             </Grid>

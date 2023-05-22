@@ -48,7 +48,7 @@
             Grid.Column="1"
             Margin="10"
             VerticalAlignment="Center"
-            materialDesign:ShadowAssist.ShadowDepth="Depth2"
+            materialDesign:ElevationAssist.Elevation="Dp2"
             UniformCornerRadius="10">
             <Grid>
                 <TabControl SelectedIndex="{Binding IndexTabActual}">
@@ -94,7 +94,7 @@
                                 Margin="30,10"
                                 HorizontalAlignment="Right"
                                 VerticalAlignment="Top"
-                                materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                materialDesign:ElevationAssist.Elevation="Dp2"
                                 Background="Red"
                                 BorderBrush="Transparent"
                                 Command="{Binding SortirCommand}"
@@ -161,27 +161,76 @@
                                     Background="#549b92"
                                     BorderBrush="Transparent"
                                     Command="{Binding ChangeTabCommand}"
-                                    Content="REGISTRA'M"
-                                    ToolTip="Anar a registre" />
+                                    ToolTip="Anar a registre">
+
+                                    <StackPanel Orientation="Horizontal">
+
+                                        <materialDesign:PackIcon Margin="0,0,5,0" Kind="Register" />
+
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            Foreground="{DynamicResource MaterialDesignDarkForeground}"
+                                            Text="REGISTRA'M" />
+
+                                    </StackPanel>
+                                </Button>
 
                                 <Button
                                     x:Name="ButtonInciarSessio"
                                     Command="{Binding LoginCommand}"
-                                    Content="INICIAR SESSIÓ"
-                                    ToolTip="Iniciar sessió" />
+                                    ToolTip="Iniciar sessió">
+
+                                    <StackPanel Orientation="Horizontal">
+
+                                        <materialDesign:PackIcon Margin="0,0,5,0" Kind="Login" />
+
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            Foreground="{DynamicResource MaterialDesignDarkForeground}"
+                                            Text="INICIAR SESSIÓ" />
+
+                                        <ProgressBar
+                                            Width="16"
+                                            Height="16"
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Foreground="White"
+                                            IsIndeterminate="True"
+                                            Style="{StaticResource MaterialDesignCircularProgressBar}"
+                                            Visibility="{Binding ProgressBarLoginVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                            Value="0" />
+
+                                    </StackPanel>
+
+                                </Button>
+
                             </StackPanel>
 
-                            <TextBlock
-                                x:Name="TextBlockOblidat"
+                            <StackPanel
                                 Grid.Row="5"
                                 Grid.ColumnSpan="3"
                                 Margin="10"
                                 HorizontalAlignment="Center"
-                                VerticalAlignment="Bottom"
-                                Cursor="Hand"
-                                Foreground="Gray"
-                                Text="HE OBLIDAT LA CONTRASENYA O USUARI"
-                                TextDecorations="Underline" />
+                                Orientation="Horizontal">
+                                <materialDesign:PackIcon
+                                    VerticalAlignment="Center"
+                                    Foreground="Gray"
+                                    Kind="ForgotPassword" />
+
+                                <TextBlock
+                                    x:Name="TextBlockOblidat"
+                                    Grid.Row="5"
+                                    Grid.ColumnSpan="3"
+                                    Margin="10"
+                                    VerticalAlignment="Center"
+                                    Cursor="Hand"
+                                    Foreground="Gray"
+                                    Text="HE OBLIDAT LA CONTRASENYA O USUARI"
+                                    TextDecorations="Underline" />
+
+                            </StackPanel>
+
+
                         </Grid>
                     </TabItem>
                     <TabItem x:Name="RegisterTab" Cursor="Hand">
@@ -232,7 +281,7 @@
                                 Margin="30,15"
                                 HorizontalAlignment="Right"
                                 VerticalAlignment="Top"
-                                materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                materialDesign:ElevationAssist.Elevation="Dp2"
                                 Background="Red"
                                 BorderBrush="Transparent"
                                 Command="{Binding SortirCommand}"
@@ -303,7 +352,7 @@
                                 FontSize="15"
                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                                 Text="{Binding RCognom}"
-                                ToolTip="Escriu el teu correu" />
+                                ToolTip="Escriu el teu cognom" />
 
                             <TextBox
                                 x:Name="TextBoxRegistrarDni"
@@ -357,13 +406,34 @@
                                 Orientation="Horizontal">
 
                                 <Button
-                                    x:Name="ButtonRegistrar"
                                     Margin="10,0"
-                                    Background="#549b92"
                                     BorderBrush="Transparent"
                                     Command="{Binding RegisterCommand}"
-                                    Content="REGISTRAR-ME"
-                                    ToolTip="Registra les teves dades" />
+                                    ToolTip="Registra les teves dades">
+
+                                    <StackPanel Orientation="Horizontal">
+
+                                        <materialDesign:PackIcon Margin="0,0,5,0" Kind="Register" />
+
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            Foreground="{DynamicResource MaterialDesignDarkForeground}"
+                                            Text="REGISTRAR-ME" />
+
+                                        <ProgressBar
+                                            Width="16"
+                                            Height="16"
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Foreground="White"
+                                            IsIndeterminate="True"
+                                            Style="{StaticResource MaterialDesignCircularProgressBar}"
+                                            Visibility="{Binding ProgressBarRegistreVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                            Value="0" />
+
+                                    </StackPanel>
+
+                                </Button>
                             </StackPanel>
                         </Grid>
                     </TabItem>

@@ -5,6 +5,7 @@ using System;
 using System.Diagnostics;
 using System.Security;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -20,6 +21,8 @@ namespace ProjectePorres.ViewModels
         private bool _isViewVisible = true;
         private bool _mantenirSessio;
         private bool _iniciatSessio;
+        private bool _progressBarLoginVisible;
+        private bool _progressBarRegistreVisible;
 
         private string r_nomUsuari;
         private string r_dni;
@@ -174,6 +177,26 @@ namespace ProjectePorres.ViewModels
             }
         }
 
+        public bool ProgressBarLoginVisible
+        {
+            get { return _progressBarLoginVisible; }
+            set
+            {
+                _progressBarLoginVisible = value;
+                OnPropertyChanged(nameof(ProgressBarLoginVisible));
+            }
+        }
+
+        public bool ProgressBarRegistreVisible
+        {
+            get { return _progressBarRegistreVisible; }
+            set
+            {
+                _progressBarRegistreVisible = value;
+                OnPropertyChanged(nameof(ProgressBarRegistreVisible));
+            }
+        }
+
         // Commands
         public ICommand LoginCommand { get; }
         public ICommand RegisterCommand { get; }
@@ -197,22 +220,38 @@ namespace ProjectePorres.ViewModels
             SortirCommand = new CommandViewModel(ExecuteSortirCommand);
         }
 
-        private void ExecuteLoginCommand(object obj)
+        private async void ExecuteLoginCommand(object obj)
         {
-            // Convertim SecureString en string TODO: NO ÉS LA MILLOR OPCIÓ
-            string password = new System.Net.NetworkCredential(string.Empty, SecurePassword).Password;
-            UsuariModel usuari = databaseContext.RetornarUsuariPerNom(NomUsuari);
-            if (databaseContext.ValidarUsuari(NomUsuari, password))
+            ProgressBarLoginVisible = true;
+            await Task.Delay(100);
+            bool connectat = await databaseContext.ComprovarConnexio();
+
+            if (connectat)
             {
-                IniciatSessio = true;
-                IsViewVisible = false;
-                
-                Usuari = usuari;
-                MainWindowViewModel.Instance.IsViewVisible = true;
+                // Convertim SecureString en string TODO: NO ÉS LA MILLOR OPCIÓ
+                string password = new System.Net.NetworkCredential(string.Empty, SecurePassword).Password;
+                UsuariModel usuari = await databaseContext.RetornarUsuariPerNom(NomUsuari);
+
+                if (databaseContext.ValidarUsuari(NomUsuari, password))
+                {
+                    IniciatSessio = true;
+                    IsViewVisible = false;
+
+                    Usuari = usuari;
+                    MainWindowViewModel.Instance.IsViewVisible = true;
+                    ProgressBarLoginVisible = false;
+                }
+                else
+                {
+                    ProgressBarLoginVisible = false;
+                    ErrorMessage = "Usuari o contrasenya incorrecte.";
+                    MessageBox.Show(ErrorMessage, "Error | Autenticació", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
             {
-                ErrorMessage = "Usuari o contrasenya incorrecte.";
+                ProgressBarLoginVisible = false;
+                ErrorMessage = "No es pot accedir a la base de dades.";
                 MessageBox.Show(ErrorMessage, "Error | Autenticació", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -229,16 +268,37 @@ namespace ProjectePorres.ViewModels
             return dadesValides;
         }
 
-        private void ExecuteRegisterCommand(object obj)
+        private async void ExecuteRegisterCommand(object obj)
         {
-            string password = new System.Net.NetworkCredential(string.Empty, RPassword).Password;
-            if (databaseContext.RegistrarUsuari(RNomUsuari, Dni, RNom, RCognom, RCorreu, password))
+            ProgressBarRegistreVisible = true;
+            await Task.Delay(300);
+            bool connectat = await databaseContext.ComprovarConnexio();
+            
+            if (connectat)
             {
-                IndexTabActual = 0;
-                MessageBox.Show("Has sigut registrat correctament", "Registre correcte", MessageBoxButton.OK, MessageBoxImage.Information);
+                string password = new System.Net.NetworkCredential(string.Empty, RPassword).Password;
+
+                bool usuariRegistrat = await databaseContext.RegistrarUsuari(RNomUsuari, Dni, RNom, RCognom, RCorreu, password);
+
+                if (usuariRegistrat)
+                {
+                    IndexTabActual = 0;
+                    MessageBox.Show("Has sigut registrat correctament", "Registre correcte", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ProgressBarRegistreVisible = false;
+                }
+                else
+                {
+                    ProgressBarRegistreVisible = false;
+                    ErrorMessage = "No s'ha pogut registrar-te, revisa els camps.";
+                    MessageBox.Show(ErrorMessage, "Error | Registre", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
-                MessageBox.Show("No s'ha pogut registrar-te", "Registre incorrecte", MessageBoxButton.OK, MessageBoxImage.Warning);
+            {
+                ProgressBarRegistreVisible = false;
+                ErrorMessage = "No es pot accedir a la base de dades.";
+                MessageBox.Show(ErrorMessage, "Error | Registre", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private bool CanExecuteRegisterCommand(object obj)
