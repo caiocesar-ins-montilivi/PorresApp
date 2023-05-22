@@ -20,6 +20,12 @@
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
 
+    <behaviors:Interaction.Triggers>
+        <behaviors:EventTrigger EventName="Closing">
+            <behaviors:InvokeCommandAction Command="{Binding DataContext.OnSortirCommand, RelativeSource={RelativeSource AncestorType=mde:MaterialWindow}}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=mde:MaterialWindow}, Path=DataContext}" />
+        </behaviors:EventTrigger>
+    </behaviors:Interaction.Triggers>
+
     <Window.DataContext>
         <viewModel:MainWindowViewModel />
     </Window.DataContext>

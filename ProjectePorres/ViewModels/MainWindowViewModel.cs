@@ -63,6 +63,7 @@ namespace ProjectePorres.ViewModels
         public ICommand CarregaSettingsViewCommand { get; }
 
         public ICommand SortirCommand { get; }
+        public ICommand OnSortirCommand { get; }
 
         // Constructor
         public MainWindowViewModel()
@@ -73,17 +74,13 @@ namespace ProjectePorres.ViewModels
             CarregaRecomanarViewCommand = new CommandViewModel(ExecuteCarregaRecomanar);
             CarregaSettingsViewCommand = new CommandViewModel(ExecuteCarregaSettings);
             SortirCommand = new CommandViewModel(ExecuteSortir);
+            OnSortirCommand = new CommandViewModel(ExecuteOnSortir);
         }
 
         private void ExecuteCarregaHome(object obj)
         {
             if (VistaActual != homePage || VistaActual is null)
             {
-
-                if (Usuari != null) Trace.WriteLine(Usuari.ToString());
-                else Trace.WriteLine("Na");
-
-
                 homePage ??= new HomePage();
                 VistaActual = homePage;
             }
@@ -129,7 +126,7 @@ namespace ProjectePorres.ViewModels
         private void ExecuteSortir(object obj)
         {
             using TaskDialog dialog = new();
-            dialog.WindowTitle = "Confirmació";
+            dialog.WindowTitle = "Sortir | Confirmació";
             dialog.Content = "Vols sortir de l'aplicació o només tancar sessió";
             dialog.MainIcon = TaskDialogIcon.Information;
 
@@ -148,14 +145,13 @@ namespace ProjectePorres.ViewModels
                 // Ocultar MainWindow
                 TancantSessio = true;
                 IsViewVisible = false;
-
                 LoginViewModel.Instance.IniciatSessio = false;
                 LoginViewModel.Instance.IsViewVisible = true;
             }
-            else if (button == buttonTancarApp)
-            {
-                Application.Current.Shutdown();
-            }
+            else if (button == buttonTancarApp) Application.Current.Shutdown();
         }
+
+        private void ExecuteOnSortir(object obj) => Application.Current.Shutdown();
+
     }
 }

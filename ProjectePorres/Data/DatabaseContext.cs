@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using MySql.Data.MySqlClient;
 using ProjectePorres.Model;
+using System.Windows;
 
 namespace ProjectePorres.Data
 {
@@ -17,6 +18,7 @@ namespace ProjectePorres.Data
             this.connectionString = connectionString;
         }
 
+        // Comprova que tenim connexió a la base de dades de manera asíncrona.
         public async Task<bool> ComprovarConnexio()
         {
             try
@@ -31,6 +33,7 @@ namespace ProjectePorres.Data
             }
         }
 
+        // Mètode encarregat de validar un usuari de manera asíncrona.
         public bool ValidarUsuari(string nomUsuari, string contrasenya)
         {
             using var connection = new MySqlConnection(connectionString);
@@ -77,6 +80,7 @@ namespace ProjectePorres.Data
             return esValid;
         }
 
+        // Mètode encarregat de registrar un usuari de manera asíncrona.
         public async Task<bool> RegistrarUsuari(string nomUsuari, string dni, string nom, string cognom, string correu, string password)
         {
             bool registreCorrecte;
@@ -97,6 +101,11 @@ namespace ProjectePorres.Data
                 await command.ExecuteNonQueryAsync();
                 registreCorrecte = true;
             }
+            catch (MySqlException ex) when (ex.Number == 1062) // Número d'error específic per entrada duplicada.
+            {
+                Trace.WriteLine($"Error entrada duplicada: {ex.Message}");
+                registreCorrecte = false;
+            }
             catch (MySqlException ex)
             {
                 Trace.WriteLine($"Error al connectar a la base de dades: {ex.Message}");
@@ -106,6 +115,7 @@ namespace ProjectePorres.Data
             return registreCorrecte;
         }
 
+        // Retorna un model d'usuari segons el seu nom d'usuari de manera asíncrona.
         public async Task<UsuariModel> RetornarUsuariPerNom(string nomUsuari)
         {
             UsuariModel? usuariModel = null;

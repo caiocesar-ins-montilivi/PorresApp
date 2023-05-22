@@ -2,6 +2,7 @@
     x:Class="ProjectePorres.Views.Windows.LoginView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:ProjectePorres.Views.Windows"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -17,6 +18,13 @@
     Icon="../../Assets/favicon.ico"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
+
+    <!--  Command per quan vols sortir del diàlog d'inici de sessió  -->
+    <behaviors:Interaction.Triggers>
+        <behaviors:EventTrigger EventName="Closed">
+            <behaviors:InvokeCommandAction Command="{Binding DataContext.SortirCommand, RelativeSource={RelativeSource AncestorType=mde:MaterialWindow}}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=mde:MaterialWindow}, Path=DataContext}" />
+        </behaviors:EventTrigger>
+    </behaviors:Interaction.Triggers>
 
     <Window.DataContext>
         <viewModel:LoginViewModel />
