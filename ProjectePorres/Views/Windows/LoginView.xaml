@@ -13,7 +13,7 @@
     Height="450"
     MinWidth="780"
     MinHeight="450"
-    BorderBackgroundBrush="#549b92"
+    BorderBackgroundBrush="{StaticResource PrimaryHueDarkBrush}"
     Icon="../../Assets/favicon.ico"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">

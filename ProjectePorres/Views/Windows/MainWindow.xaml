@@ -14,7 +14,7 @@
     Height="600"
     MinWidth="500"
     MinHeight="600"
-    BorderBackgroundBrush="#549b92"
+    BorderBackgroundBrush="{DynamicResource PrimaryHueDarkBrush}"
     FontFamily="Open Sans"
     Icon="../../Assets/favicon.ico"
     WindowStartupLocation="CenterScreen"
@@ -76,7 +76,7 @@
             Background="#55313131"
             Opacity="0" />
 
-        <Grid Cursor="">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="70" />
                 <RowDefinition Height="*" />
@@ -84,11 +84,12 @@
             </Grid.RowDefinitions>
 
             <!--#region Header-->
-            <Border Grid.Row="0" Background="#40bdaf">
+            <Border Grid.Row="0" Background="{DynamicResource PrimaryHueMidBrush}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
@@ -100,7 +101,7 @@
                         Padding="0"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
-                        Background="Green"
+                        Background="{DynamicResource PrimaryHueDarkBrush}"
                         BorderBrush="{x:Null}"
                         Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                         ToolTip="Obre el menú">
@@ -121,14 +122,32 @@
                         Text="PrediXtor" />
 
                     <Button
-                        x:Name="ButtonSettings"
+                        x:Name="ButtonHome"
                         Grid.Column="2"
+                        Margin="10,0"
+                        Background="Teal"
+                        BorderBrush="Transparent"
+                        Command="{Binding CarregaHomeViewCommand}"
+                        Cursor="Hand"
+                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                        ToolTip="Configuració">
+                        <materialDesign:PackIcon
+                            Width="24"
+                            Height="24"
+                            Foreground="White"
+                            Kind="Home" />
+                    </Button>
+
+                    <Button
+                        x:Name="ButtonSettings"
+                        Grid.Column="3"
                         Margin="10,0"
                         Background="Black"
                         BorderBrush="Transparent"
                         Command="{Binding CarregaSettingsViewCommand}"
                         Cursor="Hand"
-                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                        ToolTip="Configuració">
                         <materialDesign:PackIcon
                             Width="24"
                             Height="24"
@@ -138,12 +157,13 @@
 
                     <Button
                         x:Name="ButtonAbout"
-                        Grid.Column="3"
+                        Grid.Column="4"
                         Margin="10,0"
                         Background="Blue"
                         BorderBrush="Transparent"
                         Cursor="Hand"
-                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                        ToolTip="Ajuda / Sobre app">
                         <materialDesign:PackIcon
                             Width="24"
                             Height="24"
@@ -153,13 +173,14 @@
 
                     <Button
                         x:Name="ButtonExit"
-                        Grid.Column="4"
+                        Grid.Column="5"
                         Margin="10,0"
                         Background="Red"
                         BorderBrush="Transparent"
                         Command="{Binding SortirCommand}"
                         Cursor="Hand"
-                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                        Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                        ToolTip="Sortir / Tanca sessió">
                         <materialDesign:PackIcon
                             Width="24"
                             Height="24"
@@ -183,7 +204,7 @@
             <!--#endregion-->
 
             <!--#region Footer-->
-            <Border Grid.Row="2" Background="#40bdaf">
+            <Border Grid.Row="2" Background="{DynamicResource PrimaryHueDarkBrush}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
@@ -219,7 +240,7 @@
             Width="250"
             Margin="-250,0,0,0"
             HorizontalAlignment="Left"
-            Background="White"
+            Background="{DynamicResource PrimaryHueMidBrush}"
             RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TransformGroup>
@@ -258,7 +279,10 @@
                                 VerticalAlignment="Center"
                                 Foreground="Gray"
                                 Kind="Home" />
-                            <TextBlock Margin="10" Text="Home" />
+                            <TextBlock
+                                Margin="10"
+                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                Text="Home" />
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem
@@ -283,7 +307,10 @@
                                 VerticalAlignment="Center"
                                 Foreground="#FFF08033"
                                 Kind="Soccer" />
-                            <TextBlock Margin="10" Text="Porres" />
+                            <TextBlock
+                                Margin="10"
+                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                Text="Porres" />
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem
@@ -308,7 +335,10 @@
                                 VerticalAlignment="Center"
                                 Foreground="Green"
                                 Kind="SoccerField" />
-                            <TextBlock Margin="10" Text="Equips" />
+                            <TextBlock
+                                Margin="10"
+                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                Text="Equips" />
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem
@@ -333,7 +363,10 @@
                                 VerticalAlignment="Center"
                                 Foreground="#FFD41515"
                                 Kind="Heart" />
-                            <TextBlock Margin="10" Text="Recomanar" />
+                            <TextBlock
+                                Margin="10"
+                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                Text="Recomanar" />
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem
@@ -358,7 +391,10 @@
                                 VerticalAlignment="Center"
                                 Foreground="Red"
                                 Kind="Logout" />
-                            <TextBlock Margin="10" Text="Tanca sessió" />
+                            <TextBlock
+                                Margin="10"
+                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                Text="Tanca sessió" />
                         </StackPanel>
                     </ListViewItem>
                     <ListViewItem
@@ -383,7 +419,10 @@
                                 VerticalAlignment="Center"
                                 Foreground="#FF0069C1"
                                 Kind="Settings" />
-                            <TextBlock Margin="10" Text="Configuració" />
+                            <TextBlock
+                                Margin="10"
+                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                Text="Configuració" />
                         </StackPanel>
                     </ListViewItem>
                 </ListView>
@@ -392,7 +431,7 @@
                 x:Name="SidebarFooter"
                 Height="40"
                 VerticalAlignment="Bottom"
-                Background="#40bdaf">
+                Background="{DynamicResource PrimaryHueDarkBrush}">
                 <TextBlock
                     x:Name="SidebarTxtBlockFooter"
                     Margin="10,0"

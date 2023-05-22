@@ -31,15 +31,15 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <materialDesign:Card
             Grid.ColumnSpan="3"
             Margin="20,10,20,0"
             Padding="5"
-            materialDesign:ShadowAssist.ShadowDepth="Depth1"
-            Background="{StaticResource PrimaryHueDarkBrush}"
+            materialDesign:ElevationAssist.Elevation="Dp3"
+            Background="{DynamicResource PrimaryHueDarkBrush}"
             Foreground="White"
             UniformCornerRadius="1">
 
@@ -63,8 +63,7 @@
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Margin="20,20,10,0"
-            materialDesign:ShadowAssist.ShadowDepth="Depth2"
-            Background="{StaticResource PrimaryHueDarkForegroundBrush}"
+            materialDesign:ElevationAssist.Elevation="Dp3"
             UniformCornerRadius="5">
 
             <Grid>
@@ -114,8 +113,8 @@
                                     Margin="0,3"
                                     Padding="10"
                                     HorizontalContentAlignment="Center"
-                                    Background="White"
-                                    BorderBrush="Gray"
+                                    Background="{DynamicResource PrimaryHueMidBrush}"
+                                    BorderBrush="{DynamicResource PrimaryHueDarkBrush}"
                                     BorderThickness="2"
                                     Cursor="Hand"
                                     ToolTip="Selecciona per fer el teu pronòstic">
@@ -142,6 +141,7 @@
                                             <TextBlock
                                                 VerticalAlignment="Center"
                                                 FontSize="16"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding EquipLocal.Nom}" />
 
                                             <TextBlock
@@ -154,6 +154,7 @@
                                             <TextBlock
                                                 VerticalAlignment="Center"
                                                 FontSize="16"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding EquipVisitant.Nom}" />
 
                                             <Image
@@ -165,16 +166,30 @@
 
                                         </StackPanel>
 
-                                        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                        <StackPanel
+                                            Margin="0,5"
+                                            HorizontalAlignment="Center"
+                                            Orientation="Horizontal">
 
-                                            <TextBlock VerticalAlignment="Center" Text="{Binding EquipLocal.Camp}" />
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                Text="{Binding EquipLocal.Camp}" />
                                             <TextBlock VerticalAlignment="Center" Text="," />
                                             <TextBlock
                                                 Margin="3,0"
                                                 VerticalAlignment="Center"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding EquipLocal.Ciutat}" />
-                                            <TextBlock Margin="9,0" Text="-" />
-                                            <TextBlock VerticalAlignment="Center" Text="{Binding DataHoraPartit}" />
+                                            <TextBlock
+                                                Margin="9,0"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                Text="-" />
+                                            <TextBlock
+                                                VerticalAlignment="Center"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                Text="{Binding DataHoraPartit}" />
+
                                         </StackPanel>
 
                                     </StackPanel>
@@ -192,8 +207,8 @@
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Margin="20,10,10,20"
-            materialDesign:ShadowAssist.ShadowDepth="Depth2"
-            Background="{StaticResource PrimaryHueDarkForegroundBrush}"
+            Padding="0,5"
+            materialDesign:ElevationAssist.Elevation="Dp3"
             UniformCornerRadius="5">
 
             <Grid>
@@ -232,6 +247,8 @@
                     <mde:OversizedNumberSpinner
                         Width="40"
                         Height="60"
+                        Background="{DynamicResource PrimaryHueMidBrush}"
+                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                         Max="100"
                         Min="0"
                         Value="{Binding GolsPartitSeleccionatLocal}" />
@@ -251,6 +268,8 @@
                     <mde:OversizedNumberSpinner
                         Width="40"
                         Height="60"
+                        Background="{DynamicResource PrimaryHueMidBrush}"
+                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                         Max="100"
                         Min="0"
                         Value="{Binding GolsPartitSeleccionatVisitant}" />
@@ -266,8 +285,7 @@
             Grid.RowSpan="3"
             Grid.Column="3"
             Margin="0,20,20,20"
-            materialDesign:ShadowAssist.ShadowDepth="Depth2"
-            Background="{StaticResource PrimaryHueDarkForegroundBrush}"
+            materialDesign:ElevationAssist.Elevation="Dp3"
             UniformCornerRadius="5">
 
             <Grid>
@@ -316,8 +334,8 @@
                                     Margin="0,3"
                                     Padding="10"
                                     HorizontalContentAlignment="Center"
-                                    Background="White"
-                                    BorderBrush="Gray"
+                                    Background="{DynamicResource PrimaryHueMidBrush}"
+                                    BorderBrush="{DynamicResource PrimaryHueDarkBrush}"
                                     BorderThickness="2"
                                     Cursor="Hand">
 
@@ -337,27 +355,32 @@
                                                 Margin="0,0,10,0"
                                                 VerticalAlignment="Center"
                                                 FontSize="16"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding EquipLocal.Nom}" />
 
                                             <TextBlock
                                                 VerticalAlignment="Center"
                                                 FontSize="20"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding GolsLocal}" />
 
                                             <TextBlock
                                                 Margin="10"
                                                 VerticalAlignment="Center"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="|" />
 
                                             <TextBlock
                                                 VerticalAlignment="Center"
                                                 FontSize="20"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding GolsVisitant}" />
 
                                             <TextBlock
                                                 Margin="10,0,0,0"
                                                 VerticalAlignment="Center"
                                                 FontSize="16"
+                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding EquipVisitant.Nom}" />
 
                                             <Image
@@ -372,6 +395,7 @@
                                         <TextBlock
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Center"
+                                            Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                             Text="{Binding DataHoraPartit}" />
 
                                     </StackPanel>
@@ -380,11 +404,7 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </ScrollViewer>
-
-
             </Grid>
         </materialDesign:Card>
-
-
     </Grid>
 </Page>

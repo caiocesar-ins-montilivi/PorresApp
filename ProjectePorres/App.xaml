@@ -15,6 +15,13 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignExtensions;component/Themes/MaterialDesignLightTheme.xaml" />
                 <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignExtensions;component/Themes/MaterialDesignDarkTheme.xaml" />-->
 
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <materialDesign:BundledTheme BaseTheme="Light" />
+                        <materialDesign:BundledTheme BaseTheme="Dark" />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+
                 <!--  primary colors  -->
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
@@ -31,7 +38,7 @@
                 <!--  accent color  -->
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
-                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Lime.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Green.xaml" />
                     </ResourceDictionary.MergedDictionaries>
                     <SolidColorBrush x:Key="SecondaryHueMidBrush" Color="{StaticResource Accent400}" />
                     <SolidColorBrush x:Key="SecondaryHueMidForegroundBrush" Color="{StaticResource Accent400Foreground}" />
