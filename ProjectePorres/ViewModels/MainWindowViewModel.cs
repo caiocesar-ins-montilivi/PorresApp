@@ -11,8 +11,8 @@ namespace ProjectePorres.ViewModels
     {
         private bool _tancantSessio;
         private bool _isViewVisible;
-        private string _textBenvinguda;
-        private UsuariModel _usuari;
+        private string? _textBenvinguda;
+        private UsuariModel? _usuari;
 
         // Pàgines
         private object? _vistaActual;
@@ -54,7 +54,7 @@ namespace ProjectePorres.ViewModels
             }
         }
 
-        public UsuariModel Usuari
+        public UsuariModel? Usuari
         {
             get => _usuari;
             set
@@ -64,7 +64,7 @@ namespace ProjectePorres.ViewModels
             }
         }
 
-        public string TextBenvinguda 
+        public string? TextBenvinguda 
         { 
             get => _textBenvinguda;
             set 
@@ -73,8 +73,6 @@ namespace ProjectePorres.ViewModels
                 OnPropertyChanged(nameof(TextBenvinguda));
             }  
         }
-
-        public static MainWindowViewModel Instance { get; } = new MainWindowViewModel();
 
         // Commands
         public ICommand CarregaHomeViewCommand { get; }
@@ -97,10 +95,11 @@ namespace ProjectePorres.ViewModels
             CarregaRecomanarViewCommand = new CommandViewModel(ExecuteCarregaRecomanar);
             CarregaSettingsViewCommand = new CommandViewModel(ExecuteCarregaSettings);
             CarregaAboutViewCommand = new CommandViewModel(ExecuteCarregaAbout);
-            
             SortirCommand = new CommandViewModel(ExecuteSortir);
             OnSortirCommand = new CommandViewModel(ExecuteOnSortir);
             OnLoadedCommand = new CommandViewModel(ExecuteOnLoaded);
+
+            _usuari = new UsuariModel();
         }
 
         private void ExecuteCarregaHome(object obj)
@@ -177,11 +176,9 @@ namespace ProjectePorres.ViewModels
 
             if (button == buttonTancarSessio)
             {
-                // Ocultar MainWindow
+                // Amaga MainWindow
                 TancantSessio = true;
                 IsViewVisible = false;
-                LoginViewModel.Instance.IniciatSessio = false;
-                LoginViewModel.Instance.IsViewVisible = true;
             }
             else if (button == buttonTancarApp) Application.Current.Shutdown();
         }

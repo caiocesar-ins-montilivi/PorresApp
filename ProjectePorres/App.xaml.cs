@@ -1,37 +1,58 @@
 ﻿using System.Windows;
+using ProjectePorres.Data;
+using ProjectePorres.ViewModels;
 using ProjectePorres.Views.Windows;
 
 namespace ProjectePorres
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
-        protected void ApplicationStart(object sender, StartupEventArgs e)
+        protected override async void OnStartup(StartupEventArgs e)
         {
-            LoginView loginView = new();
-            loginView.Show();
+            base.OnStartup(e);
 
-            MainWindow mainWindow = new();
+            // Crear instàncies dls ViewModels.
+            const string connectionString = "Server=localhost; Database=PorraGirona; Uid=root; Pwd=;";
+            var databaseContext = new DatabaseContext(connectionString);
+            var loginViewModel = new LoginViewModel();
+            var mainWindowViewModel = new MainWindowViewModel();
 
-            loginView.IsVisibleChanged += (s, ev) =>
+            // Crear instàncies de les vistes i establir DataContext.
+            var loginView = new LoginView { DataContext = loginViewModel };
+            var mainWindow = new MainWindow { DataContext = mainWindowViewModel };
+
+            // Mostra la finestra d'inci de sessió.
+            bool connexio = await databaseContext.ComprovarConnexio();
+            bool sessioActiva = await databaseContext.ComprovarSessionsActives();
+            if (connexio)
             {
-                // LoginView no és visible i encara està carregada.
-                if (!loginView.IsVisible && loginView.IsLoaded)
+                if (sessioActiva)
                 {
                     mainWindow.Show();
+                }
+                else
+                {
+                    loginView.Show();
+                }
+            }
+
+            // Gestiona canvis en el ViewModel d'inici de sessió.
+            loginViewModel.PropertyChanged += (sender, args) =>
+            {
+                if (args.PropertyName == nameof(LoginViewModel.IniciatSessio))
+                {
                     loginView.Hide();
+                    mainWindow.Show();
                 }
             };
 
-            mainWindow.IsVisibleChanged += (s, ev) =>
+            // Gestiona canvis en el ViewModel de la finestra principal.
+            mainWindowViewModel.PropertyChanged += (sender, args) =>
             {
-                // MainWindow no és visible i encara està carregada.
-                if (!mainWindow.IsVisible && mainWindow.IsLoaded)
+                if (args.PropertyName == nameof(MainWindowViewModel.TancantSessio))
                 {
-                    loginView.Show();
                     mainWindow.Hide();
+                    loginView.Show();
                 }
             };
         }

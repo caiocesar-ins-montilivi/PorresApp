@@ -426,7 +426,6 @@
                                         <TextBlock
                                             VerticalAlignment="Center"
                                             Foreground="{DynamicResource MaterialDesignDarkForeground}"
-                                            IsEnabled="{Binding ButtonRegistreEnabled}"
                                             Text="REGISTRAR-ME" />
 
                                         <ProgressBar

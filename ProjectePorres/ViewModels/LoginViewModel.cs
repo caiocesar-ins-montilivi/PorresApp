@@ -18,10 +18,8 @@ namespace ProjectePorres.ViewModels
         private bool _isViewVisible = true;
         private bool _mantenirSessio;
         private bool _iniciatSessio;
-
         private bool _progressBarLoginVisible;
         private bool _progressBarRegistreVisible;
-
         private string r_nomUsuari;
         private string r_dni;
         private string r_nom;
@@ -29,8 +27,7 @@ namespace ProjectePorres.ViewModels
         private string r_correu;
         private SecureString r_password;
         private SecureString r_password2;
-
-         private readonly DatabaseContext databaseContext;
+        private readonly DatabaseContext databaseContext;
 
         // Propietats
         public string NomUsuari
@@ -163,8 +160,6 @@ namespace ProjectePorres.ViewModels
             }
         }
 
-        public static LoginViewModel Instance { get { return new LoginViewModel(); } }
-
         public bool IniciatSessio
         {
             get { return _iniciatSessio; }
@@ -232,11 +227,12 @@ namespace ProjectePorres.ViewModels
 
                 if (databaseContext.ValidarUsuari(NomUsuari, password))
                 {
+                    // Si l'usuari vol mantenir la sessió per el pròxim inici de sessió.
+                    if (MantenirSessio) databaseContext.ActualitzarSessioActiva(usuari.Id, true);
+                    else databaseContext.ActualitzarSessioActiva(usuari.Id, false);
                     IniciatSessio = true;
                     IsViewVisible = false;
                     ProgressBarLoginVisible = false;
-
-                    MainWindowViewModel.Instance.Usuari = usuari;
                 }
                 else 
                 {

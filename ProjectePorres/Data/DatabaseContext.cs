@@ -158,5 +158,56 @@ namespace ProjectePorres.Data
 
             return usuariModel;
         }
+
+        public async Task<bool> ComprovarSessionsActives()
+        {
+            bool sessioActiva = false;
+            using var connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                await connection.OpenAsync();
+                string query = "SELECT COUNT(*) FROM Usuarios WHERE SesiónActiva = 1";
+                MySqlCommand command = new(query, connection);
+                int count = Convert.ToInt32(await command.ExecuteScalarAsync());
+                if (count > 0) 
+                    sessioActiva = true;
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"Error durant la verificació de la sesión activa: {ex.Message}");
+            }
+
+            return sessioActiva;
+        }
+
+        public async void ActualitzarSessioActiva(int idUsuari, bool canviar)
+        {
+            using var connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                await connection.OpenAsync();
+                string query;
+                if (canviar)
+                {
+                    query = "INSERT INTO Sessions(idUsuari) VALUES(@idUsuari)";
+                    MySqlCommand command = new(query, connection);
+                    command.Parameters.AddWithValue("@idUsuari", idUsuari);
+                    await command.ExecuteNonQueryAsync();
+                }
+                else
+                {
+                    query = "TRUNCATE Sessions";
+                    MySqlCommand command = new(query, connection);
+                    await command.ExecuteNonQueryAsync();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"Error durant l'actualització de la sesión activa: {ex.Message}");
+            }
+        }
     }
 }
