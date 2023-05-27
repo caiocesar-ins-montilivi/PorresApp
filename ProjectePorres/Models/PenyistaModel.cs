@@ -8,6 +8,8 @@ namespace ProjectePorres.Model
 {
     public class PenyistaModel : UsuariModel
     {
+        public int IdPenya { get; set; }
+
         public PenyistaModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin) : base(id, dni, nom, cognom, puntuacio, esAdmin) { }
     }
 }

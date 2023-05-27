@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using MySql.Data.MySqlClient;
 using ProjectePorres.Model;
-using System.Windows;
 
 namespace ProjectePorres.Data
 {
@@ -95,7 +94,7 @@ namespace ProjectePorres.Data
                 command.Parameters.AddWithValue("@NomUsuari", nomUsuari);
                 command.Parameters.AddWithValue("@Dni", dni);
                 command.Parameters.AddWithValue("@Nom", nom);
-                command.Parameters.AddWithValue("@Cognom", cognom);
+                command.Parameters.AddWithValue("@Cognom", cognom); 
                 command.Parameters.AddWithValue("@Correu", correu);
                 command.Parameters.AddWithValue("@Contrasenya", password);
                 await command.ExecuteNonQueryAsync();

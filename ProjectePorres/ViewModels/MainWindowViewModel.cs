@@ -1,8 +1,6 @@
 ﻿using Ookii.Dialogs.Wpf;
 using ProjectePorres.Model;
-using ProjectePorres.Views;
 using ProjectePorres.Views.Pages;
-using System.Configuration;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
@@ -13,6 +11,8 @@ namespace ProjectePorres.ViewModels
     {
         private bool _tancantSessio;
         private bool _isViewVisible;
+        private string _textBenvinguda;
+        private UsuariModel _usuari;
 
         // Pàgines
         private object? _vistaActual;
@@ -21,6 +21,7 @@ namespace ProjectePorres.ViewModels
         private EquipsPage? equipsPage;
         private RecomanarPage? recomanarPage;
         private SettingsPage? settingsPage;
+        private AboutPage? aboutPage;
 
         // Propietats
         public bool TancantSessio
@@ -53,7 +54,27 @@ namespace ProjectePorres.ViewModels
             }
         }
 
-        public static MainWindowViewModel Instance { get { return new MainWindowViewModel(); } }
+        public UsuariModel Usuari
+        {
+            get => _usuari;
+            set
+            {
+                _usuari = value;
+                OnPropertyChanged(nameof(Usuari));
+            }
+        }
+
+        public string TextBenvinguda 
+        { 
+            get => _textBenvinguda;
+            set 
+            {
+                _textBenvinguda = value;
+                OnPropertyChanged(nameof(TextBenvinguda));
+            }  
+        }
+
+        public static MainWindowViewModel Instance { get; } = new MainWindowViewModel();
 
         // Commands
         public ICommand CarregaHomeViewCommand { get; }
@@ -61,9 +82,11 @@ namespace ProjectePorres.ViewModels
         public ICommand CarregaEquipsViewCommand { get; }
         public ICommand CarregaRecomanarViewCommand { get; }
         public ICommand CarregaSettingsViewCommand { get; }
+        public ICommand CarregaAboutViewCommand { get; }
 
         public ICommand SortirCommand { get; }
         public ICommand OnSortirCommand { get; }
+        public ICommand OnLoadedCommand { get; }
 
         // Constructor
         public MainWindowViewModel()
@@ -73,8 +96,11 @@ namespace ProjectePorres.ViewModels
             CarregaEquipsViewCommand = new CommandViewModel(ExecuteCarregaEquips);
             CarregaRecomanarViewCommand = new CommandViewModel(ExecuteCarregaRecomanar);
             CarregaSettingsViewCommand = new CommandViewModel(ExecuteCarregaSettings);
+            CarregaAboutViewCommand = new CommandViewModel(ExecuteCarregaAbout);
+            
             SortirCommand = new CommandViewModel(ExecuteSortir);
             OnSortirCommand = new CommandViewModel(ExecuteOnSortir);
+            OnLoadedCommand = new CommandViewModel(ExecuteOnLoaded);
         }
 
         private void ExecuteCarregaHome(object obj)
@@ -122,6 +148,15 @@ namespace ProjectePorres.ViewModels
             }
         }
 
+        private void ExecuteCarregaAbout(object obj)
+        {
+            if (VistaActual != aboutPage || VistaActual is null)
+            {
+                aboutPage ??= new AboutPage();
+                VistaActual = aboutPage;
+            }
+        }
+
         // Utilitza un Ooki dialog
         private void ExecuteSortir(object obj)
         {
@@ -153,5 +188,10 @@ namespace ProjectePorres.ViewModels
 
         private void ExecuteOnSortir(object obj) => Application.Current.Shutdown();
 
+        private void ExecuteOnLoaded(object obj)
+        {
+            CarregaHomeViewCommand.Execute(this);
+            Trace.WriteLine(Usuari?.ToString());
+        }
     }
 }

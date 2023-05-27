@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectePorres.Model
 {
-    public class AdministradorModel : UsuariModel
+    public class AdminModel : UsuariModel
     {
-        public AdministradorModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin) : base(id, dni, nom, cognom, puntuacio, esAdmin) { }
+        public AdminModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin) : base(id, dni, nom, cognom, puntuacio, esAdmin) { }
 
         public bool EliminarUsuari()
         {

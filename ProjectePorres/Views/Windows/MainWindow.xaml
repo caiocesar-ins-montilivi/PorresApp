@@ -24,6 +24,10 @@
         <behaviors:EventTrigger EventName="Closing">
             <behaviors:InvokeCommandAction Command="{Binding DataContext.OnSortirCommand, RelativeSource={RelativeSource AncestorType=mde:MaterialWindow}}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=mde:MaterialWindow}, Path=DataContext}" />
         </behaviors:EventTrigger>
+
+        <behaviors:EventTrigger EventName="Loaded">
+            <behaviors:InvokeCommandAction Command="{Binding DataContext.OnLoadedCommand, RelativeSource={RelativeSource AncestorType=mde:MaterialWindow}}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=mde:MaterialWindow}, Path=DataContext}" />
+        </behaviors:EventTrigger>
     </behaviors:Interaction.Triggers>
 
     <Window.DataContext>
@@ -107,7 +111,7 @@
                         Padding="0"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
-                        Background="{DynamicResource PrimaryHueDarkBrush}"
+                        Background="{DynamicResource SecondaryHueMidBrush}"
                         BorderBrush="{x:Null}"
                         Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                         ToolTip="Obre el menú">
@@ -167,6 +171,7 @@
                         Margin="10,0"
                         Background="Blue"
                         BorderBrush="Transparent"
+                        Command="{Binding CarregaAboutViewCommand}"
                         Cursor="Hand"
                         Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                         ToolTip="Ajuda / Sobre app">
@@ -233,7 +238,7 @@
                         VerticalAlignment="Center"
                         FontSize="12"
                         Foreground="White"
-                        Text="{Binding Usuari.Nom}" />
+                        Text="{Binding Usuari.Nom, Mode=TwoWay}" />
                 </Grid>
             </Border>
             <!--#endregion-->

@@ -1,8 +1,5 @@
-﻿using MySql.Data.MySqlClient;
-using ProjectePorres.Data;
+﻿using ProjectePorres.Data;
 using ProjectePorres.Model;
-using System;
-using System.Diagnostics;
 using System.Security;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -21,6 +18,7 @@ namespace ProjectePorres.ViewModels
         private bool _isViewVisible = true;
         private bool _mantenirSessio;
         private bool _iniciatSessio;
+
         private bool _progressBarLoginVisible;
         private bool _progressBarRegistreVisible;
 
@@ -236,12 +234,11 @@ namespace ProjectePorres.ViewModels
                 {
                     IniciatSessio = true;
                     IsViewVisible = false;
-
-                    Usuari = usuari;
-                    MainWindowViewModel.Instance.IsViewVisible = true;
                     ProgressBarLoginVisible = false;
+
+                    MainWindowViewModel.Instance.Usuari = usuari;
                 }
-                else
+                else 
                 {
                     ProgressBarLoginVisible = false;
                     ErrorMessage = "Usuari o contrasenya incorrecte.";
@@ -264,7 +261,7 @@ namespace ProjectePorres.ViewModels
                 dadesValides = false;
             else
                 dadesValides = true;
-            
+
             return dadesValides;
         }
 

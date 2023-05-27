@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using ProjectePorres.ViewModels;
 using ProjectePorres.Views.Windows;
 
 namespace ProjectePorres
@@ -18,7 +17,8 @@ namespace ProjectePorres
 
             loginView.IsVisibleChanged += (s, ev) =>
             {
-                if (!loginView.IsVisible && loginView.IsLoaded && !LoginViewModel.Instance.IniciatSessio)
+                // LoginView no és visible i encara està carregada.
+                if (!loginView.IsVisible && loginView.IsLoaded)
                 {
                     mainWindow.Show();
                     loginView.Hide();
@@ -27,6 +27,7 @@ namespace ProjectePorres
 
             mainWindow.IsVisibleChanged += (s, ev) =>
             {
+                // MainWindow no és visible i encara està carregada.
                 if (!mainWindow.IsVisible && mainWindow.IsLoaded)
                 {
                     loginView.Show();

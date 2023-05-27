@@ -38,7 +38,7 @@
                 <!--  accent color  -->
                 <ResourceDictionary>
                     <ResourceDictionary.MergedDictionaries>
-                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Green.xaml" />
+                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Cyan.xaml" />
                     </ResourceDictionary.MergedDictionaries>
                     <SolidColorBrush x:Key="SecondaryHueMidBrush" Color="{StaticResource Accent400}" />
                     <SolidColorBrush x:Key="SecondaryHueMidForegroundBrush" Color="{StaticResource Accent400Foreground}" />
@@ -53,7 +53,6 @@
                         <Setter Property="materialDesign:ScrollViewerAssist.IgnorePadding" Value="False" />
                     </Style>
                 </ResourceDictionary>
-
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

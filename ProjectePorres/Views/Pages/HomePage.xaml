@@ -22,7 +22,7 @@
     <Grid>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
@@ -177,7 +177,7 @@
                                                 Text="{Binding EquipLocal.Camp}" />
                                             <TextBlock VerticalAlignment="Center" Text="," />
                                             <TextBlock
-                                                Margin="3,0"
+                                                Margin="3,0,0,0"
                                                 VerticalAlignment="Center"
                                                 Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                                 Text="{Binding EquipLocal.Ciutat}" />
@@ -279,7 +279,6 @@
 
         </materialDesign:Card>
 
-
         <materialDesign:Card
             Grid.Row="1"
             Grid.RowSpan="3"
@@ -332,73 +331,103 @@
                                 <ListViewItem
                                     Height="Auto"
                                     Margin="0,3"
-                                    Padding="10"
                                     HorizontalContentAlignment="Center"
-                                    Background="{DynamicResource PrimaryHueMidBrush}"
-                                    BorderBrush="{DynamicResource PrimaryHueDarkBrush}"
-                                    BorderThickness="2"
                                     Cursor="Hand">
 
-                                    <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
-                                        <StackPanel
-                                            Grid.Column="1"
-                                            Margin="10,0"
-                                            Orientation="Horizontal">
-                                            <Image
-                                                Width="64"
-                                                Height="64"
-                                                VerticalAlignment="Center"
-                                                Source="{Binding EquipLocal.Foto}"
-                                                Stretch="Uniform" />
+                                    <Expander materialDesign:ExpanderAssist.HeaderBackground="{DynamicResource PrimaryHueMidBrush}" ToolTip="Fes clic per veure els detalls">
 
-                                            <TextBlock
-                                                Margin="0,0,10,0"
-                                                VerticalAlignment="Center"
-                                                FontSize="16"
-                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                                                Text="{Binding EquipLocal.Nom}" />
+                                        <Expander.Header>
 
-                                            <TextBlock
-                                                VerticalAlignment="Center"
-                                                FontSize="20"
-                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                                                Text="{Binding GolsLocal}" />
+                                            <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                                                <StackPanel
+                                                    Grid.Column="1"
+                                                    Margin="10,0"
+                                                    Orientation="Horizontal">
+                                                    <Image
+                                                        Width="128"
+                                                        Height="64"
+                                                        VerticalAlignment="Center"
+                                                        Source="{Binding EquipLocal.Foto}"
+                                                        Stretch="Uniform" />
 
-                                            <TextBlock
-                                                Margin="10"
-                                                VerticalAlignment="Center"
-                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                                                Text="|" />
+                                                    <TextBlock
+                                                        Margin="0,0,10,0"
+                                                        VerticalAlignment="Center"
+                                                        FontSize="16"
+                                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                        Text="{Binding EquipLocal.Nom}" />
 
-                                            <TextBlock
-                                                VerticalAlignment="Center"
-                                                FontSize="20"
-                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                                                Text="{Binding GolsVisitant}" />
+                                                    <TextBlock
+                                                        VerticalAlignment="Center"
+                                                        FontSize="20"
+                                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                        Text="{Binding GolsLocal}" />
 
-                                            <TextBlock
-                                                Margin="10,0,0,0"
-                                                VerticalAlignment="Center"
-                                                FontSize="16"
-                                                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                                                Text="{Binding EquipVisitant.Nom}" />
+                                                    <TextBlock
+                                                        Margin="10"
+                                                        VerticalAlignment="Center"
+                                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                        Text="|" />
 
-                                            <Image
-                                                Width="64"
-                                                Height="64"
-                                                VerticalAlignment="Center"
-                                                Source="{Binding EquipVisitant.Foto}"
-                                                Stretch="Uniform" />
+                                                    <TextBlock
+                                                        VerticalAlignment="Center"
+                                                        FontSize="20"
+                                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                        Text="{Binding GolsVisitant}" />
 
+                                                    <TextBlock
+                                                        Margin="10,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        FontSize="16"
+                                                        Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                        Text="{Binding EquipVisitant.Nom}" />
+
+                                                    <Image
+                                                        Width="128"
+                                                        Height="64"
+                                                        VerticalAlignment="Center"
+                                                        Source="{Binding EquipVisitant.Foto}"
+                                                        Stretch="Uniform" />
+
+                                                </StackPanel>
+
+                                                <TextBlock
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                                                    Text="{Binding DataHoraPartit}" />
+
+                                            </StackPanel>
+
+                                        </Expander.Header>
+
+                                        <StackPanel Background="{DynamicResource PrimaryHueLightBrush}">
+                                            <!--  Contenido del Expander  -->
+                                            <!--  ...  -->
+
+                                            <StackPanel Orientation="Horizontal">
+                                                <!--  Equipo Local  -->
+                                                <ItemsControl ItemsSource="{Binding EquipLocal.Jugadors}">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Text="{Binding Nom}" />
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+
+                                                <!--  Equipo Visitante  -->
+                                                <ItemsControl Margin="20,0" ItemsSource="{Binding EquipVisitant.Jugadors}">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Text="{Binding Nom}" />
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+                                            </StackPanel>
                                         </StackPanel>
 
-                                        <TextBlock
-                                            HorizontalAlignment="Center"
-                                            VerticalAlignment="Center"
-                                            Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                                            Text="{Binding DataHoraPartit}" />
+                                    </Expander>
 
-                                    </StackPanel>
                                 </ListViewItem>
                             </DataTemplate>
                         </ListView.ItemTemplate>

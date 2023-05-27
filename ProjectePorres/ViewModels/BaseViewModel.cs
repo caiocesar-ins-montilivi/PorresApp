@@ -5,8 +5,6 @@ namespace ProjectePorres.ViewModels
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
-        public static UsuariModel? Usuari { get; set; }
-
         public event PropertyChangedEventHandler? PropertyChanged;
     
         public void OnPropertyChanged(string propertyName)
