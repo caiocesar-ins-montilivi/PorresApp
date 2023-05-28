@@ -9,7 +9,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
     xmlns:viewModel="clr-namespace:ProjectePorres.ViewModels"
-    Title="Porres - Caio Gomes"
+    Title="PrediXtor - Caio Gomes"
     Width="1080"
     Height="600"
     MinWidth="500"

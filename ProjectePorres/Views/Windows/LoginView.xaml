@@ -9,7 +9,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
     xmlns:viewModel="clr-namespace:ProjectePorres.ViewModels"
-    Title="Login"
+    Title="PrediXtor - Login"
     Width="800"
     Height="450"
     MinWidth="780"

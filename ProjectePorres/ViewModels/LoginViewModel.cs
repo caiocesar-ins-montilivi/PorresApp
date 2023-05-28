@@ -227,10 +227,12 @@ namespace ProjectePorres.ViewModels
             {
                 // Convertim SecureString en string TODO: NO ÉS LA MILLOR OPCIÓ
                 string password = new System.Net.NetworkCredential(string.Empty, SecurePassword).Password;
-                UsuariModel usuari = await databaseContext.RetornarUsuariPerNom(NomUsuari);
+                bool usuariValid = await databaseContext.ValidarUsuari(NomUsuari, password);
 
-                if (databaseContext.ValidarUsuari(NomUsuari, password))
+                if (usuariValid)
                 {
+                
+                    UsuariModel usuari = await databaseContext.RetornarUsuariPerNom(NomUsuari);
                     // Si l'usuari vol mantenir la sessió per el pròxim inici de sessió.
                     if (MantenirSessio) 
                     {

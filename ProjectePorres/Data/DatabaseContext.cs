@@ -1,10 +1,10 @@
-﻿using System;
-using System.Text;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using System.Security.Cryptography;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using ProjectePorres.Model;
+using System;
+using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjectePorres.Data
 {
@@ -33,7 +33,7 @@ namespace ProjectePorres.Data
         }
 
         // Mètode encarregat de validar un usuari de manera asíncrona.
-        public bool ValidarUsuari(string nomUsuari, string contrasenya)
+        public async Task<bool> ValidarUsuari(string nomUsuari, string contrasenya)
         {
             using var connection = new MySqlConnection(connectionString);
             string hashGuardat = string.Empty; // Hash de la contrasenya guardada a la base de dades.
@@ -41,13 +41,13 @@ namespace ProjectePorres.Data
 
             try
             {
-                connection.Open();
+                await connection.OpenAsync();
 
                 const string query = "SELECT Contrasenya FROM Usuaris WHERE NomUsuari = @nom_usuari;";
                 MySqlCommand command = new(query, connection);
                 command.Parameters.AddWithValue("@nom_usuari", nomUsuari);
 
-                var reader = command.ExecuteReader();
+                var reader = await command.ExecuteReaderAsync();
 
                 // Afagem el hash de la base de dades.
                 if (reader.HasRows)
@@ -94,7 +94,7 @@ namespace ProjectePorres.Data
                 command.Parameters.AddWithValue("@NomUsuari", nomUsuari);
                 command.Parameters.AddWithValue("@Dni", dni);
                 command.Parameters.AddWithValue("@Nom", nom);
-                command.Parameters.AddWithValue("@Cognom", cognom); 
+                command.Parameters.AddWithValue("@Cognom", cognom);
                 command.Parameters.AddWithValue("@Correu", correu);
                 command.Parameters.AddWithValue("@Contrasenya", password);
                 await command.ExecuteNonQueryAsync();
@@ -139,7 +139,7 @@ namespace ProjectePorres.Data
                         var _correu = reader[5];
                         var _puntuacio = reader[7];
                         var _esAdmin = reader[8];
-                        
+
                         usuariModel = new(
                             Convert.ToInt32(_id),
                             _dni.ToString(),
