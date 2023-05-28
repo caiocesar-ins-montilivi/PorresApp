@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8dtacX7igtlSwquOhZSWM4/paWFyIiq5JfOHV9CydtAnGuQiPOyyzeXsIKw5iB32AbpUGLkNVdWlJdIEr8yiVQ==",
+  "dgSpecHash": "5rFhRCmaHAT+6MRM/Z9nZbZlkPxbIG/UmjW2MqnFzAM2Ijre+U7DqA3gouAXxV6rujUvzWF+H+fsD80fTzq8Ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Caio\\.nuget\\packages\\docfx.console\\2.59.4\\docfx.console.2.59.4.nupkg.sha512",
     "C:\\Users\\Caio\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Caio\\.nuget\\packages\\ini-parser\\2.5.2\\ini-parser.2.5.2.nupkg.sha512",
     "C:\\Users\\Caio\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
