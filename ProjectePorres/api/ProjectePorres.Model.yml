@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  id: ProjectePorres.Model
+  children:
+  - ProjectePorres.Model.AdminModel
+  - ProjectePorres.Model.EquipModel
+  - ProjectePorres.Model.PartitModel
+  - ProjectePorres.Model.PenyistaModel
+  - ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.Model.AdminModel
+  commentId: T:ProjectePorres.Model.AdminModel
+  name: AdminModel
+  nameWithType: AdminModel
+  fullName: ProjectePorres.Model.AdminModel
+- uid: ProjectePorres.Model.EquipModel
+  commentId: T:ProjectePorres.Model.EquipModel
+  parent: ProjectePorres.Model
+  name: EquipModel
+  nameWithType: EquipModel
+  fullName: ProjectePorres.Model.EquipModel
+- uid: ProjectePorres.Model.PartitModel
+  commentId: T:ProjectePorres.Model.PartitModel
+  name: PartitModel
+  nameWithType: PartitModel
+  fullName: ProjectePorres.Model.PartitModel
+- uid: ProjectePorres.Model.PenyistaModel
+  commentId: T:ProjectePorres.Model.PenyistaModel
+  name: PenyistaModel
+  nameWithType: PenyistaModel
+  fullName: ProjectePorres.Model.PenyistaModel
+- uid: ProjectePorres.Model.UsuariModel
+  commentId: T:ProjectePorres.Model.UsuariModel
+  parent: ProjectePorres.Model
+  name: UsuariModel
+  nameWithType: UsuariModel
+  fullName: ProjectePorres.Model.UsuariModel
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Data
+  commentId: N:ProjectePorres.Data
+  id: ProjectePorres.Data
+  children:
+  - ProjectePorres.Data.ConfigContext
+  - ProjectePorres.Data.DatabaseContext
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres.Data
+  nameWithType: ProjectePorres.Data
+  fullName: ProjectePorres.Data
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.Data.ConfigContext
+  commentId: T:ProjectePorres.Data.ConfigContext
+  name: ConfigContext
+  nameWithType: ConfigContext
+  fullName: ProjectePorres.Data.ConfigContext
+- uid: ProjectePorres.Data.DatabaseContext
+  commentId: T:ProjectePorres.Data.DatabaseContext
+  name: DatabaseContext
+  nameWithType: DatabaseContext
+  fullName: ProjectePorres.Data.DatabaseContext

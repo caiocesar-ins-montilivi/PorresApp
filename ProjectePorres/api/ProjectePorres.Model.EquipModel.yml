@@ -1,0 +1,805 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Model.EquipModel
+  commentId: T:ProjectePorres.Model.EquipModel
+  id: EquipModel
+  parent: ProjectePorres.Model
+  children:
+  - ProjectePorres.Model.EquipModel.#ctor
+  - ProjectePorres.Model.EquipModel.#ctor(System.String,System.String,System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel})
+  - ProjectePorres.Model.EquipModel.Camp
+  - ProjectePorres.Model.EquipModel.Categoria
+  - ProjectePorres.Model.EquipModel.Ciutat
+  - ProjectePorres.Model.EquipModel.Foto
+  - ProjectePorres.Model.EquipModel.Jugadors
+  - ProjectePorres.Model.EquipModel.Nom
+  - ProjectePorres.Model.EquipModel.ToString
+  langs:
+  - csharp
+  - vb
+  name: EquipModel
+  nameWithType: EquipModel
+  fullName: ProjectePorres.Model.EquipModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: EquipModel
+    path: Models/EquipModel.cs
+    startLine: 5
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public class EquipModel
+    content.vb: Public Class EquipModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Model.EquipModel.Nom
+  commentId: P:ProjectePorres.Model.EquipModel.Nom
+  id: Nom
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: Nom
+  nameWithType: EquipModel.Nom
+  fullName: ProjectePorres.Model.EquipModel.Nom
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Nom
+    path: Models/EquipModel.cs
+    startLine: 7
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Nom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nom As String
+  overload: ProjectePorres.Model.EquipModel.Nom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.Ciutat
+  commentId: P:ProjectePorres.Model.EquipModel.Ciutat
+  id: Ciutat
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: Ciutat
+  nameWithType: EquipModel.Ciutat
+  fullName: ProjectePorres.Model.EquipModel.Ciutat
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Ciutat
+    path: Models/EquipModel.cs
+    startLine: 9
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Ciutat { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Ciutat As String
+  overload: ProjectePorres.Model.EquipModel.Ciutat*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.Camp
+  commentId: P:ProjectePorres.Model.EquipModel.Camp
+  id: Camp
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: Camp
+  nameWithType: EquipModel.Camp
+  fullName: ProjectePorres.Model.EquipModel.Camp
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Camp
+    path: Models/EquipModel.cs
+    startLine: 11
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Camp { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Camp As String
+  overload: ProjectePorres.Model.EquipModel.Camp*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.Foto
+  commentId: P:ProjectePorres.Model.EquipModel.Foto
+  id: Foto
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: Foto
+  nameWithType: EquipModel.Foto
+  fullName: ProjectePorres.Model.EquipModel.Foto
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Foto
+    path: Models/EquipModel.cs
+    startLine: 13
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Foto { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Foto As String
+  overload: ProjectePorres.Model.EquipModel.Foto*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.Categoria
+  commentId: P:ProjectePorres.Model.EquipModel.Categoria
+  id: Categoria
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: Categoria
+  nameWithType: EquipModel.Categoria
+  fullName: ProjectePorres.Model.EquipModel.Categoria
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Categoria
+    path: Models/EquipModel.cs
+    startLine: 15
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Categoria { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Categoria As String
+  overload: ProjectePorres.Model.EquipModel.Categoria*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.Jugadors
+  commentId: P:ProjectePorres.Model.EquipModel.Jugadors
+  id: Jugadors
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: Jugadors
+  nameWithType: EquipModel.Jugadors
+  fullName: ProjectePorres.Model.EquipModel.Jugadors
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Jugadors
+    path: Models/EquipModel.cs
+    startLine: 17
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public ObservableCollection<JugadorModel> Jugadors { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel}
+    content.vb: Public Property Jugadors As ObservableCollection(Of JugadorModel)
+  overload: ProjectePorres.Model.EquipModel.Jugadors*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.#ctor
+  commentId: M:ProjectePorres.Model.EquipModel.#ctor
+  id: '#ctor'
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: EquipModel()
+  nameWithType: EquipModel.EquipModel()
+  fullName: ProjectePorres.Model.EquipModel.EquipModel()
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/EquipModel.cs
+    startLine: 19
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public EquipModel()
+    content.vb: Public Sub New
+  overload: ProjectePorres.Model.EquipModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.EquipModel.#ctor(System.String,System.String,System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel})
+  commentId: M:ProjectePorres.Model.EquipModel.#ctor(System.String,System.String,System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel})
+  id: '#ctor(System.String,System.String,System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel})'
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: EquipModel(String, String, String, String, String, ObservableCollection<JugadorModel>)
+  nameWithType: EquipModel.EquipModel(String, String, String, String, String, ObservableCollection<JugadorModel>)
+  fullName: ProjectePorres.Model.EquipModel.EquipModel(System.String, System.String, System.String, System.String, System.String, System.Collections.ObjectModel.ObservableCollection<ProjectePorres.Models.JugadorModel>)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/EquipModel.cs
+    startLine: 21
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public EquipModel(string nom, string ciutat, string camp, string foto, string categoria, ObservableCollection<JugadorModel> jugadors)
+    parameters:
+    - id: nom
+      type: System.String
+    - id: ciutat
+      type: System.String
+    - id: camp
+      type: System.String
+    - id: foto
+      type: System.String
+    - id: categoria
+      type: System.String
+    - id: jugadors
+      type: System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel}
+    content.vb: Public Sub New(nom As String, ciutat As String, camp As String, foto As String, categoria As String, jugadors As ObservableCollection(Of JugadorModel))
+  overload: ProjectePorres.Model.EquipModel.#ctor*
+  nameWithType.vb: EquipModel.EquipModel(String, String, String, String, String, ObservableCollection(Of JugadorModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ProjectePorres.Model.EquipModel.EquipModel(System.String, System.String, System.String, System.String, System.String, System.Collections.ObjectModel.ObservableCollection(Of ProjectePorres.Models.JugadorModel))
+  name.vb: EquipModel(String, String, String, String, String, ObservableCollection(Of JugadorModel))
+- uid: ProjectePorres.Model.EquipModel.ToString
+  commentId: M:ProjectePorres.Model.EquipModel.ToString
+  id: ToString
+  parent: ProjectePorres.Model.EquipModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: EquipModel.ToString()
+  fullName: ProjectePorres.Model.EquipModel.ToString()
+  type: Method
+  source:
+    remote:
+      path: ProjectePorres/Models/EquipModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ToString
+    path: Models/EquipModel.cs
+    startLine: 39
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: ProjectePorres.Model.EquipModel.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Model.EquipModel.Nom*
+  commentId: Overload:ProjectePorres.Model.EquipModel.Nom
+  name: Nom
+  nameWithType: EquipModel.Nom
+  fullName: ProjectePorres.Model.EquipModel.Nom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.Model.EquipModel.Ciutat*
+  commentId: Overload:ProjectePorres.Model.EquipModel.Ciutat
+  name: Ciutat
+  nameWithType: EquipModel.Ciutat
+  fullName: ProjectePorres.Model.EquipModel.Ciutat
+- uid: ProjectePorres.Model.EquipModel.Camp*
+  commentId: Overload:ProjectePorres.Model.EquipModel.Camp
+  name: Camp
+  nameWithType: EquipModel.Camp
+  fullName: ProjectePorres.Model.EquipModel.Camp
+- uid: ProjectePorres.Model.EquipModel.Foto*
+  commentId: Overload:ProjectePorres.Model.EquipModel.Foto
+  name: Foto
+  nameWithType: EquipModel.Foto
+  fullName: ProjectePorres.Model.EquipModel.Foto
+- uid: ProjectePorres.Model.EquipModel.Categoria*
+  commentId: Overload:ProjectePorres.Model.EquipModel.Categoria
+  name: Categoria
+  nameWithType: EquipModel.Categoria
+  fullName: ProjectePorres.Model.EquipModel.Categoria
+- uid: ProjectePorres.Model.EquipModel.Jugadors*
+  commentId: Overload:ProjectePorres.Model.EquipModel.Jugadors
+  name: Jugadors
+  nameWithType: EquipModel.Jugadors
+  fullName: ProjectePorres.Model.EquipModel.Jugadors
+- uid: System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{ProjectePorres.Models.JugadorModel}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  name: ObservableCollection<JugadorModel>
+  nameWithType: ObservableCollection<JugadorModel>
+  fullName: System.Collections.ObjectModel.ObservableCollection<ProjectePorres.Models.JugadorModel>
+  nameWithType.vb: ObservableCollection(Of JugadorModel)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of ProjectePorres.Models.JugadorModel)
+  name.vb: ObservableCollection(Of JugadorModel)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ProjectePorres.Models.JugadorModel
+    name: JugadorModel
+    nameWithType: JugadorModel
+    fullName: ProjectePorres.Models.JugadorModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ProjectePorres.Models.JugadorModel
+    name: JugadorModel
+    nameWithType: JugadorModel
+    fullName: ProjectePorres.Models.JugadorModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: System.Collections.ObjectModel.ObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: ProjectePorres.Model.EquipModel.#ctor*
+  commentId: Overload:ProjectePorres.Model.EquipModel.#ctor
+  name: EquipModel
+  nameWithType: EquipModel.EquipModel
+  fullName: ProjectePorres.Model.EquipModel.EquipModel
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ProjectePorres.Model.EquipModel.ToString*
+  commentId: Overload:ProjectePorres.Model.EquipModel.ToString
+  name: ToString
+  nameWithType: EquipModel.ToString
+  fullName: ProjectePorres.Model.EquipModel.ToString

@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Model.AdminModel
+  commentId: T:ProjectePorres.Model.AdminModel
+  id: AdminModel
+  parent: ProjectePorres.Model
+  children:
+  - ProjectePorres.Model.AdminModel.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)
+  - ProjectePorres.Model.AdminModel.EliminarUsuari
+  - ProjectePorres.Model.AdminModel.GestionarResultats
+  langs:
+  - csharp
+  - vb
+  name: AdminModel
+  nameWithType: AdminModel
+  fullName: ProjectePorres.Model.AdminModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/AdminModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: AdminModel
+    path: Models/AdminModel.cs
+    startLine: 8
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: 'public class AdminModel : UsuariModel'
+    content.vb: >-
+      Public Class AdminModel
+          Inherits UsuariModel
+  inheritance:
+  - System.Object
+  - ProjectePorres.Model.UsuariModel
+  inheritedMembers:
+  - ProjectePorres.Model.UsuariModel.Id
+  - ProjectePorres.Model.UsuariModel.Dni
+  - ProjectePorres.Model.UsuariModel.Nom
+  - ProjectePorres.Model.UsuariModel.Cognom
+  - ProjectePorres.Model.UsuariModel.Correu
+  - ProjectePorres.Model.UsuariModel.Puntuacio
+  - ProjectePorres.Model.UsuariModel.Contrasenya
+  - ProjectePorres.Model.UsuariModel.EsAdmin
+  - ProjectePorres.Model.UsuariModel.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Model.AdminModel.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)
+  commentId: M:ProjectePorres.Model.AdminModel.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)
+  id: '#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)'
+  parent: ProjectePorres.Model.AdminModel
+  langs:
+  - csharp
+  - vb
+  name: AdminModel(Int32, String, String, String, Int32, Boolean)
+  nameWithType: AdminModel.AdminModel(Int32, String, String, String, Int32, Boolean)
+  fullName: ProjectePorres.Model.AdminModel.AdminModel(System.Int32, System.String, System.String, System.String, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/AdminModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/AdminModel.cs
+    startLine: 10
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public AdminModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: dni
+      type: System.String
+    - id: nom
+      type: System.String
+    - id: cognom
+      type: System.String
+    - id: puntuacio
+      type: System.Int32
+    - id: esAdmin
+      type: System.Boolean
+    content.vb: Public Sub New(id As Integer, dni As String, nom As String, cognom As String, puntuacio As Integer, esAdmin As Boolean)
+  overload: ProjectePorres.Model.AdminModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.AdminModel.EliminarUsuari
+  commentId: M:ProjectePorres.Model.AdminModel.EliminarUsuari
+  id: EliminarUsuari
+  parent: ProjectePorres.Model.AdminModel
+  langs:
+  - csharp
+  - vb
+  name: EliminarUsuari()
+  nameWithType: AdminModel.EliminarUsuari()
+  fullName: ProjectePorres.Model.AdminModel.EliminarUsuari()
+  type: Method
+  source:
+    remote:
+      path: ProjectePorres/Models/AdminModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: EliminarUsuari
+    path: Models/AdminModel.cs
+    startLine: 12
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public bool EliminarUsuari()
+    return:
+      type: System.Boolean
+    content.vb: Public Function EliminarUsuari As Boolean
+  overload: ProjectePorres.Model.AdminModel.EliminarUsuari*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.AdminModel.GestionarResultats
+  commentId: M:ProjectePorres.Model.AdminModel.GestionarResultats
+  id: GestionarResultats
+  parent: ProjectePorres.Model.AdminModel
+  langs:
+  - csharp
+  - vb
+  name: GestionarResultats()
+  nameWithType: AdminModel.GestionarResultats()
+  fullName: ProjectePorres.Model.AdminModel.GestionarResultats()
+  type: Method
+  source:
+    remote:
+      path: ProjectePorres/Models/AdminModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: GestionarResultats
+    path: Models/AdminModel.cs
+    startLine: 17
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public bool GestionarResultats()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GestionarResultats As Boolean
+  overload: ProjectePorres.Model.AdminModel.GestionarResultats*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ProjectePorres.Model.UsuariModel
+  commentId: T:ProjectePorres.Model.UsuariModel
+  parent: ProjectePorres.Model
+  name: UsuariModel
+  nameWithType: UsuariModel
+  fullName: ProjectePorres.Model.UsuariModel
+- uid: ProjectePorres.Model.UsuariModel.Id
+  commentId: P:ProjectePorres.Model.UsuariModel.Id
+  parent: ProjectePorres.Model.UsuariModel
+  name: Id
+  nameWithType: UsuariModel.Id
+  fullName: ProjectePorres.Model.UsuariModel.Id
+- uid: ProjectePorres.Model.UsuariModel.Dni
+  commentId: P:ProjectePorres.Model.UsuariModel.Dni
+  parent: ProjectePorres.Model.UsuariModel
+  name: Dni
+  nameWithType: UsuariModel.Dni
+  fullName: ProjectePorres.Model.UsuariModel.Dni
+- uid: ProjectePorres.Model.UsuariModel.Nom
+  commentId: P:ProjectePorres.Model.UsuariModel.Nom
+  parent: ProjectePorres.Model.UsuariModel
+  name: Nom
+  nameWithType: UsuariModel.Nom
+  fullName: ProjectePorres.Model.UsuariModel.Nom
+- uid: ProjectePorres.Model.UsuariModel.Cognom
+  commentId: P:ProjectePorres.Model.UsuariModel.Cognom
+  parent: ProjectePorres.Model.UsuariModel
+  name: Cognom
+  nameWithType: UsuariModel.Cognom
+  fullName: ProjectePorres.Model.UsuariModel.Cognom
+- uid: ProjectePorres.Model.UsuariModel.Correu
+  commentId: P:ProjectePorres.Model.UsuariModel.Correu
+  parent: ProjectePorres.Model.UsuariModel
+  name: Correu
+  nameWithType: UsuariModel.Correu
+  fullName: ProjectePorres.Model.UsuariModel.Correu
+- uid: ProjectePorres.Model.UsuariModel.Puntuacio
+  commentId: P:ProjectePorres.Model.UsuariModel.Puntuacio
+  parent: ProjectePorres.Model.UsuariModel
+  name: Puntuacio
+  nameWithType: UsuariModel.Puntuacio
+  fullName: ProjectePorres.Model.UsuariModel.Puntuacio
+- uid: ProjectePorres.Model.UsuariModel.Contrasenya
+  commentId: P:ProjectePorres.Model.UsuariModel.Contrasenya
+  parent: ProjectePorres.Model.UsuariModel
+  name: Contrasenya
+  nameWithType: UsuariModel.Contrasenya
+  fullName: ProjectePorres.Model.UsuariModel.Contrasenya
+- uid: ProjectePorres.Model.UsuariModel.EsAdmin
+  commentId: P:ProjectePorres.Model.UsuariModel.EsAdmin
+  parent: ProjectePorres.Model.UsuariModel
+  name: EsAdmin
+  nameWithType: UsuariModel.EsAdmin
+  fullName: ProjectePorres.Model.UsuariModel.EsAdmin
+- uid: ProjectePorres.Model.UsuariModel.ToString
+  commentId: M:ProjectePorres.Model.UsuariModel.ToString
+  parent: ProjectePorres.Model.UsuariModel
+  name: ToString()
+  nameWithType: UsuariModel.ToString()
+  fullName: ProjectePorres.Model.UsuariModel.ToString()
+  spec.csharp:
+  - uid: ProjectePorres.Model.UsuariModel.ToString
+    name: ToString
+    nameWithType: UsuariModel.ToString
+    fullName: ProjectePorres.Model.UsuariModel.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ProjectePorres.Model.UsuariModel.ToString
+    name: ToString
+    nameWithType: UsuariModel.ToString
+    fullName: ProjectePorres.Model.UsuariModel.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Model.AdminModel.#ctor*
+  commentId: Overload:ProjectePorres.Model.AdminModel.#ctor
+  name: AdminModel
+  nameWithType: AdminModel.AdminModel
+  fullName: ProjectePorres.Model.AdminModel.AdminModel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ProjectePorres.Model.AdminModel.EliminarUsuari*
+  commentId: Overload:ProjectePorres.Model.AdminModel.EliminarUsuari
+  name: EliminarUsuari
+  nameWithType: AdminModel.EliminarUsuari
+  fullName: ProjectePorres.Model.AdminModel.EliminarUsuari
+- uid: ProjectePorres.Model.AdminModel.GestionarResultats*
+  commentId: Overload:ProjectePorres.Model.AdminModel.GestionarResultats
+  name: GestionarResultats
+  nameWithType: AdminModel.GestionarResultats
+  fullName: ProjectePorres.Model.AdminModel.GestionarResultats

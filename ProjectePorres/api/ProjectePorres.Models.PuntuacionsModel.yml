@@ -1,0 +1,608 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Models.PuntuacionsModel
+  commentId: T:ProjectePorres.Models.PuntuacionsModel
+  id: PuntuacionsModel
+  parent: ProjectePorres.Models
+  children:
+  - ProjectePorres.Models.PuntuacionsModel.#ctor(System.Int32,System.Int32,System.String,System.Int32,System.String)
+  - ProjectePorres.Models.PuntuacionsModel.Alias
+  - ProjectePorres.Models.PuntuacionsModel.Id
+  - ProjectePorres.Models.PuntuacionsModel.IdPenyista
+  - ProjectePorres.Models.PuntuacionsModel.Puntuacio
+  - ProjectePorres.Models.PuntuacionsModel.Temporada
+  langs:
+  - csharp
+  - vb
+  name: PuntuacionsModel
+  nameWithType: PuntuacionsModel
+  fullName: ProjectePorres.Models.PuntuacionsModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: PuntuacionsModel
+    path: Models/PuntuacionsModel.cs
+    startLine: 8
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public class PuntuacionsModel
+    content.vb: Public Class PuntuacionsModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Models.PuntuacionsModel.Id
+  commentId: P:ProjectePorres.Models.PuntuacionsModel.Id
+  id: Id
+  parent: ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PuntuacionsModel.Id
+  fullName: ProjectePorres.Models.PuntuacionsModel.Id
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Id
+    path: Models/PuntuacionsModel.cs
+    startLine: 10
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: ProjectePorres.Models.PuntuacionsModel.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PuntuacionsModel.IdPenyista
+  commentId: P:ProjectePorres.Models.PuntuacionsModel.IdPenyista
+  id: IdPenyista
+  parent: ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: IdPenyista
+  nameWithType: PuntuacionsModel.IdPenyista
+  fullName: ProjectePorres.Models.PuntuacionsModel.IdPenyista
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IdPenyista
+    path: Models/PuntuacionsModel.cs
+    startLine: 12
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int IdPenyista { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdPenyista As Integer
+  overload: ProjectePorres.Models.PuntuacionsModel.IdPenyista*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PuntuacionsModel.Alias
+  commentId: P:ProjectePorres.Models.PuntuacionsModel.Alias
+  id: Alias
+  parent: ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: Alias
+  nameWithType: PuntuacionsModel.Alias
+  fullName: ProjectePorres.Models.PuntuacionsModel.Alias
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Alias
+    path: Models/PuntuacionsModel.cs
+    startLine: 14
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public string Alias { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Alias As String
+  overload: ProjectePorres.Models.PuntuacionsModel.Alias*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PuntuacionsModel.Puntuacio
+  commentId: P:ProjectePorres.Models.PuntuacionsModel.Puntuacio
+  id: Puntuacio
+  parent: ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: Puntuacio
+  nameWithType: PuntuacionsModel.Puntuacio
+  fullName: ProjectePorres.Models.PuntuacionsModel.Puntuacio
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Puntuacio
+    path: Models/PuntuacionsModel.cs
+    startLine: 16
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int Puntuacio { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Puntuacio As Integer
+  overload: ProjectePorres.Models.PuntuacionsModel.Puntuacio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PuntuacionsModel.Temporada
+  commentId: P:ProjectePorres.Models.PuntuacionsModel.Temporada
+  id: Temporada
+  parent: ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: Temporada
+  nameWithType: PuntuacionsModel.Temporada
+  fullName: ProjectePorres.Models.PuntuacionsModel.Temporada
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Temporada
+    path: Models/PuntuacionsModel.cs
+    startLine: 18
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public string Temporada { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Temporada As String
+  overload: ProjectePorres.Models.PuntuacionsModel.Temporada*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PuntuacionsModel.#ctor(System.Int32,System.Int32,System.String,System.Int32,System.String)
+  commentId: M:ProjectePorres.Models.PuntuacionsModel.#ctor(System.Int32,System.Int32,System.String,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String,System.Int32,System.String)'
+  parent: ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: PuntuacionsModel(Int32, Int32, String, Int32, String)
+  nameWithType: PuntuacionsModel.PuntuacionsModel(Int32, Int32, String, Int32, String)
+  fullName: ProjectePorres.Models.PuntuacionsModel.PuntuacionsModel(System.Int32, System.Int32, System.String, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/PuntuacionsModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/PuntuacionsModel.cs
+    startLine: 20
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public PuntuacionsModel(int id, int idPenyista, string alias, int puntuacio, string temporada)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: idPenyista
+      type: System.Int32
+    - id: alias
+      type: System.String
+    - id: puntuacio
+      type: System.Int32
+    - id: temporada
+      type: System.String
+    content.vb: Public Sub New(id As Integer, idPenyista As Integer, alias As String, puntuacio As Integer, temporada As String)
+  overload: ProjectePorres.Models.PuntuacionsModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ProjectePorres.Models
+  commentId: N:ProjectePorres.Models
+  name: ProjectePorres.Models
+  nameWithType: ProjectePorres.Models
+  fullName: ProjectePorres.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Models.PuntuacionsModel.Id*
+  commentId: Overload:ProjectePorres.Models.PuntuacionsModel.Id
+  name: Id
+  nameWithType: PuntuacionsModel.Id
+  fullName: ProjectePorres.Models.PuntuacionsModel.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ProjectePorres.Models.PuntuacionsModel.IdPenyista*
+  commentId: Overload:ProjectePorres.Models.PuntuacionsModel.IdPenyista
+  name: IdPenyista
+  nameWithType: PuntuacionsModel.IdPenyista
+  fullName: ProjectePorres.Models.PuntuacionsModel.IdPenyista
+- uid: ProjectePorres.Models.PuntuacionsModel.Alias*
+  commentId: Overload:ProjectePorres.Models.PuntuacionsModel.Alias
+  name: Alias
+  nameWithType: PuntuacionsModel.Alias
+  fullName: ProjectePorres.Models.PuntuacionsModel.Alias
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.Models.PuntuacionsModel.Puntuacio*
+  commentId: Overload:ProjectePorres.Models.PuntuacionsModel.Puntuacio
+  name: Puntuacio
+  nameWithType: PuntuacionsModel.Puntuacio
+  fullName: ProjectePorres.Models.PuntuacionsModel.Puntuacio
+- uid: ProjectePorres.Models.PuntuacionsModel.Temporada*
+  commentId: Overload:ProjectePorres.Models.PuntuacionsModel.Temporada
+  name: Temporada
+  nameWithType: PuntuacionsModel.Temporada
+  fullName: ProjectePorres.Models.PuntuacionsModel.Temporada
+- uid: ProjectePorres.Models.PuntuacionsModel.#ctor*
+  commentId: Overload:ProjectePorres.Models.PuntuacionsModel.#ctor
+  name: PuntuacionsModel
+  nameWithType: PuntuacionsModel.PuntuacionsModel
+  fullName: ProjectePorres.Models.PuntuacionsModel.PuntuacionsModel

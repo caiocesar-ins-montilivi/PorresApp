@@ -1,0 +1,1062 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.ViewModels.MainWindowViewModel
+  commentId: T:ProjectePorres.ViewModels.MainWindowViewModel
+  id: MainWindowViewModel
+  parent: ProjectePorres.ViewModels
+  children:
+  - ProjectePorres.ViewModels.MainWindowViewModel.#ctor
+  - ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible
+  - ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand
+  - ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio
+  - ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda
+  - ProjectePorres.ViewModels.MainWindowViewModel.Usuari
+  - ProjectePorres.ViewModels.MainWindowViewModel.VistaActual
+  langs:
+  - csharp
+  - vb
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: MainWindowViewModel
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 9
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: 'public class MainWindowViewModel : BaseViewModel, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class MainWindowViewModel
+          Inherits BaseViewModel
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - ProjectePorres.ViewModels.BaseViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+  - ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio
+  id: TancantSessio
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: TancantSessio
+  nameWithType: MainWindowViewModel.TancantSessio
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: TancantSessio
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 26
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool TancantSessio { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TancantSessio As Boolean
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible
+  id: IsViewVisible
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsViewVisible
+  nameWithType: MainWindowViewModel.IsViewVisible
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IsViewVisible
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 36
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool IsViewVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsViewVisible As Boolean
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.VistaActual
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.VistaActual
+  id: VistaActual
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: VistaActual
+  nameWithType: MainWindowViewModel.VistaActual
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.VistaActual
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: VistaActual
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 46
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public object VistaActual { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property VistaActual As Object
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.VistaActual*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.Usuari
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.Usuari
+  id: Usuari
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: Usuari
+  nameWithType: MainWindowViewModel.Usuari
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.Usuari
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Usuari
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 56
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public UsuariModel Usuari { get; set; }
+    parameters: []
+    return:
+      type: ProjectePorres.Model.UsuariModel
+    content.vb: Public Property Usuari As UsuariModel
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.Usuari*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda
+  id: TextBenvinguda
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: TextBenvinguda
+  nameWithType: MainWindowViewModel.TextBenvinguda
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: TextBenvinguda
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 66
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string TextBenvinguda { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TextBenvinguda As String
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand
+  id: CarregaHomeViewCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarregaHomeViewCommand
+  nameWithType: MainWindowViewModel.CarregaHomeViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: CarregaHomeViewCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 77
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand CarregaHomeViewCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CarregaHomeViewCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand
+  id: CarregaPorresViewCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarregaPorresViewCommand
+  nameWithType: MainWindowViewModel.CarregaPorresViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: CarregaPorresViewCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 78
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand CarregaPorresViewCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CarregaPorresViewCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand
+  id: CarregaEquipsViewCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarregaEquipsViewCommand
+  nameWithType: MainWindowViewModel.CarregaEquipsViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: CarregaEquipsViewCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 79
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand CarregaEquipsViewCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CarregaEquipsViewCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand
+  id: CarregaRecomanarViewCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarregaRecomanarViewCommand
+  nameWithType: MainWindowViewModel.CarregaRecomanarViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: CarregaRecomanarViewCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 80
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand CarregaRecomanarViewCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CarregaRecomanarViewCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand
+  id: CarregaSettingsViewCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarregaSettingsViewCommand
+  nameWithType: MainWindowViewModel.CarregaSettingsViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: CarregaSettingsViewCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 81
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand CarregaSettingsViewCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CarregaSettingsViewCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand
+  id: CarregaAboutViewCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarregaAboutViewCommand
+  nameWithType: MainWindowViewModel.CarregaAboutViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: CarregaAboutViewCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 82
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand CarregaAboutViewCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CarregaAboutViewCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand
+  id: SortirCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: SortirCommand
+  nameWithType: MainWindowViewModel.SortirCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: SortirCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 84
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand SortirCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property SortirCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand
+  id: OnSortirCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnSortirCommand
+  nameWithType: MainWindowViewModel.OnSortirCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: OnSortirCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 85
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand OnSortirCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property OnSortirCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand
+  commentId: P:ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand
+  id: OnLoadedCommand
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnLoadedCommand
+  nameWithType: MainWindowViewModel.OnLoadedCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: OnLoadedCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 86
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand OnLoadedCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property OnLoadedCommand As ICommand
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.#ctor
+  commentId: M:ProjectePorres.ViewModels.MainWindowViewModel.#ctor
+  id: '#ctor'
+  parent: ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: MainWindowViewModel()
+  nameWithType: MainWindowViewModel.MainWindowViewModel()
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.MainWindowViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/MainWindowViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 89
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public MainWindowViewModel()
+    content.vb: Public Sub New
+  overload: ProjectePorres.ViewModels.MainWindowViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ProjectePorres.ViewModels
+  commentId: N:ProjectePorres.ViewModels
+  name: ProjectePorres.ViewModels
+  nameWithType: ProjectePorres.ViewModels
+  fullName: ProjectePorres.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ProjectePorres.ViewModels.BaseViewModel
+  commentId: T:ProjectePorres.ViewModels.BaseViewModel
+  parent: ProjectePorres.ViewModels
+  name: BaseViewModel
+  nameWithType: BaseViewModel
+  fullName: ProjectePorres.ViewModels.BaseViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+  commentId: E:ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+  parent: ProjectePorres.ViewModels.BaseViewModel
+  name: PropertyChanged
+  nameWithType: BaseViewModel.PropertyChanged
+  fullName: ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+- uid: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  commentId: M:ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  parent: ProjectePorres.ViewModels.BaseViewModel
+  isExternal: true
+  name: OnPropertyChanged(String)
+  nameWithType: BaseViewModel.OnPropertyChanged(String)
+  fullName: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  spec.csharp:
+  - uid: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BaseViewModel.OnPropertyChanged
+    fullName: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BaseViewModel.OnPropertyChanged
+    fullName: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio
+  name: TancantSessio
+  nameWithType: MainWindowViewModel.TancantSessio
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.TancantSessio
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible
+  name: IsViewVisible
+  nameWithType: MainWindowViewModel.IsViewVisible
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.IsViewVisible
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.VistaActual*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.VistaActual
+  name: VistaActual
+  nameWithType: MainWindowViewModel.VistaActual
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.VistaActual
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.Usuari*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.Usuari
+  name: Usuari
+  nameWithType: MainWindowViewModel.Usuari
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.Usuari
+- uid: ProjectePorres.Model.UsuariModel
+  commentId: T:ProjectePorres.Model.UsuariModel
+  parent: ProjectePorres.Model
+  name: UsuariModel
+  nameWithType: UsuariModel
+  fullName: ProjectePorres.Model.UsuariModel
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda
+  name: TextBenvinguda
+  nameWithType: MainWindowViewModel.TextBenvinguda
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.TextBenvinguda
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand
+  name: CarregaHomeViewCommand
+  nameWithType: MainWindowViewModel.CarregaHomeViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaHomeViewCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand
+  name: CarregaPorresViewCommand
+  nameWithType: MainWindowViewModel.CarregaPorresViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaPorresViewCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand
+  name: CarregaEquipsViewCommand
+  nameWithType: MainWindowViewModel.CarregaEquipsViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaEquipsViewCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand
+  name: CarregaRecomanarViewCommand
+  nameWithType: MainWindowViewModel.CarregaRecomanarViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaRecomanarViewCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand
+  name: CarregaSettingsViewCommand
+  nameWithType: MainWindowViewModel.CarregaSettingsViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaSettingsViewCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand
+  name: CarregaAboutViewCommand
+  nameWithType: MainWindowViewModel.CarregaAboutViewCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.CarregaAboutViewCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand
+  name: SortirCommand
+  nameWithType: MainWindowViewModel.SortirCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.SortirCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand
+  name: OnSortirCommand
+  nameWithType: MainWindowViewModel.OnSortirCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.OnSortirCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand
+  name: OnLoadedCommand
+  nameWithType: MainWindowViewModel.OnLoadedCommand
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.OnLoadedCommand
+- uid: ProjectePorres.ViewModels.MainWindowViewModel.#ctor*
+  commentId: Overload:ProjectePorres.ViewModels.MainWindowViewModel.#ctor
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel.MainWindowViewModel
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel.MainWindowViewModel

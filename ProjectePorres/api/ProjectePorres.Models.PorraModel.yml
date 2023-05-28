@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Models.PorraModel
+  commentId: T:ProjectePorres.Models.PorraModel
+  id: PorraModel
+  parent: ProjectePorres.Models
+  children:
+  - ProjectePorres.Models.PorraModel.#ctor(System.Int32,System.Int32,System.Int32,System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32)
+  - ProjectePorres.Models.PorraModel.Data
+  - ProjectePorres.Models.PorraModel.GolsLocal
+  - ProjectePorres.Models.PorraModel.GolsVisitant
+  - ProjectePorres.Models.PorraModel.Id
+  - ProjectePorres.Models.PorraModel.IdGolejadorsLocal
+  - ProjectePorres.Models.PorraModel.IdGolejadorsVisitant
+  - ProjectePorres.Models.PorraModel.IdPartit
+  - ProjectePorres.Models.PorraModel.IdPenyista
+  langs:
+  - csharp
+  - vb
+  name: PorraModel
+  nameWithType: PorraModel
+  fullName: ProjectePorres.Models.PorraModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: PorraModel
+    path: Models/PorraModel.cs
+    startLine: 8
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public class PorraModel
+    content.vb: Public Class PorraModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Models.PorraModel.Id
+  commentId: P:ProjectePorres.Models.PorraModel.Id
+  id: Id
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PorraModel.Id
+  fullName: ProjectePorres.Models.PorraModel.Id
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Id
+    path: Models/PorraModel.cs
+    startLine: 10
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: ProjectePorres.Models.PorraModel.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.GolsLocal
+  commentId: P:ProjectePorres.Models.PorraModel.GolsLocal
+  id: GolsLocal
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: GolsLocal
+  nameWithType: PorraModel.GolsLocal
+  fullName: ProjectePorres.Models.PorraModel.GolsLocal
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: GolsLocal
+    path: Models/PorraModel.cs
+    startLine: 12
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int GolsLocal { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GolsLocal As Integer
+  overload: ProjectePorres.Models.PorraModel.GolsLocal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.GolsVisitant
+  commentId: P:ProjectePorres.Models.PorraModel.GolsVisitant
+  id: GolsVisitant
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: GolsVisitant
+  nameWithType: PorraModel.GolsVisitant
+  fullName: ProjectePorres.Models.PorraModel.GolsVisitant
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: GolsVisitant
+    path: Models/PorraModel.cs
+    startLine: 14
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int GolsVisitant { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GolsVisitant As Integer
+  overload: ProjectePorres.Models.PorraModel.GolsVisitant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.Data
+  commentId: P:ProjectePorres.Models.PorraModel.Data
+  id: Data
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: PorraModel.Data
+  fullName: ProjectePorres.Models.PorraModel.Data
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Data
+    path: Models/PorraModel.cs
+    startLine: 16
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public DateTime Data { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property Data As Date
+  overload: ProjectePorres.Models.PorraModel.Data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.IdGolejadorsLocal
+  commentId: P:ProjectePorres.Models.PorraModel.IdGolejadorsLocal
+  id: IdGolejadorsLocal
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: IdGolejadorsLocal
+  nameWithType: PorraModel.IdGolejadorsLocal
+  fullName: ProjectePorres.Models.PorraModel.IdGolejadorsLocal
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IdGolejadorsLocal
+    path: Models/PorraModel.cs
+    startLine: 18
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int IdGolejadorsLocal { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdGolejadorsLocal As Integer
+  overload: ProjectePorres.Models.PorraModel.IdGolejadorsLocal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.IdGolejadorsVisitant
+  commentId: P:ProjectePorres.Models.PorraModel.IdGolejadorsVisitant
+  id: IdGolejadorsVisitant
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: IdGolejadorsVisitant
+  nameWithType: PorraModel.IdGolejadorsVisitant
+  fullName: ProjectePorres.Models.PorraModel.IdGolejadorsVisitant
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IdGolejadorsVisitant
+    path: Models/PorraModel.cs
+    startLine: 20
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int IdGolejadorsVisitant { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdGolejadorsVisitant As Integer
+  overload: ProjectePorres.Models.PorraModel.IdGolejadorsVisitant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.IdPenyista
+  commentId: P:ProjectePorres.Models.PorraModel.IdPenyista
+  id: IdPenyista
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: IdPenyista
+  nameWithType: PorraModel.IdPenyista
+  fullName: ProjectePorres.Models.PorraModel.IdPenyista
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IdPenyista
+    path: Models/PorraModel.cs
+    startLine: 22
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int IdPenyista { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdPenyista As Integer
+  overload: ProjectePorres.Models.PorraModel.IdPenyista*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.IdPartit
+  commentId: P:ProjectePorres.Models.PorraModel.IdPartit
+  id: IdPartit
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: IdPartit
+  nameWithType: PorraModel.IdPartit
+  fullName: ProjectePorres.Models.PorraModel.IdPartit
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IdPartit
+    path: Models/PorraModel.cs
+    startLine: 24
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int IdPartit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdPartit As Integer
+  overload: ProjectePorres.Models.PorraModel.IdPartit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PorraModel.#ctor(System.Int32,System.Int32,System.Int32,System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:ProjectePorres.Models.PorraModel.#ctor(System.Int32,System.Int32,System.Int32,System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: ProjectePorres.Models.PorraModel
+  langs:
+  - csharp
+  - vb
+  name: PorraModel(Int32, Int32, Int32, DateTime, Int32, Int32, Int32, Int32)
+  nameWithType: PorraModel.PorraModel(Int32, Int32, Int32, DateTime, Int32, Int32, Int32, Int32)
+  fullName: ProjectePorres.Models.PorraModel.PorraModel(System.Int32, System.Int32, System.Int32, System.DateTime, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/PorraModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/PorraModel.cs
+    startLine: 26
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public PorraModel(int id, int golsLocal, int golsVisitant, DateTime data, int idGolejadorsLocal, int idGolejadorsVisitant, int idPenyista, int idPartit)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: golsLocal
+      type: System.Int32
+    - id: golsVisitant
+      type: System.Int32
+    - id: data
+      type: System.DateTime
+    - id: idGolejadorsLocal
+      type: System.Int32
+    - id: idGolejadorsVisitant
+      type: System.Int32
+    - id: idPenyista
+      type: System.Int32
+    - id: idPartit
+      type: System.Int32
+    content.vb: Public Sub New(id As Integer, golsLocal As Integer, golsVisitant As Integer, data As Date, idGolejadorsLocal As Integer, idGolejadorsVisitant As Integer, idPenyista As Integer, idPartit As Integer)
+  overload: ProjectePorres.Models.PorraModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ProjectePorres.Models
+  commentId: N:ProjectePorres.Models
+  name: ProjectePorres.Models
+  nameWithType: ProjectePorres.Models
+  fullName: ProjectePorres.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Models.PorraModel.Id*
+  commentId: Overload:ProjectePorres.Models.PorraModel.Id
+  name: Id
+  nameWithType: PorraModel.Id
+  fullName: ProjectePorres.Models.PorraModel.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ProjectePorres.Models.PorraModel.GolsLocal*
+  commentId: Overload:ProjectePorres.Models.PorraModel.GolsLocal
+  name: GolsLocal
+  nameWithType: PorraModel.GolsLocal
+  fullName: ProjectePorres.Models.PorraModel.GolsLocal
+- uid: ProjectePorres.Models.PorraModel.GolsVisitant*
+  commentId: Overload:ProjectePorres.Models.PorraModel.GolsVisitant
+  name: GolsVisitant
+  nameWithType: PorraModel.GolsVisitant
+  fullName: ProjectePorres.Models.PorraModel.GolsVisitant
+- uid: ProjectePorres.Models.PorraModel.Data*
+  commentId: Overload:ProjectePorres.Models.PorraModel.Data
+  name: Data
+  nameWithType: PorraModel.Data
+  fullName: ProjectePorres.Models.PorraModel.Data
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: ProjectePorres.Models.PorraModel.IdGolejadorsLocal*
+  commentId: Overload:ProjectePorres.Models.PorraModel.IdGolejadorsLocal
+  name: IdGolejadorsLocal
+  nameWithType: PorraModel.IdGolejadorsLocal
+  fullName: ProjectePorres.Models.PorraModel.IdGolejadorsLocal
+- uid: ProjectePorres.Models.PorraModel.IdGolejadorsVisitant*
+  commentId: Overload:ProjectePorres.Models.PorraModel.IdGolejadorsVisitant
+  name: IdGolejadorsVisitant
+  nameWithType: PorraModel.IdGolejadorsVisitant
+  fullName: ProjectePorres.Models.PorraModel.IdGolejadorsVisitant
+- uid: ProjectePorres.Models.PorraModel.IdPenyista*
+  commentId: Overload:ProjectePorres.Models.PorraModel.IdPenyista
+  name: IdPenyista
+  nameWithType: PorraModel.IdPenyista
+  fullName: ProjectePorres.Models.PorraModel.IdPenyista
+- uid: ProjectePorres.Models.PorraModel.IdPartit*
+  commentId: Overload:ProjectePorres.Models.PorraModel.IdPartit
+  name: IdPartit
+  nameWithType: PorraModel.IdPartit
+  fullName: ProjectePorres.Models.PorraModel.IdPartit
+- uid: ProjectePorres.Models.PorraModel.#ctor*
+  commentId: Overload:ProjectePorres.Models.PorraModel.#ctor
+  name: PorraModel
+  nameWithType: PorraModel.PorraModel
+  fullName: ProjectePorres.Models.PorraModel.PorraModel

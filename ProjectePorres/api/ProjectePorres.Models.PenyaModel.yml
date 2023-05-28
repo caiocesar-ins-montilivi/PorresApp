@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Models.PenyaModel
+  commentId: T:ProjectePorres.Models.PenyaModel
+  id: PenyaModel
+  parent: ProjectePorres.Models
+  children:
+  - ProjectePorres.Models.PenyaModel.#ctor(System.Int32,System.String)
+  - ProjectePorres.Models.PenyaModel.IdPenya
+  - ProjectePorres.Models.PenyaModel.Nom
+  langs:
+  - csharp
+  - vb
+  name: PenyaModel
+  nameWithType: PenyaModel
+  fullName: ProjectePorres.Models.PenyaModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/PenyaModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: PenyaModel
+    path: Models/PenyaModel.cs
+    startLine: 8
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public class PenyaModel
+    content.vb: Public Class PenyaModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Models.PenyaModel.IdPenya
+  commentId: P:ProjectePorres.Models.PenyaModel.IdPenya
+  id: IdPenya
+  parent: ProjectePorres.Models.PenyaModel
+  langs:
+  - csharp
+  - vb
+  name: IdPenya
+  nameWithType: PenyaModel.IdPenya
+  fullName: ProjectePorres.Models.PenyaModel.IdPenya
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PenyaModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IdPenya
+    path: Models/PenyaModel.cs
+    startLine: 10
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public int IdPenya { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IdPenya As Integer
+  overload: ProjectePorres.Models.PenyaModel.IdPenya*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PenyaModel.Nom
+  commentId: P:ProjectePorres.Models.PenyaModel.Nom
+  id: Nom
+  parent: ProjectePorres.Models.PenyaModel
+  langs:
+  - csharp
+  - vb
+  name: Nom
+  nameWithType: PenyaModel.Nom
+  fullName: ProjectePorres.Models.PenyaModel.Nom
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PenyaModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Nom
+    path: Models/PenyaModel.cs
+    startLine: 12
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public string Nom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nom As String
+  overload: ProjectePorres.Models.PenyaModel.Nom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Models.PenyaModel.#ctor(System.Int32,System.String)
+  commentId: M:ProjectePorres.Models.PenyaModel.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
+  parent: ProjectePorres.Models.PenyaModel
+  langs:
+  - csharp
+  - vb
+  name: PenyaModel(Int32, String)
+  nameWithType: PenyaModel.PenyaModel(Int32, String)
+  fullName: ProjectePorres.Models.PenyaModel.PenyaModel(System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/PenyaModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/PenyaModel.cs
+    startLine: 14
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Models
+  syntax:
+    content: public PenyaModel(int idPenya, string nom)
+    parameters:
+    - id: idPenya
+      type: System.Int32
+    - id: nom
+      type: System.String
+    content.vb: Public Sub New(idPenya As Integer, nom As String)
+  overload: ProjectePorres.Models.PenyaModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ProjectePorres.Models
+  commentId: N:ProjectePorres.Models
+  name: ProjectePorres.Models
+  nameWithType: ProjectePorres.Models
+  fullName: ProjectePorres.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Models.PenyaModel.IdPenya*
+  commentId: Overload:ProjectePorres.Models.PenyaModel.IdPenya
+  name: IdPenya
+  nameWithType: PenyaModel.IdPenya
+  fullName: ProjectePorres.Models.PenyaModel.IdPenya
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ProjectePorres.Models.PenyaModel.Nom*
+  commentId: Overload:ProjectePorres.Models.PenyaModel.Nom
+  name: Nom
+  nameWithType: PenyaModel.Nom
+  fullName: ProjectePorres.Models.PenyaModel.Nom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.Models.PenyaModel.#ctor*
+  commentId: Overload:ProjectePorres.Models.PenyaModel.#ctor
+  name: PenyaModel
+  nameWithType: PenyaModel.PenyaModel
+  fullName: ProjectePorres.Models.PenyaModel.PenyaModel

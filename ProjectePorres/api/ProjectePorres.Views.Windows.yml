@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Views.Windows
+  commentId: N:ProjectePorres.Views.Windows
+  id: ProjectePorres.Views.Windows
+  children:
+  - ProjectePorres.Views.Windows.LoginView
+  - ProjectePorres.Views.Windows.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres.Views.Windows
+  nameWithType: ProjectePorres.Views.Windows
+  fullName: ProjectePorres.Views.Windows
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.Views.Windows.LoginView
+  commentId: T:ProjectePorres.Views.Windows.LoginView
+  name: LoginView
+  nameWithType: LoginView
+  fullName: ProjectePorres.Views.Windows.LoginView
+- uid: ProjectePorres.Views.Windows.MainWindow
+  commentId: T:ProjectePorres.Views.Windows.MainWindow
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: ProjectePorres.Views.Windows.MainWindow
