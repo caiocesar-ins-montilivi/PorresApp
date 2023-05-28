@@ -1,5 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Diagnostics;
+using System.Windows;
 using ProjectePorres.Data;
+using ProjectePorres.Model;
 using ProjectePorres.ViewModels;
 using ProjectePorres.Views.Windows;
 
@@ -11,9 +14,14 @@ namespace ProjectePorres
         {
             base.OnStartup(e);
 
-            // Crear instàncies dls ViewModels.
+            // Instància de configuració per treballar amb el fitxer de configuració.
+            ConfigContext config = new("../../../settings.ini");
+
+            // ConnectionString per fer alguna consulta a la base de dades.
             const string connectionString = "Server=localhost; Database=PorraGirona; Uid=root; Pwd=;";
             var databaseContext = new DatabaseContext(connectionString);
+
+            // Crear instàncies dels ViewModels.
             var loginViewModel = new LoginViewModel();
             var mainWindowViewModel = new MainWindowViewModel();
 
@@ -21,28 +29,32 @@ namespace ProjectePorres
             var loginView = new LoginView { DataContext = loginViewModel };
             var mainWindow = new MainWindow { DataContext = mainWindowViewModel };
 
-            // Mostra la finestra d'inci de sessió.
             bool connexio = await databaseContext.ComprovarConnexio();
-            bool sessioActiva = await databaseContext.ComprovarSessionsActives();
+
+            int userSessionId = Convert.ToInt32(config.RetornarValor("UserSessionId", "Id"));
+
             if (connexio)
             {
-                if (sessioActiva)
+                if (userSessionId != 0)
                 {
-                    mainWindow.Show();
+                    MostrarMainWindow();
+                    ActualitzarUsuari();
                 }
                 else
                 {
-                    loginView.Show();
+                    MostrarLoginView();
+                    ActualitzarUsuari();
                 }
             }
+            else MostrarLoginView();
 
             // Gestiona canvis en el ViewModel d'inici de sessió.
             loginViewModel.PropertyChanged += (sender, args) =>
             {
                 if (args.PropertyName == nameof(LoginViewModel.IniciatSessio))
                 {
-                    loginView.Hide();
-                    mainWindow.Show();
+                    MostrarMainWindow();
+                    ActualitzarUsuari();
                 }
             };
 
@@ -51,10 +63,29 @@ namespace ProjectePorres
             {
                 if (args.PropertyName == nameof(MainWindowViewModel.TancantSessio))
                 {
-                    mainWindow.Hide();
-                    loginView.Show();
+                    MostrarLoginView();
+                    ActualitzarUsuari();
                 }
             };
+
+            void MostrarMainWindow()
+            {
+                mainWindow?.Show();
+                loginView?.Hide();
+            }
+
+            void MostrarLoginView()
+            {
+                mainWindow?.Hide();
+                loginView?.Show();
+            }
+
+            async void ActualitzarUsuari()
+            {
+                int currentSessionId = Convert.ToInt32(config.RetornarValor("UserSessionId", "CurrentId"));
+                UsuariModel usuari = await databaseContext.RetornarUsuariPerId(currentSessionId);
+                mainWindowViewModel.Usuari = usuari;
+            }
         }
     }
 }

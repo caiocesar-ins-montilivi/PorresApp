@@ -159,55 +159,49 @@ namespace ProjectePorres.Data
             return usuariModel;
         }
 
-        public async Task<bool> ComprovarSessionsActives()
+        // Retorna un model d'usuari segons el seu nom d'usuari de manera asíncrona.
+        public async Task<UsuariModel> RetornarUsuariPerId(int idUsuari)
         {
-            bool sessioActiva = false;
+            UsuariModel? usuariModel = null;
             using var connection = new MySqlConnection(connectionString);
 
             try
             {
                 await connection.OpenAsync();
-                string query = "SELECT COUNT(*) FROM Usuarios WHERE SesiónActiva = 1";
+                const string query = "SELECT * FROM Usuaris WHERE Id = @idUsuari";
                 MySqlCommand command = new(query, connection);
-                int count = Convert.ToInt32(await command.ExecuteScalarAsync());
-                if (count > 0) 
-                    sessioActiva = true;
-            }
-            catch (Exception ex)
-            {
-                Trace.WriteLine($"Error durant la verificació de la sesión activa: {ex.Message}");
-            }
+                command.Parameters.AddWithValue("@idUsuari", idUsuari);
 
-            return sessioActiva;
-        }
-
-        public async void ActualitzarSessioActiva(int idUsuari, bool canviar)
-        {
-            using var connection = new MySqlConnection(connectionString);
-
-            try
-            {
-                await connection.OpenAsync();
-                string query;
-                if (canviar)
+                var reader = await command.ExecuteReaderAsync();
+                if (reader.HasRows)
                 {
-                    query = "INSERT INTO Sessions(idUsuari) VALUES(@idUsuari)";
-                    MySqlCommand command = new(query, connection);
-                    command.Parameters.AddWithValue("@idUsuari", idUsuari);
-                    await command.ExecuteNonQueryAsync();
-                }
-                else
-                {
-                    query = "TRUNCATE Sessions";
-                    MySqlCommand command = new(query, connection);
-                    await command.ExecuteNonQueryAsync();
-                }
+                    while (reader.Read())
+                    {
+                        var _id = reader[0];
+                        var _dni = reader[2];
+                        var _nom = reader[3];
+                        var _cognom = reader[4];
+                        var _correu = reader[5];
+                        var _puntuacio = reader[7];
+                        var _esAdmin = reader[8];
 
+                        usuariModel = new(
+                            Convert.ToInt32(_id),
+                            _dni.ToString(),
+                            _nom.ToString(),
+                            _cognom.ToString(),
+                            Convert.ToInt32(_puntuacio),
+                            Convert.ToBoolean(_esAdmin));
+                    }
+                }
+                else Trace.WriteLine($"No hi ha cap usuari amb la id: {idUsuari}");
             }
-            catch (Exception ex)
+            catch (MySqlException ex)
             {
-                Trace.WriteLine($"Error durant l'actualització de la sesión activa: {ex.Message}");
+                Trace.WriteLine($"Error al connectar a la base de dades: {ex.Message}");
             }
+
+            return usuariModel;
         }
     }
 }

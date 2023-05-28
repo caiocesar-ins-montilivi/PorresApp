@@ -238,7 +238,7 @@
                         VerticalAlignment="Center"
                         FontSize="12"
                         Foreground="White"
-                        Text="{Binding Usuari.Nom, Mode=TwoWay}" />
+                        Text="{Binding Usuari.Nom, Mode=OneWay}" />
                 </Grid>
             </Border>
             <!--#endregion-->

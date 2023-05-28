@@ -1,5 +1,7 @@
 ﻿using ProjectePorres.Data;
 using ProjectePorres.Model;
+using System;
+using System.Diagnostics;
 using System.Security;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -28,6 +30,7 @@ namespace ProjectePorres.ViewModels
         private SecureString r_password;
         private SecureString r_password2;
         private readonly DatabaseContext databaseContext;
+        private readonly ConfigContext config;
 
         // Propietats
         public string NomUsuari
@@ -194,7 +197,7 @@ namespace ProjectePorres.ViewModels
         public ICommand LoginCommand { get; }
         public ICommand RegisterCommand { get; }
         public ICommand ChangeTabCommand { get; }
-        public ICommand RecuperarContrasenyaComand { get; }
+        public ICommand RecuperarContrasenyaCommand { get; }
         public ICommand MostrarPasswordCommand { get; }
         public ICommand MantenirSessioCommand { get; }
         public ICommand SortirCommand { get; }
@@ -205,11 +208,12 @@ namespace ProjectePorres.ViewModels
             // Ens connectem a la base de dades.
             const string connectionString = "Server=localhost; Database=PorraGirona; Uid=root; Pwd=;";
             databaseContext = new DatabaseContext(connectionString);
+            config = new("../../../settings.ini");
 
             LoginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
             RegisterCommand = new CommandViewModel(ExecuteRegisterCommand, CanExecuteRegisterCommand);
             ChangeTabCommand = new CommandViewModel(ExecuteChangeTab);
-            RecuperarContrasenyaComand = new CommandViewModel(p => ExecuteRecuperarPassCommand("", ""));
+            RecuperarContrasenyaCommand = new CommandViewModel(p => ExecuteRecuperarContrasenyaCommand("", ""));
             SortirCommand = new CommandViewModel(ExecuteSortirCommand);
         }
 
@@ -228,8 +232,16 @@ namespace ProjectePorres.ViewModels
                 if (databaseContext.ValidarUsuari(NomUsuari, password))
                 {
                     // Si l'usuari vol mantenir la sessió per el pròxim inici de sessió.
-                    if (MantenirSessio) databaseContext.ActualitzarSessioActiva(usuari.Id, true);
-                    else databaseContext.ActualitzarSessioActiva(usuari.Id, false);
+                    if (MantenirSessio) 
+                    {
+                        config.EscriureConfiguracio("UserSessionId", "Id", Convert.ToString(usuari.Id));
+                        config.EscriureConfiguracio("UserSessionId", "CurrentId", Convert.ToString(usuari.Id));
+                    }
+                    else 
+                    {
+                        config.EscriureConfiguracio("UserSessionId", "Id", "0");
+                        config.EscriureConfiguracio("UserSessionId", "CurrentId", Convert.ToString(usuari.Id));
+                    }
                     IniciatSessio = true;
                     IsViewVisible = false;
                     ProgressBarLoginVisible = false;
@@ -352,7 +364,7 @@ namespace ProjectePorres.ViewModels
             return Regex.IsMatch(RCorreu, pattern);
         }
 
-        private void ExecuteRecuperarPassCommand(string username, string email)
+        private void ExecuteRecuperarContrasenyaCommand(string username, string email)
         {
             MessageBox.Show("No implementat", "En desenvolupament", MessageBoxButton.OK, MessageBoxImage.Information);
         }

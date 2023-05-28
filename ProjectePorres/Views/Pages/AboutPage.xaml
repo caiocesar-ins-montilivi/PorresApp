@@ -143,6 +143,7 @@
                             <ListViewItem Content="Microsoft.Xaml.Behaviors.Wpf - Microsoft | v.1.1.39" ToolTip="Microsoft.Xaml.Behaviors.Wpf - Microsoft | v.1.1.39" />
                             <ListViewItem Content="MySql.Data - Oracle | v.8.0.33" ToolTip="MySql.Data - Oracle | v.8.0.33" />
                             <ListViewItem Content="Ookii.Dialogs.Wpf | v.5.0.1" ToolTip="Ookii.Dialogs.Wpf | v.5.0.1" />
+                            <ListViewItem Content="Ini-Parser | 2.5.2" ToolTip="Ini-Parser | 2.5.2" />
                         </ListView>
 
                         <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">

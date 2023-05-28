@@ -220,24 +220,33 @@
                                 Margin="10"
                                 HorizontalAlignment="Center"
                                 Orientation="Horizontal">
-                                <materialDesign:PackIcon
-                                    VerticalAlignment="Center"
-                                    Foreground="Gray"
-                                    Kind="ForgotPassword" />
 
-                                <TextBlock
+                                <Button
                                     x:Name="TextBlockOblidat"
                                     Grid.Row="5"
                                     Grid.ColumnSpan="3"
-                                    Margin="10"
                                     VerticalAlignment="Center"
+                                    Command="{Binding RecuperarContrasenyaCommand}"
                                     Cursor="Hand"
-                                    Foreground="Gray"
-                                    Text="HE OBLIDAT LA CONTRASENYA O USUARI"
-                                    TextDecorations="Underline" />
+                                    Style="{StaticResource MaterialDesignFlatButton}">
+
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Margin="5,0"
+                                            VerticalAlignment="Top"
+                                            Foreground="Gray"
+                                            Kind="ForgotPassword" />
+
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            Foreground="Gray"
+                                            Text="HE OBLIDAT LA CONTRASENYA O USUARI"
+                                            TextDecorations="Underline" />
+                                    </StackPanel>
+
+                                </Button>
 
                             </StackPanel>
-
 
                         </Grid>
                     </TabItem>

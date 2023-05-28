@@ -188,7 +188,6 @@ namespace ProjectePorres.ViewModels
         private void ExecuteOnLoaded(object obj)
         {
             CarregaHomeViewCommand.Execute(this);
-            Trace.WriteLine(Usuari?.ToString());
         }
     }
 }

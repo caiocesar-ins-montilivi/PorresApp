@@ -56,7 +56,7 @@
                                     Margin="10"
                                     VerticalAlignment="Center"
                                     ItemsSource="{Binding Mostres}"
-                                    SelectedIndex="0"
+                                    SelectedIndex="{Binding PrimaryIndex}"
                                     SelectedItem="{Binding PrimarySwatch}"
                                     Style="{StaticResource MaterialDesignFilledComboBox}">
 
@@ -86,7 +86,7 @@
                                     Margin="10"
                                     VerticalAlignment="Center"
                                     ItemsSource="{Binding Mostres}"
-                                    SelectedIndex="0"
+                                    SelectedIndex="{Binding AccentIndex}"
                                     SelectedItem="{Binding AccentSwatch}"
                                     Style="{StaticResource MaterialDesignFilledComboBox}">
 

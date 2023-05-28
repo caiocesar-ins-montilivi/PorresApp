@@ -64,6 +64,10 @@
             "Ookii.Dialogs.Wpf": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "ini-parser": {
+              "target": "Package",
+              "version": "[2.5.2, )"
             }
           },
           "imports": [
