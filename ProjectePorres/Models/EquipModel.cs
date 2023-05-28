@@ -5,6 +5,8 @@ namespace ProjectePorres.Model
 {
     public class EquipModel
     {
+        public int Id { get; set; }
+
         public string Nom { get; set; }
 
         public string Ciutat { get; set; }
@@ -17,24 +19,16 @@ namespace ProjectePorres.Model
 
         public ObservableCollection<JugadorModel> Jugadors { get; set; }
 
-        public EquipModel() { Jugadors = new ObservableCollection<JugadorModel>(); }
+        public EquipModel() { }
 
-        public EquipModel(string nom, string ciutat, string camp, string foto, string categoria, ObservableCollection<JugadorModel> jugadors)
+        public EquipModel(int id, string nom, string ciutat, string camp, string foto, string categoria)
         {
+            Id = id;
             Nom = nom;
             Ciutat = ciutat;
             Camp = camp;
             Foto = foto;
             Categoria = categoria;
-            Jugadors = new ObservableCollection<JugadorModel>(jugadors);
-        }
-
-        private string MostrarJugadors()
-        {
-            string jugador = string.Empty;
-            foreach (JugadorModel j in Jugadors)
-                jugador += j.ToString();
-            return jugador;
         }
 
         public override string ToString()
@@ -43,8 +37,7 @@ namespace ProjectePorres.Model
                    $"{Ciutat}, " +
                    $"{Camp}, " +
                    $"{Categoria}, " +
-                   $"{Foto}" +
-                   $"{MostrarJugadors()}";
+                   $"{Foto}";
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using ProjectePorres.Model;
 using System;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
@@ -202,6 +203,124 @@ namespace ProjectePorres.Data
             }
 
             return usuariModel;
+        }
+
+        // Mètode encarregat de registrar un partit de manera asíncrona.
+        public async Task<bool> RegistrarPartit(PartitModel partit)
+        {
+            bool registreCorrecte;
+            using var connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                await connection.OpenAsync();
+
+                // string query = "INSERT INTO Partits()";
+
+                registreCorrecte = true;
+            }
+            catch (MySqlException ex)
+            {
+                Trace.WriteLine($"Error al registrar un partit: {ex.Message}");
+                registreCorrecte = false;
+            }
+
+            return registreCorrecte;
+        }
+
+        // Retorna els partits de manera asíncrona.
+        public async Task<ObservableCollection<PartitModel>> RetornarPartits()
+        {
+            ObservableCollection<PartitModel> coleccioPartits;
+            using var connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                await connection.OpenAsync();
+
+                // string query = "SELECT * FROM Partits";
+                
+                coleccioPartits = new ObservableCollection<PartitModel>();
+            }
+            catch (MySqlException ex)
+            {
+                Trace.WriteLine($"Error al retornar partits: {ex.Message}");
+                coleccioPartits = new ObservableCollection<PartitModel>();
+            }
+
+            return coleccioPartits;
+        }
+
+        // Mètode encarregat de registrar un partit de manera asíncrona.
+        public async Task<bool> RegistrarEquip(string nom, string imatge, string ciutat, string camp, string categoria)
+        {
+            bool registreCorrecte;
+            using var connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                await connection.OpenAsync();
+
+                // string query = "INSERT INTO Equips()";
+
+                registreCorrecte = true;
+            }
+            catch (MySqlException ex)
+            {
+                Trace.WriteLine($"Error al registrar un equip: {ex.Message}");
+                registreCorrecte = false;
+            }
+
+            return registreCorrecte;
+        }
+
+        // Retorna els equips de manera asíncrona.
+        public async Task<ObservableCollection<EquipModel>> RetornarEquips()
+        {
+            ObservableCollection<EquipModel> coleccioPartits = new ObservableCollection<EquipModel>();
+
+            using var connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                await connection.OpenAsync();
+
+                string query = "SELECT * FROM Equips";
+
+                MySqlCommand command = new(query, connection);
+
+                var reader = await command.ExecuteReaderAsync();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        var _idEquip = reader[0];
+                        var _nom = reader[1];
+                        var _imatge = reader[2];
+                        var _ciutat = reader[3];
+                        var _camp = reader[4];
+                        var _categoria = reader[5];
+
+                        EquipModel equip = new(
+                            Convert.ToInt32(_idEquip),
+                            _nom.ToString(),
+                            _ciutat.ToString(),
+                            _camp.ToString(),
+                            _imatge.ToString(),
+                            _categoria.ToString()
+                        );
+                        coleccioPartits.Add(equip);
+                    }
+                }
+                else Trace.WriteLine($"No hi ha cap equip registrat.");
+            }
+            catch (MySqlException ex)
+            {
+                Trace.WriteLine($"Error al retornar equips: {ex.Message}");
+            }
+
+            return coleccioPartits;
         }
     }
 }

@@ -402,11 +402,9 @@
                                         </Expander.Header>
 
                                         <StackPanel Background="{DynamicResource PrimaryHueLightBrush}">
-                                            <!--  Contenido del Expander  -->
-                                            <!--  ...  -->
 
                                             <StackPanel Orientation="Horizontal">
-                                                <!--  Equipo Local  -->
+                                                <!--  Equip Local  -->
                                                 <ItemsControl ItemsSource="{Binding EquipLocal.Jugadors}">
                                                     <ItemsControl.ItemTemplate>
                                                         <DataTemplate>
@@ -415,7 +413,7 @@
                                                     </ItemsControl.ItemTemplate>
                                                 </ItemsControl>
 
-                                                <!--  Equipo Visitante  -->
+                                                <!--  Equip Visitant  -->
                                                 <ItemsControl Margin="20,0" ItemsSource="{Binding EquipVisitant.Jugadors}">
                                                     <ItemsControl.ItemTemplate>
                                                         <DataTemplate>

@@ -60,7 +60,6 @@ namespace ProjectePorres.ViewModels
         // Commands
         public ICommand PartitSeleccionatCommand { get; }
 
-
         // Constructor
         public HomePageViewModel()
         {
@@ -69,18 +68,18 @@ namespace ProjectePorres.ViewModels
             ColeccioJugadors = new ObservableCollection<JugadorModel>()
             {
                 new JugadorModel(1, "Manolo", "2023-2024", 20),
-                new JugadorModel(1, "Javier", "2023-2024", 4),
-                new JugadorModel(1, "Juan", "2023-2024", 10),
+                new JugadorModel(2, "Javier", "2023-2024", 4),
+                new JugadorModel(3, "Juan", "2023-2024", 10),
             };
 
-            EquipModel barca = new("Barça", "Barcelona", "Spotify Camp Nou", "../../../Assets/barca.png", "Primera divisió", ColeccioJugadors);
-            EquipModel girona = new("Girona", "Girona", "Camp Montilivi", "../../../Assets/girona.png", "Primera divisió", ColeccioJugadors);
+            EquipModel barca = new(0, "Barça", "Barcelona", "Spotify Camp Nou", "../../../Assets/barca.png", "Primera divisió");
+            EquipModel girona = new(1, "Girona", "Girona", "Camp Montilivi", "../../../Assets/girona.png", "Primera divisió");
 
             ColeccioPartits = new ObservableCollection<PartitModel>()
             {
-                new PartitModel(barca, girona, new DateTime(2023, 05, 22), "2023-2024", 2, 1, false),
-                new PartitModel(girona, barca, new DateTime(2023, 05, 22), "2023-2024", 3, 1, false),
-                new PartitModel(girona, barca, new DateTime(2023, 05, 22), "2023-2024", 1, 3, false),
+                new PartitModel(1, barca, girona, new DateTime(2023, 05, 22), "2023-2024", 2, 1, false),
+                new PartitModel(2, girona, barca, new DateTime(2023, 05, 22), "2023-2024", 3, 1, false),
+                new PartitModel(3, girona, barca, new DateTime(2023, 05, 22), "2023-2024", 1, 3, false),
             };
         }
 

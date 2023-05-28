@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectePorres.Model
 {
     public class PartitModel
     {
+        public int IdPartit { get; set; }
+
         public EquipModel EquipLocal { get; set; }
 
         public EquipModel EquipVisitant { get; set; }
@@ -22,8 +20,9 @@ namespace ProjectePorres.Model
 
         public bool ResultatsComplerts { get; set; }
 
-        public PartitModel(EquipModel equipLocal, EquipModel equipVisitant, DateTime dataHoraPartit, string temporada, int golsLocal, int golsVisitant, bool resultatsComplerts)
+        public PartitModel(int idPartit, EquipModel equipLocal, EquipModel equipVisitant, DateTime dataHoraPartit, string temporada, int golsLocal, int golsVisitant, bool resultatsComplerts)
         {
+            IdPartit = idPartit;
             EquipLocal = equipLocal;
             EquipVisitant = equipVisitant;
             DataHoraPartit = dataHoraPartit;
