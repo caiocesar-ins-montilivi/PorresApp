@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dtacX7igtlSwquOhZSWM4/paWFyIiq5JfOHV9CydtAnGuQiPOyyzeXsIKw5iB32AbpUGLkNVdWlJdIEr8yiVQ==",
+  "dgSpecHash": "7/1bLQs2f51YjG602Bu1/i1pGyeL/0XOrSHYj4SkbZAP8WtziQQY90ax7oUAgxdkMJNOyjgr7vUpgP915x2K4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
+  "projectFilePath": "D:\\Documentos\\Cole\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Caio\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Caio\\.nuget\\packages\\ini-parser\\2.5.2\\ini-parser.2.5.2.nupkg.sha512",

@@ -120,7 +120,8 @@ namespace ProjectePorres.ViewModels
             {
                 ModificarTema(theme => theme.SetSecondaryColor(AccentSwatch.AccentExemplarHue.Color));
                 config.EscriureConfiguracio("AppTheme", "SecondaryColor", AccentSwatch.AccentExemplarHue.Color.ToString());
-                config.EscriureConfiguracio("AppTheme", "AccentIndex", AccentIndex.ToString());            }
+                config.EscriureConfiguracio("AppTheme", "AccentIndex", AccentIndex.ToString());
+            }
         }
 
         private void ExecuteAplicarDarkTheme(object obj) => AplicarDarkTheme();

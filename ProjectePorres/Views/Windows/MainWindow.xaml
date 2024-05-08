@@ -460,7 +460,6 @@
                 VerticalAlignment="Top"
                 Background="Red"
                 BorderBrush="{x:Null}"
-                Command=""
                 Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                 ToolTip="Tanca el menú">
                 <materialDesign:PackIcon Kind="Close" />

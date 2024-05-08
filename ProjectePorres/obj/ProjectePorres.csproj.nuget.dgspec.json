@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj": {}
+    "D:\\Documentos\\Cole\\PorresApp\\ProjectePorres\\ProjectePorres.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj": {
+    "D:\\Documentos\\Cole\\PorresApp\\ProjectePorres\\ProjectePorres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
+        "projectUniqueName": "D:\\Documentos\\Cole\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
         "projectName": "ProjectePorres",
-        "projectPath": "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
+        "projectPath": "D:\\Documentos\\Cole\\PorresApp\\ProjectePorres\\ProjectePorres.csproj",
         "packagesPath": "C:\\Users\\Caio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Caio\\Desktop\\PorresApp\\ProjectePorres\\obj\\",
+        "outputPath": "D:\\Documentos\\Cole\\PorresApp\\ProjectePorres\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Caio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

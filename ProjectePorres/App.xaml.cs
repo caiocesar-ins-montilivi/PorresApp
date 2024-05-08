@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Windows;
 using ProjectePorres.Data;
 using ProjectePorres.Model;
@@ -8,7 +7,7 @@ using ProjectePorres.Views.Windows;
 
 namespace ProjectePorres
 {
-    public partial class App : Application
+    public partial class App
     {
         protected override async void OnStartup(StartupEventArgs e)
         {
@@ -70,14 +69,14 @@ namespace ProjectePorres
 
             void MostrarMainWindow()
             {
-                mainWindow?.Show();
-                loginView?.Hide();
+                mainWindow.Show();
+                loginView.Hide();
             }
 
             void MostrarLoginView()
             {
-                mainWindow?.Hide();
-                loginView?.Show();
+                mainWindow.Hide();
+                loginView.Show();
             }
 
             async void ActualitzarUsuari()

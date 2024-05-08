@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using ProjectePorres.Model;
 
 namespace ProjectePorres.ViewModels
 {
