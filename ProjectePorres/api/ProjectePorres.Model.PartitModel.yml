@@ -1,0 +1,754 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Model.PartitModel
+  commentId: T:ProjectePorres.Model.PartitModel
+  id: PartitModel
+  parent: ProjectePorres.Model
+  children:
+  - ProjectePorres.Model.PartitModel.#ctor(ProjectePorres.Model.EquipModel,ProjectePorres.Model.EquipModel,System.DateTime,System.String,System.Int32,System.Int32,System.Boolean)
+  - ProjectePorres.Model.PartitModel.DataHoraPartit
+  - ProjectePorres.Model.PartitModel.EquipLocal
+  - ProjectePorres.Model.PartitModel.EquipVisitant
+  - ProjectePorres.Model.PartitModel.GolsLocal
+  - ProjectePorres.Model.PartitModel.GolsVisitant
+  - ProjectePorres.Model.PartitModel.ResultatsComplerts
+  - ProjectePorres.Model.PartitModel.Temporada
+  - ProjectePorres.Model.PartitModel.ToString
+  langs:
+  - csharp
+  - vb
+  name: PartitModel
+  nameWithType: PartitModel
+  fullName: ProjectePorres.Model.PartitModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: PartitModel
+    path: Models/PartitModel.cs
+    startLine: 8
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public class PartitModel
+    content.vb: Public Class PartitModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Model.PartitModel.EquipLocal
+  commentId: P:ProjectePorres.Model.PartitModel.EquipLocal
+  id: EquipLocal
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: EquipLocal
+  nameWithType: PartitModel.EquipLocal
+  fullName: ProjectePorres.Model.PartitModel.EquipLocal
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: EquipLocal
+    path: Models/PartitModel.cs
+    startLine: 10
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public EquipModel EquipLocal { get; set; }
+    parameters: []
+    return:
+      type: ProjectePorres.Model.EquipModel
+    content.vb: Public Property EquipLocal As EquipModel
+  overload: ProjectePorres.Model.PartitModel.EquipLocal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.EquipVisitant
+  commentId: P:ProjectePorres.Model.PartitModel.EquipVisitant
+  id: EquipVisitant
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: EquipVisitant
+  nameWithType: PartitModel.EquipVisitant
+  fullName: ProjectePorres.Model.PartitModel.EquipVisitant
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: EquipVisitant
+    path: Models/PartitModel.cs
+    startLine: 12
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public EquipModel EquipVisitant { get; set; }
+    parameters: []
+    return:
+      type: ProjectePorres.Model.EquipModel
+    content.vb: Public Property EquipVisitant As EquipModel
+  overload: ProjectePorres.Model.PartitModel.EquipVisitant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.DataHoraPartit
+  commentId: P:ProjectePorres.Model.PartitModel.DataHoraPartit
+  id: DataHoraPartit
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: DataHoraPartit
+  nameWithType: PartitModel.DataHoraPartit
+  fullName: ProjectePorres.Model.PartitModel.DataHoraPartit
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: DataHoraPartit
+    path: Models/PartitModel.cs
+    startLine: 14
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public DateTime DataHoraPartit { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DataHoraPartit As Date
+  overload: ProjectePorres.Model.PartitModel.DataHoraPartit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.Temporada
+  commentId: P:ProjectePorres.Model.PartitModel.Temporada
+  id: Temporada
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: Temporada
+  nameWithType: PartitModel.Temporada
+  fullName: ProjectePorres.Model.PartitModel.Temporada
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Temporada
+    path: Models/PartitModel.cs
+    startLine: 16
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Temporada { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Temporada As String
+  overload: ProjectePorres.Model.PartitModel.Temporada*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.GolsLocal
+  commentId: P:ProjectePorres.Model.PartitModel.GolsLocal
+  id: GolsLocal
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: GolsLocal
+  nameWithType: PartitModel.GolsLocal
+  fullName: ProjectePorres.Model.PartitModel.GolsLocal
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: GolsLocal
+    path: Models/PartitModel.cs
+    startLine: 18
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public int GolsLocal { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GolsLocal As Integer
+  overload: ProjectePorres.Model.PartitModel.GolsLocal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.GolsVisitant
+  commentId: P:ProjectePorres.Model.PartitModel.GolsVisitant
+  id: GolsVisitant
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: GolsVisitant
+  nameWithType: PartitModel.GolsVisitant
+  fullName: ProjectePorres.Model.PartitModel.GolsVisitant
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: GolsVisitant
+    path: Models/PartitModel.cs
+    startLine: 20
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public int GolsVisitant { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GolsVisitant As Integer
+  overload: ProjectePorres.Model.PartitModel.GolsVisitant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.ResultatsComplerts
+  commentId: P:ProjectePorres.Model.PartitModel.ResultatsComplerts
+  id: ResultatsComplerts
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: ResultatsComplerts
+  nameWithType: PartitModel.ResultatsComplerts
+  fullName: ProjectePorres.Model.PartitModel.ResultatsComplerts
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ResultatsComplerts
+    path: Models/PartitModel.cs
+    startLine: 22
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public bool ResultatsComplerts { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ResultatsComplerts As Boolean
+  overload: ProjectePorres.Model.PartitModel.ResultatsComplerts*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.#ctor(ProjectePorres.Model.EquipModel,ProjectePorres.Model.EquipModel,System.DateTime,System.String,System.Int32,System.Int32,System.Boolean)
+  commentId: M:ProjectePorres.Model.PartitModel.#ctor(ProjectePorres.Model.EquipModel,ProjectePorres.Model.EquipModel,System.DateTime,System.String,System.Int32,System.Int32,System.Boolean)
+  id: '#ctor(ProjectePorres.Model.EquipModel,ProjectePorres.Model.EquipModel,System.DateTime,System.String,System.Int32,System.Int32,System.Boolean)'
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: PartitModel(EquipModel, EquipModel, DateTime, String, Int32, Int32, Boolean)
+  nameWithType: PartitModel.PartitModel(EquipModel, EquipModel, DateTime, String, Int32, Int32, Boolean)
+  fullName: ProjectePorres.Model.PartitModel.PartitModel(ProjectePorres.Model.EquipModel, ProjectePorres.Model.EquipModel, System.DateTime, System.String, System.Int32, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/PartitModel.cs
+    startLine: 24
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public PartitModel(EquipModel equipLocal, EquipModel equipVisitant, DateTime dataHoraPartit, string temporada, int golsLocal, int golsVisitant, bool resultatsComplerts)
+    parameters:
+    - id: equipLocal
+      type: ProjectePorres.Model.EquipModel
+    - id: equipVisitant
+      type: ProjectePorres.Model.EquipModel
+    - id: dataHoraPartit
+      type: System.DateTime
+    - id: temporada
+      type: System.String
+    - id: golsLocal
+      type: System.Int32
+    - id: golsVisitant
+      type: System.Int32
+    - id: resultatsComplerts
+      type: System.Boolean
+    content.vb: Public Sub New(equipLocal As EquipModel, equipVisitant As EquipModel, dataHoraPartit As Date, temporada As String, golsLocal As Integer, golsVisitant As Integer, resultatsComplerts As Boolean)
+  overload: ProjectePorres.Model.PartitModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.PartitModel.ToString
+  commentId: M:ProjectePorres.Model.PartitModel.ToString
+  id: ToString
+  parent: ProjectePorres.Model.PartitModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PartitModel.ToString()
+  fullName: ProjectePorres.Model.PartitModel.ToString()
+  type: Method
+  source:
+    remote:
+      path: ProjectePorres/Models/PartitModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ToString
+    path: Models/PartitModel.cs
+    startLine: 35
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: ProjectePorres.Model.PartitModel.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Model.PartitModel.EquipLocal*
+  commentId: Overload:ProjectePorres.Model.PartitModel.EquipLocal
+  name: EquipLocal
+  nameWithType: PartitModel.EquipLocal
+  fullName: ProjectePorres.Model.PartitModel.EquipLocal
+- uid: ProjectePorres.Model.EquipModel
+  commentId: T:ProjectePorres.Model.EquipModel
+  parent: ProjectePorres.Model
+  name: EquipModel
+  nameWithType: EquipModel
+  fullName: ProjectePorres.Model.EquipModel
+- uid: ProjectePorres.Model.PartitModel.EquipVisitant*
+  commentId: Overload:ProjectePorres.Model.PartitModel.EquipVisitant
+  name: EquipVisitant
+  nameWithType: PartitModel.EquipVisitant
+  fullName: ProjectePorres.Model.PartitModel.EquipVisitant
+- uid: ProjectePorres.Model.PartitModel.DataHoraPartit*
+  commentId: Overload:ProjectePorres.Model.PartitModel.DataHoraPartit
+  name: DataHoraPartit
+  nameWithType: PartitModel.DataHoraPartit
+  fullName: ProjectePorres.Model.PartitModel.DataHoraPartit
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: ProjectePorres.Model.PartitModel.Temporada*
+  commentId: Overload:ProjectePorres.Model.PartitModel.Temporada
+  name: Temporada
+  nameWithType: PartitModel.Temporada
+  fullName: ProjectePorres.Model.PartitModel.Temporada
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.Model.PartitModel.GolsLocal*
+  commentId: Overload:ProjectePorres.Model.PartitModel.GolsLocal
+  name: GolsLocal
+  nameWithType: PartitModel.GolsLocal
+  fullName: ProjectePorres.Model.PartitModel.GolsLocal
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ProjectePorres.Model.PartitModel.GolsVisitant*
+  commentId: Overload:ProjectePorres.Model.PartitModel.GolsVisitant
+  name: GolsVisitant
+  nameWithType: PartitModel.GolsVisitant
+  fullName: ProjectePorres.Model.PartitModel.GolsVisitant
+- uid: ProjectePorres.Model.PartitModel.ResultatsComplerts*
+  commentId: Overload:ProjectePorres.Model.PartitModel.ResultatsComplerts
+  name: ResultatsComplerts
+  nameWithType: PartitModel.ResultatsComplerts
+  fullName: ProjectePorres.Model.PartitModel.ResultatsComplerts
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ProjectePorres.Model.PartitModel.#ctor*
+  commentId: Overload:ProjectePorres.Model.PartitModel.#ctor
+  name: PartitModel
+  nameWithType: PartitModel.PartitModel
+  fullName: ProjectePorres.Model.PartitModel.PartitModel
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ProjectePorres.Model.PartitModel.ToString*
+  commentId: Overload:ProjectePorres.Model.PartitModel.ToString
+  name: ToString
+  nameWithType: PartitModel.ToString
+  fullName: ProjectePorres.Model.PartitModel.ToString

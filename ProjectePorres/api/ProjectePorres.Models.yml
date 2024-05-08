@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Models
+  commentId: N:ProjectePorres.Models
+  id: ProjectePorres.Models
+  children:
+  - ProjectePorres.Models.JugadorModel
+  - ProjectePorres.Models.PenyaModel
+  - ProjectePorres.Models.PorraModel
+  - ProjectePorres.Models.PuntuacionsModel
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres.Models
+  nameWithType: ProjectePorres.Models
+  fullName: ProjectePorres.Models
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.Models.JugadorModel
+  commentId: T:ProjectePorres.Models.JugadorModel
+  name: JugadorModel
+  nameWithType: JugadorModel
+  fullName: ProjectePorres.Models.JugadorModel
+- uid: ProjectePorres.Models.PenyaModel
+  commentId: T:ProjectePorres.Models.PenyaModel
+  name: PenyaModel
+  nameWithType: PenyaModel
+  fullName: ProjectePorres.Models.PenyaModel
+- uid: ProjectePorres.Models.PorraModel
+  commentId: T:ProjectePorres.Models.PorraModel
+  name: PorraModel
+  nameWithType: PorraModel
+  fullName: ProjectePorres.Models.PorraModel
+- uid: ProjectePorres.Models.PuntuacionsModel
+  commentId: T:ProjectePorres.Models.PuntuacionsModel
+  name: PuntuacionsModel
+  nameWithType: PuntuacionsModel
+  fullName: ProjectePorres.Models.PuntuacionsModel

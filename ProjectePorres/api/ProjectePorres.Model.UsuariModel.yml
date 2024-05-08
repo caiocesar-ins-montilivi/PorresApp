@@ -1,0 +1,814 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Model.UsuariModel
+  commentId: T:ProjectePorres.Model.UsuariModel
+  id: UsuariModel
+  parent: ProjectePorres.Model
+  children:
+  - ProjectePorres.Model.UsuariModel.#ctor
+  - ProjectePorres.Model.UsuariModel.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)
+  - ProjectePorres.Model.UsuariModel.Cognom
+  - ProjectePorres.Model.UsuariModel.Contrasenya
+  - ProjectePorres.Model.UsuariModel.Correu
+  - ProjectePorres.Model.UsuariModel.Dni
+  - ProjectePorres.Model.UsuariModel.EsAdmin
+  - ProjectePorres.Model.UsuariModel.Id
+  - ProjectePorres.Model.UsuariModel.Nom
+  - ProjectePorres.Model.UsuariModel.Puntuacio
+  - ProjectePorres.Model.UsuariModel.ToString
+  langs:
+  - csharp
+  - vb
+  name: UsuariModel
+  nameWithType: UsuariModel
+  fullName: ProjectePorres.Model.UsuariModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: UsuariModel
+    path: Models/UsuariModel.cs
+    startLine: 11
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public class UsuariModel
+    content.vb: Public Class UsuariModel
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - ProjectePorres.Model.AdminModel
+  - ProjectePorres.Model.PenyistaModel
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.Model.UsuariModel.Id
+  commentId: P:ProjectePorres.Model.UsuariModel.Id
+  id: Id
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: UsuariModel.Id
+  fullName: ProjectePorres.Model.UsuariModel.Id
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Id
+    path: Models/UsuariModel.cs
+    startLine: 13
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: ProjectePorres.Model.UsuariModel.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.Dni
+  commentId: P:ProjectePorres.Model.UsuariModel.Dni
+  id: Dni
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Dni
+  nameWithType: UsuariModel.Dni
+  fullName: ProjectePorres.Model.UsuariModel.Dni
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Dni
+    path: Models/UsuariModel.cs
+    startLine: 15
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Dni { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Dni As String
+  overload: ProjectePorres.Model.UsuariModel.Dni*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.Nom
+  commentId: P:ProjectePorres.Model.UsuariModel.Nom
+  id: Nom
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Nom
+  nameWithType: UsuariModel.Nom
+  fullName: ProjectePorres.Model.UsuariModel.Nom
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Nom
+    path: Models/UsuariModel.cs
+    startLine: 17
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Nom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nom As String
+  overload: ProjectePorres.Model.UsuariModel.Nom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.Cognom
+  commentId: P:ProjectePorres.Model.UsuariModel.Cognom
+  id: Cognom
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Cognom
+  nameWithType: UsuariModel.Cognom
+  fullName: ProjectePorres.Model.UsuariModel.Cognom
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Cognom
+    path: Models/UsuariModel.cs
+    startLine: 19
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Cognom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Cognom As String
+  overload: ProjectePorres.Model.UsuariModel.Cognom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.Correu
+  commentId: P:ProjectePorres.Model.UsuariModel.Correu
+  id: Correu
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Correu
+  nameWithType: UsuariModel.Correu
+  fullName: ProjectePorres.Model.UsuariModel.Correu
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Correu
+    path: Models/UsuariModel.cs
+    startLine: 21
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Correu { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Correu As String
+  overload: ProjectePorres.Model.UsuariModel.Correu*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.Puntuacio
+  commentId: P:ProjectePorres.Model.UsuariModel.Puntuacio
+  id: Puntuacio
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Puntuacio
+  nameWithType: UsuariModel.Puntuacio
+  fullName: ProjectePorres.Model.UsuariModel.Puntuacio
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Puntuacio
+    path: Models/UsuariModel.cs
+    startLine: 23
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public int Puntuacio { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Puntuacio As Integer
+  overload: ProjectePorres.Model.UsuariModel.Puntuacio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.Contrasenya
+  commentId: P:ProjectePorres.Model.UsuariModel.Contrasenya
+  id: Contrasenya
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: Contrasenya
+  nameWithType: UsuariModel.Contrasenya
+  fullName: ProjectePorres.Model.UsuariModel.Contrasenya
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Contrasenya
+    path: Models/UsuariModel.cs
+    startLine: 25
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public string Contrasenya { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Contrasenya As String
+  overload: ProjectePorres.Model.UsuariModel.Contrasenya*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.EsAdmin
+  commentId: P:ProjectePorres.Model.UsuariModel.EsAdmin
+  id: EsAdmin
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: EsAdmin
+  nameWithType: UsuariModel.EsAdmin
+  fullName: ProjectePorres.Model.UsuariModel.EsAdmin
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: EsAdmin
+    path: Models/UsuariModel.cs
+    startLine: 27
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public bool EsAdmin { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EsAdmin As Boolean
+  overload: ProjectePorres.Model.UsuariModel.EsAdmin*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.#ctor
+  commentId: M:ProjectePorres.Model.UsuariModel.#ctor
+  id: '#ctor'
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: UsuariModel()
+  nameWithType: UsuariModel.UsuariModel()
+  fullName: ProjectePorres.Model.UsuariModel.UsuariModel()
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/UsuariModel.cs
+    startLine: 29
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public UsuariModel()
+    content.vb: Public Sub New
+  overload: ProjectePorres.Model.UsuariModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)
+  commentId: M:ProjectePorres.Model.UsuariModel.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)
+  id: '#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean)'
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: UsuariModel(Int32, String, String, String, Int32, Boolean)
+  nameWithType: UsuariModel.UsuariModel(Int32, String, String, String, Int32, Boolean)
+  fullName: ProjectePorres.Model.UsuariModel.UsuariModel(System.Int32, System.String, System.String, System.String, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: Models/UsuariModel.cs
+    startLine: 31
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public UsuariModel(int id, string dni, string nom, string cognom, int puntuacio, bool esAdmin)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: dni
+      type: System.String
+    - id: nom
+      type: System.String
+    - id: cognom
+      type: System.String
+    - id: puntuacio
+      type: System.Int32
+    - id: esAdmin
+      type: System.Boolean
+    content.vb: Public Sub New(id As Integer, dni As String, nom As String, cognom As String, puntuacio As Integer, esAdmin As Boolean)
+  overload: ProjectePorres.Model.UsuariModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.Model.UsuariModel.ToString
+  commentId: M:ProjectePorres.Model.UsuariModel.ToString
+  id: ToString
+  parent: ProjectePorres.Model.UsuariModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: UsuariModel.ToString()
+  fullName: ProjectePorres.Model.UsuariModel.ToString()
+  type: Method
+  source:
+    remote:
+      path: ProjectePorres/Models/UsuariModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ToString
+    path: Models/UsuariModel.cs
+    startLine: 41
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.Model
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: ProjectePorres.Model.UsuariModel.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: ProjectePorres.Model
+  commentId: N:ProjectePorres.Model
+  name: ProjectePorres.Model
+  nameWithType: ProjectePorres.Model
+  fullName: ProjectePorres.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProjectePorres.Model.UsuariModel.Id*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Id
+  name: Id
+  nameWithType: UsuariModel.Id
+  fullName: ProjectePorres.Model.UsuariModel.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ProjectePorres.Model.UsuariModel.Dni*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Dni
+  name: Dni
+  nameWithType: UsuariModel.Dni
+  fullName: ProjectePorres.Model.UsuariModel.Dni
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.Model.UsuariModel.Nom*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Nom
+  name: Nom
+  nameWithType: UsuariModel.Nom
+  fullName: ProjectePorres.Model.UsuariModel.Nom
+- uid: ProjectePorres.Model.UsuariModel.Cognom*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Cognom
+  name: Cognom
+  nameWithType: UsuariModel.Cognom
+  fullName: ProjectePorres.Model.UsuariModel.Cognom
+- uid: ProjectePorres.Model.UsuariModel.Correu*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Correu
+  name: Correu
+  nameWithType: UsuariModel.Correu
+  fullName: ProjectePorres.Model.UsuariModel.Correu
+- uid: ProjectePorres.Model.UsuariModel.Puntuacio*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Puntuacio
+  name: Puntuacio
+  nameWithType: UsuariModel.Puntuacio
+  fullName: ProjectePorres.Model.UsuariModel.Puntuacio
+- uid: ProjectePorres.Model.UsuariModel.Contrasenya*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.Contrasenya
+  name: Contrasenya
+  nameWithType: UsuariModel.Contrasenya
+  fullName: ProjectePorres.Model.UsuariModel.Contrasenya
+- uid: ProjectePorres.Model.UsuariModel.EsAdmin*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.EsAdmin
+  name: EsAdmin
+  nameWithType: UsuariModel.EsAdmin
+  fullName: ProjectePorres.Model.UsuariModel.EsAdmin
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ProjectePorres.Model.UsuariModel.#ctor*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.#ctor
+  name: UsuariModel
+  nameWithType: UsuariModel.UsuariModel
+  fullName: ProjectePorres.Model.UsuariModel.UsuariModel
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ProjectePorres.Model.UsuariModel.ToString*
+  commentId: Overload:ProjectePorres.Model.UsuariModel.ToString
+  name: ToString
+  nameWithType: UsuariModel.ToString
+  fullName: ProjectePorres.Model.UsuariModel.ToString

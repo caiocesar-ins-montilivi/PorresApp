@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres
+  commentId: N:ProjectePorres
+  id: ProjectePorres
+  children:
+  - ProjectePorres.App
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres
+  nameWithType: ProjectePorres
+  fullName: ProjectePorres
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.App
+  commentId: T:ProjectePorres.App
+  name: App
+  nameWithType: App
+  fullName: ProjectePorres.App

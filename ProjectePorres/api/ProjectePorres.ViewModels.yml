@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.ViewModels
+  commentId: N:ProjectePorres.ViewModels
+  id: ProjectePorres.ViewModels
+  children:
+  - ProjectePorres.ViewModels.BaseViewModel
+  - ProjectePorres.ViewModels.CommandViewModel
+  - ProjectePorres.ViewModels.LoginViewModel
+  - ProjectePorres.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres.ViewModels
+  nameWithType: ProjectePorres.ViewModels
+  fullName: ProjectePorres.ViewModels
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.ViewModels.BaseViewModel
+  commentId: T:ProjectePorres.ViewModels.BaseViewModel
+  parent: ProjectePorres.ViewModels
+  name: BaseViewModel
+  nameWithType: BaseViewModel
+  fullName: ProjectePorres.ViewModels.BaseViewModel
+- uid: ProjectePorres.ViewModels.CommandViewModel
+  commentId: T:ProjectePorres.ViewModels.CommandViewModel
+  name: CommandViewModel
+  nameWithType: CommandViewModel
+  fullName: ProjectePorres.ViewModels.CommandViewModel
+- uid: ProjectePorres.ViewModels.LoginViewModel
+  commentId: T:ProjectePorres.ViewModels.LoginViewModel
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: ProjectePorres.ViewModels.LoginViewModel
+- uid: ProjectePorres.ViewModels.MainWindowViewModel
+  commentId: T:ProjectePorres.ViewModels.MainWindowViewModel
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel
+  fullName: ProjectePorres.ViewModels.MainWindowViewModel
+- uid: ProjectePorres.ViewModels
+  commentId: N:ProjectePorres.ViewModels
+  name: ProjectePorres.ViewModels
+  nameWithType: ProjectePorres.ViewModels
+  fullName: ProjectePorres.ViewModels

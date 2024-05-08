@@ -1,0 +1,1440 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.ViewModels.LoginViewModel
+  commentId: T:ProjectePorres.ViewModels.LoginViewModel
+  id: LoginViewModel
+  parent: ProjectePorres.ViewModels
+  children:
+  - ProjectePorres.ViewModels.LoginViewModel.#ctor
+  - ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand
+  - ProjectePorres.ViewModels.LoginViewModel.Dni
+  - ProjectePorres.ViewModels.LoginViewModel.ErrorMessage
+  - ProjectePorres.ViewModels.LoginViewModel.IndexTabActual
+  - ProjectePorres.ViewModels.LoginViewModel.IniciatSessio
+  - ProjectePorres.ViewModels.LoginViewModel.IsViewVisible
+  - ProjectePorres.ViewModels.LoginViewModel.LoginCommand
+  - ProjectePorres.ViewModels.LoginViewModel.MantenirSessio
+  - ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand
+  - ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand
+  - ProjectePorres.ViewModels.LoginViewModel.NomUsuari
+  - ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible
+  - ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible
+  - ProjectePorres.ViewModels.LoginViewModel.RCognom
+  - ProjectePorres.ViewModels.LoginViewModel.RCorreu
+  - ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand
+  - ProjectePorres.ViewModels.LoginViewModel.RegisterCommand
+  - ProjectePorres.ViewModels.LoginViewModel.RNom
+  - ProjectePorres.ViewModels.LoginViewModel.RNomUsuari
+  - ProjectePorres.ViewModels.LoginViewModel.RPassword
+  - ProjectePorres.ViewModels.LoginViewModel.RPassword2
+  - ProjectePorres.ViewModels.LoginViewModel.SecurePassword
+  - ProjectePorres.ViewModels.LoginViewModel.SortirCommand
+  langs:
+  - csharp
+  - vb
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: ProjectePorres.ViewModels.LoginViewModel
+  type: Class
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: LoginViewModel
+    path: ViewModels/LoginViewModel.cs
+    startLine: 12
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: 'public class LoginViewModel : BaseViewModel, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class LoginViewModel
+          Inherits BaseViewModel
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - ProjectePorres.ViewModels.BaseViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+  - ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ProjectePorres.ViewModels.LoginViewModel.NomUsuari
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.NomUsuari
+  id: NomUsuari
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: NomUsuari
+  nameWithType: LoginViewModel.NomUsuari
+  fullName: ProjectePorres.ViewModels.LoginViewModel.NomUsuari
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: NomUsuari
+    path: ViewModels/LoginViewModel.cs
+    startLine: 35
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string NomUsuari { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NomUsuari As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.NomUsuari*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.Dni
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.Dni
+  id: Dni
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: Dni
+  nameWithType: LoginViewModel.Dni
+  fullName: ProjectePorres.ViewModels.LoginViewModel.Dni
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: Dni
+    path: ViewModels/LoginViewModel.cs
+    startLine: 45
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string Dni { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Dni As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.Dni*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.SecurePassword
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.SecurePassword
+  id: SecurePassword
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: SecurePassword
+  nameWithType: LoginViewModel.SecurePassword
+  fullName: ProjectePorres.ViewModels.LoginViewModel.SecurePassword
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: SecurePassword
+    path: ViewModels/LoginViewModel.cs
+    startLine: 55
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public SecureString SecurePassword { get; set; }
+    parameters: []
+    return:
+      type: System.Security.SecureString
+    content.vb: Public Property SecurePassword As SecureString
+  overload: ProjectePorres.ViewModels.LoginViewModel.SecurePassword*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.RNomUsuari
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RNomUsuari
+  id: RNomUsuari
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RNomUsuari
+  nameWithType: LoginViewModel.RNomUsuari
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RNomUsuari
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RNomUsuari
+    path: ViewModels/LoginViewModel.cs
+    startLine: 65
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string RNomUsuari { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RNomUsuari As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.RNomUsuari*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.RNom
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RNom
+  id: RNom
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RNom
+  nameWithType: LoginViewModel.RNom
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RNom
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RNom
+    path: ViewModels/LoginViewModel.cs
+    startLine: 75
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string RNom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RNom As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.RNom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.RCognom
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RCognom
+  id: RCognom
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RCognom
+  nameWithType: LoginViewModel.RCognom
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RCognom
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RCognom
+    path: ViewModels/LoginViewModel.cs
+    startLine: 85
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string RCognom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RCognom As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.RCognom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.RCorreu
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RCorreu
+  id: RCorreu
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RCorreu
+  nameWithType: LoginViewModel.RCorreu
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RCorreu
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RCorreu
+    path: ViewModels/LoginViewModel.cs
+    startLine: 95
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string RCorreu { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RCorreu As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.RCorreu*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.RPassword
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RPassword
+  id: RPassword
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RPassword
+  nameWithType: LoginViewModel.RPassword
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RPassword
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RPassword
+    path: ViewModels/LoginViewModel.cs
+    startLine: 105
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public SecureString RPassword { get; set; }
+    parameters: []
+    return:
+      type: System.Security.SecureString
+    content.vb: Public Property RPassword As SecureString
+  overload: ProjectePorres.ViewModels.LoginViewModel.RPassword*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.RPassword2
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RPassword2
+  id: RPassword2
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RPassword2
+  nameWithType: LoginViewModel.RPassword2
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RPassword2
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RPassword2
+    path: ViewModels/LoginViewModel.cs
+    startLine: 115
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public SecureString RPassword2 { get; set; }
+    parameters: []
+    return:
+      type: System.Security.SecureString
+    content.vb: Public Property RPassword2 As SecureString
+  overload: ProjectePorres.ViewModels.LoginViewModel.RPassword2*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.ErrorMessage
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.ErrorMessage
+  id: ErrorMessage
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: LoginViewModel.ErrorMessage
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ErrorMessage
+    path: ViewModels/LoginViewModel.cs
+    startLine: 125
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public string ErrorMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ErrorMessage As String
+  overload: ProjectePorres.ViewModels.LoginViewModel.ErrorMessage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.MantenirSessio
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.MantenirSessio
+  id: MantenirSessio
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: MantenirSessio
+  nameWithType: LoginViewModel.MantenirSessio
+  fullName: ProjectePorres.ViewModels.LoginViewModel.MantenirSessio
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: MantenirSessio
+    path: ViewModels/LoginViewModel.cs
+    startLine: 135
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool MantenirSessio { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property MantenirSessio As Boolean
+  overload: ProjectePorres.ViewModels.LoginViewModel.MantenirSessio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.IsViewVisible
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.IsViewVisible
+  id: IsViewVisible
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsViewVisible
+  nameWithType: LoginViewModel.IsViewVisible
+  fullName: ProjectePorres.ViewModels.LoginViewModel.IsViewVisible
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IsViewVisible
+    path: ViewModels/LoginViewModel.cs
+    startLine: 145
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool IsViewVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsViewVisible As Boolean
+  overload: ProjectePorres.ViewModels.LoginViewModel.IsViewVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.IndexTabActual
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.IndexTabActual
+  id: IndexTabActual
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: IndexTabActual
+  nameWithType: LoginViewModel.IndexTabActual
+  fullName: ProjectePorres.ViewModels.LoginViewModel.IndexTabActual
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IndexTabActual
+    path: ViewModels/LoginViewModel.cs
+    startLine: 155
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public int IndexTabActual { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IndexTabActual As Integer
+  overload: ProjectePorres.ViewModels.LoginViewModel.IndexTabActual*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.IniciatSessio
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.IniciatSessio
+  id: IniciatSessio
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: IniciatSessio
+  nameWithType: LoginViewModel.IniciatSessio
+  fullName: ProjectePorres.ViewModels.LoginViewModel.IniciatSessio
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: IniciatSessio
+    path: ViewModels/LoginViewModel.cs
+    startLine: 165
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool IniciatSessio { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IniciatSessio As Boolean
+  overload: ProjectePorres.ViewModels.LoginViewModel.IniciatSessio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible
+  id: ProgressBarLoginVisible
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: ProgressBarLoginVisible
+  nameWithType: LoginViewModel.ProgressBarLoginVisible
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ProgressBarLoginVisible
+    path: ViewModels/LoginViewModel.cs
+    startLine: 175
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool ProgressBarLoginVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ProgressBarLoginVisible As Boolean
+  overload: ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible
+  id: ProgressBarRegistreVisible
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: ProgressBarRegistreVisible
+  nameWithType: LoginViewModel.ProgressBarRegistreVisible
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ProgressBarRegistreVisible
+    path: ViewModels/LoginViewModel.cs
+    startLine: 185
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public bool ProgressBarRegistreVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ProgressBarRegistreVisible As Boolean
+  overload: ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ProjectePorres.ViewModels.LoginViewModel.LoginCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.LoginCommand
+  id: LoginCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoginCommand
+  nameWithType: LoginViewModel.LoginCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.LoginCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: LoginCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 196
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand LoginCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property LoginCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.LoginCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.RegisterCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RegisterCommand
+  id: RegisterCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RegisterCommand
+  nameWithType: LoginViewModel.RegisterCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RegisterCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RegisterCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 197
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand RegisterCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property RegisterCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.RegisterCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand
+  id: ChangeTabCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeTabCommand
+  nameWithType: LoginViewModel.ChangeTabCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: ChangeTabCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 198
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand ChangeTabCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeTabCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand
+  id: RecuperarContrasenyaCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: RecuperarContrasenyaCommand
+  nameWithType: LoginViewModel.RecuperarContrasenyaCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: RecuperarContrasenyaCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 199
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand RecuperarContrasenyaCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property RecuperarContrasenyaCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand
+  id: MostrarPasswordCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: MostrarPasswordCommand
+  nameWithType: LoginViewModel.MostrarPasswordCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: MostrarPasswordCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 200
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand MostrarPasswordCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property MostrarPasswordCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand
+  id: MantenirSessioCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: MantenirSessioCommand
+  nameWithType: LoginViewModel.MantenirSessioCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: MantenirSessioCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 201
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand MantenirSessioCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property MantenirSessioCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.SortirCommand
+  commentId: P:ProjectePorres.ViewModels.LoginViewModel.SortirCommand
+  id: SortirCommand
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: SortirCommand
+  nameWithType: LoginViewModel.SortirCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.SortirCommand
+  type: Property
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: SortirCommand
+    path: ViewModels/LoginViewModel.cs
+    startLine: 202
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public ICommand SortirCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property SortirCommand As ICommand
+  overload: ProjectePorres.ViewModels.LoginViewModel.SortirCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ProjectePorres.ViewModels.LoginViewModel.#ctor
+  commentId: M:ProjectePorres.ViewModels.LoginViewModel.#ctor
+  id: '#ctor'
+  parent: ProjectePorres.ViewModels.LoginViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoginViewModel()
+  nameWithType: LoginViewModel.LoginViewModel()
+  fullName: ProjectePorres.ViewModels.LoginViewModel.LoginViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: ProjectePorres/ViewModels/LoginViewModel.cs
+      branch: docfx
+      repo: https://github.com/caiocesar-ins-montilivi/PorresApp.git
+    id: .ctor
+    path: ViewModels/LoginViewModel.cs
+    startLine: 205
+  assemblies:
+  - ProjectePorres
+  namespace: ProjectePorres.ViewModels
+  syntax:
+    content: public LoginViewModel()
+    content.vb: Public Sub New
+  overload: ProjectePorres.ViewModels.LoginViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ProjectePorres.ViewModels
+  commentId: N:ProjectePorres.ViewModels
+  name: ProjectePorres.ViewModels
+  nameWithType: ProjectePorres.ViewModels
+  fullName: ProjectePorres.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ProjectePorres.ViewModels.BaseViewModel
+  commentId: T:ProjectePorres.ViewModels.BaseViewModel
+  parent: ProjectePorres.ViewModels
+  name: BaseViewModel
+  nameWithType: BaseViewModel
+  fullName: ProjectePorres.ViewModels.BaseViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+  commentId: E:ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+  parent: ProjectePorres.ViewModels.BaseViewModel
+  name: PropertyChanged
+  nameWithType: BaseViewModel.PropertyChanged
+  fullName: ProjectePorres.ViewModels.BaseViewModel.PropertyChanged
+- uid: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  commentId: M:ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  parent: ProjectePorres.ViewModels.BaseViewModel
+  isExternal: true
+  name: OnPropertyChanged(String)
+  nameWithType: BaseViewModel.OnPropertyChanged(String)
+  fullName: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+  spec.csharp:
+  - uid: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BaseViewModel.OnPropertyChanged
+    fullName: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BaseViewModel.OnPropertyChanged
+    fullName: ProjectePorres.ViewModels.BaseViewModel.OnPropertyChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: ProjectePorres.ViewModels.LoginViewModel.NomUsuari*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.NomUsuari
+  name: NomUsuari
+  nameWithType: LoginViewModel.NomUsuari
+  fullName: ProjectePorres.ViewModels.LoginViewModel.NomUsuari
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ProjectePorres.ViewModels.LoginViewModel.Dni*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.Dni
+  name: Dni
+  nameWithType: LoginViewModel.Dni
+  fullName: ProjectePorres.ViewModels.LoginViewModel.Dni
+- uid: ProjectePorres.ViewModels.LoginViewModel.SecurePassword*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.SecurePassword
+  name: SecurePassword
+  nameWithType: LoginViewModel.SecurePassword
+  fullName: ProjectePorres.ViewModels.LoginViewModel.SecurePassword
+- uid: System.Security.SecureString
+  commentId: T:System.Security.SecureString
+  parent: System.Security
+  isExternal: true
+  name: SecureString
+  nameWithType: SecureString
+  fullName: System.Security.SecureString
+- uid: System.Security
+  commentId: N:System.Security
+  isExternal: true
+  name: System.Security
+  nameWithType: System.Security
+  fullName: System.Security
+- uid: ProjectePorres.ViewModels.LoginViewModel.RNomUsuari*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RNomUsuari
+  name: RNomUsuari
+  nameWithType: LoginViewModel.RNomUsuari
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RNomUsuari
+- uid: ProjectePorres.ViewModels.LoginViewModel.RNom*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RNom
+  name: RNom
+  nameWithType: LoginViewModel.RNom
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RNom
+- uid: ProjectePorres.ViewModels.LoginViewModel.RCognom*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RCognom
+  name: RCognom
+  nameWithType: LoginViewModel.RCognom
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RCognom
+- uid: ProjectePorres.ViewModels.LoginViewModel.RCorreu*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RCorreu
+  name: RCorreu
+  nameWithType: LoginViewModel.RCorreu
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RCorreu
+- uid: ProjectePorres.ViewModels.LoginViewModel.RPassword*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RPassword
+  name: RPassword
+  nameWithType: LoginViewModel.RPassword
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RPassword
+- uid: ProjectePorres.ViewModels.LoginViewModel.RPassword2*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RPassword2
+  name: RPassword2
+  nameWithType: LoginViewModel.RPassword2
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RPassword2
+- uid: ProjectePorres.ViewModels.LoginViewModel.ErrorMessage*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.ErrorMessage
+  name: ErrorMessage
+  nameWithType: LoginViewModel.ErrorMessage
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ErrorMessage
+- uid: ProjectePorres.ViewModels.LoginViewModel.MantenirSessio*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.MantenirSessio
+  name: MantenirSessio
+  nameWithType: LoginViewModel.MantenirSessio
+  fullName: ProjectePorres.ViewModels.LoginViewModel.MantenirSessio
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ProjectePorres.ViewModels.LoginViewModel.IsViewVisible*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.IsViewVisible
+  name: IsViewVisible
+  nameWithType: LoginViewModel.IsViewVisible
+  fullName: ProjectePorres.ViewModels.LoginViewModel.IsViewVisible
+- uid: ProjectePorres.ViewModels.LoginViewModel.IndexTabActual*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.IndexTabActual
+  name: IndexTabActual
+  nameWithType: LoginViewModel.IndexTabActual
+  fullName: ProjectePorres.ViewModels.LoginViewModel.IndexTabActual
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ProjectePorres.ViewModels.LoginViewModel.IniciatSessio*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.IniciatSessio
+  name: IniciatSessio
+  nameWithType: LoginViewModel.IniciatSessio
+  fullName: ProjectePorres.ViewModels.LoginViewModel.IniciatSessio
+- uid: ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible
+  name: ProgressBarLoginVisible
+  nameWithType: LoginViewModel.ProgressBarLoginVisible
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ProgressBarLoginVisible
+- uid: ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible
+  name: ProgressBarRegistreVisible
+  nameWithType: LoginViewModel.ProgressBarRegistreVisible
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ProgressBarRegistreVisible
+- uid: ProjectePorres.ViewModels.LoginViewModel.LoginCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.LoginCommand
+  name: LoginCommand
+  nameWithType: LoginViewModel.LoginCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.LoginCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: ProjectePorres.ViewModels.LoginViewModel.RegisterCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RegisterCommand
+  name: RegisterCommand
+  nameWithType: LoginViewModel.RegisterCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RegisterCommand
+- uid: ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand
+  name: ChangeTabCommand
+  nameWithType: LoginViewModel.ChangeTabCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.ChangeTabCommand
+- uid: ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand
+  name: RecuperarContrasenyaCommand
+  nameWithType: LoginViewModel.RecuperarContrasenyaCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.RecuperarContrasenyaCommand
+- uid: ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand
+  name: MostrarPasswordCommand
+  nameWithType: LoginViewModel.MostrarPasswordCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.MostrarPasswordCommand
+- uid: ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand
+  name: MantenirSessioCommand
+  nameWithType: LoginViewModel.MantenirSessioCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.MantenirSessioCommand
+- uid: ProjectePorres.ViewModels.LoginViewModel.SortirCommand*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.SortirCommand
+  name: SortirCommand
+  nameWithType: LoginViewModel.SortirCommand
+  fullName: ProjectePorres.ViewModels.LoginViewModel.SortirCommand
+- uid: ProjectePorres.ViewModels.LoginViewModel.#ctor*
+  commentId: Overload:ProjectePorres.ViewModels.LoginViewModel.#ctor
+  name: LoginViewModel
+  nameWithType: LoginViewModel.LoginViewModel
+  fullName: ProjectePorres.ViewModels.LoginViewModel.LoginViewModel

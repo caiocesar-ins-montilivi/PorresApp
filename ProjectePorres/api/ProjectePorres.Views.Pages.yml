@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProjectePorres.Views.Pages
+  commentId: N:ProjectePorres.Views.Pages
+  id: ProjectePorres.Views.Pages
+  children:
+  - ProjectePorres.Views.Pages.AboutPage
+  - ProjectePorres.Views.Pages.EquipsPage
+  - ProjectePorres.Views.Pages.HomePage
+  - ProjectePorres.Views.Pages.PorresPage
+  - ProjectePorres.Views.Pages.RecomanarPage
+  - ProjectePorres.Views.Pages.SettingsPage
+  langs:
+  - csharp
+  - vb
+  name: ProjectePorres.Views.Pages
+  nameWithType: ProjectePorres.Views.Pages
+  fullName: ProjectePorres.Views.Pages
+  type: Namespace
+  assemblies:
+  - ProjectePorres
+references:
+- uid: ProjectePorres.Views.Pages.AboutPage
+  commentId: T:ProjectePorres.Views.Pages.AboutPage
+  name: AboutPage
+  nameWithType: AboutPage
+  fullName: ProjectePorres.Views.Pages.AboutPage
+- uid: ProjectePorres.Views.Pages.EquipsPage
+  commentId: T:ProjectePorres.Views.Pages.EquipsPage
+  name: EquipsPage
+  nameWithType: EquipsPage
+  fullName: ProjectePorres.Views.Pages.EquipsPage
+- uid: ProjectePorres.Views.Pages.HomePage
+  commentId: T:ProjectePorres.Views.Pages.HomePage
+  name: HomePage
+  nameWithType: HomePage
+  fullName: ProjectePorres.Views.Pages.HomePage
+- uid: ProjectePorres.Views.Pages.PorresPage
+  commentId: T:ProjectePorres.Views.Pages.PorresPage
+  name: PorresPage
+  nameWithType: PorresPage
+  fullName: ProjectePorres.Views.Pages.PorresPage
+- uid: ProjectePorres.Views.Pages.RecomanarPage
+  commentId: T:ProjectePorres.Views.Pages.RecomanarPage
+  name: RecomanarPage
+  nameWithType: RecomanarPage
+  fullName: ProjectePorres.Views.Pages.RecomanarPage
+- uid: ProjectePorres.Views.Pages.SettingsPage
+  commentId: T:ProjectePorres.Views.Pages.SettingsPage
+  name: SettingsPage
+  nameWithType: SettingsPage
+  fullName: ProjectePorres.Views.Pages.SettingsPage

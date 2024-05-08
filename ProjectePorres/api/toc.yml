@@ -1,0 +1,70 @@
+### YamlMime:TableOfContent
+- uid: ProjectePorres
+  name: ProjectePorres
+  items:
+  - uid: ProjectePorres.App
+    name: App
+- uid: ProjectePorres.Data
+  name: ProjectePorres.Data
+  items:
+  - uid: ProjectePorres.Data.ConfigContext
+    name: ConfigContext
+  - uid: ProjectePorres.Data.DatabaseContext
+    name: DatabaseContext
+- uid: ProjectePorres.Model
+  name: ProjectePorres.Model
+  items:
+  - uid: ProjectePorres.Model.AdminModel
+    name: AdminModel
+  - uid: ProjectePorres.Model.EquipModel
+    name: EquipModel
+  - uid: ProjectePorres.Model.PartitModel
+    name: PartitModel
+  - uid: ProjectePorres.Model.PenyistaModel
+    name: PenyistaModel
+  - uid: ProjectePorres.Model.UsuariModel
+    name: UsuariModel
+- uid: ProjectePorres.Models
+  name: ProjectePorres.Models
+  items:
+  - uid: ProjectePorres.Models.JugadorModel
+    name: JugadorModel
+  - uid: ProjectePorres.Models.PenyaModel
+    name: PenyaModel
+  - uid: ProjectePorres.Models.PorraModel
+    name: PorraModel
+  - uid: ProjectePorres.Models.PuntuacionsModel
+    name: PuntuacionsModel
+- uid: ProjectePorres.ViewModels
+  name: ProjectePorres.ViewModels
+  items:
+  - uid: ProjectePorres.ViewModels.BaseViewModel
+    name: BaseViewModel
+  - uid: ProjectePorres.ViewModels.CommandViewModel
+    name: CommandViewModel
+  - uid: ProjectePorres.ViewModels.LoginViewModel
+    name: LoginViewModel
+  - uid: ProjectePorres.ViewModels.MainWindowViewModel
+    name: MainWindowViewModel
+- uid: ProjectePorres.Views.Pages
+  name: ProjectePorres.Views.Pages
+  items:
+  - uid: ProjectePorres.Views.Pages.AboutPage
+    name: AboutPage
+  - uid: ProjectePorres.Views.Pages.EquipsPage
+    name: EquipsPage
+  - uid: ProjectePorres.Views.Pages.HomePage
+    name: HomePage
+  - uid: ProjectePorres.Views.Pages.PorresPage
+    name: PorresPage
+  - uid: ProjectePorres.Views.Pages.RecomanarPage
+    name: RecomanarPage
+  - uid: ProjectePorres.Views.Pages.SettingsPage
+    name: SettingsPage
+- uid: ProjectePorres.Views.Windows
+  name: ProjectePorres.Views.Windows
+  items:
+  - uid: ProjectePorres.Views.Windows.LoginView
+    name: LoginView
+  - uid: ProjectePorres.Views.Windows.MainWindow
+    name: MainWindow

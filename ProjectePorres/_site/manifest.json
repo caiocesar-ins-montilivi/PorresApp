@@ -1,0 +1,498 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Caio/Desktop/PorresApp/ProjectePorres",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.App.html",
+          "hash": "ck8xC4sLHKVwFU9AUbNE0/NTIj6JxMmghywjCQJKcls="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Data.ConfigContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Data.ConfigContext.html",
+          "hash": "yRP5lMmuw8YXJqiF4ZYw2fpbDEXAQOCKuxBqpyce4UE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Data.DatabaseContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Data.DatabaseContext.html",
+          "hash": "iRCeqgzoKCpjJtFAxGEjyOxlgLZoCxjU9JTpr+7Rxeo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Data.html",
+          "hash": "2rfUTAXo3UrRD9G0O43PCVMazIXjJDe7MWgMQORLaz0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Model.AdminModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Model.AdminModel.html",
+          "hash": "EjRSo33dVjx8XLdy7xlVpR938dLoQa5uZ7LqGwlYxh4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Model.EquipModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Model.EquipModel.html",
+          "hash": "0BI2VrEmXCPvGxZdhUG0yXBdVCSgX1W8bkEzupkKjlY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Model.PartitModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Model.PartitModel.html",
+          "hash": "uAPGwEW3Xeznod+zArCjxWEznIXjtVvV+UPs9eCkC6g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Model.PenyistaModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Model.PenyistaModel.html",
+          "hash": "IVX08vDuImuFnpv6nN6Nq91UH8XQfnzYpByd744ovpY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Model.UsuariModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Model.UsuariModel.html",
+          "hash": "35axGRtI4LHhNCjYdKLtLlQCz4+adXr54cQL4LoD3Qk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Model.html",
+          "hash": "iwkp2VDgf8GV1pFY88Mcj8EPjlSVs4VybBTbn9Cc2MA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Models.JugadorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Models.JugadorModel.html",
+          "hash": "P/EfEI78gkH8K9nVGBDoDcJFyWoWflqhdYoxtnnIjh8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Models.PenyaModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Models.PenyaModel.html",
+          "hash": "2OjqQfVqR6rObtmwX0UXriNPTY/jI2Gi+QF5mf+e2Fk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Models.PorraModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Models.PorraModel.html",
+          "hash": "+s+Vba7cOkiCj9AfLJORrVtFw6WHFwKDD9/DFaufSrs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Models.PuntuacionsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Models.PuntuacionsModel.html",
+          "hash": "UuPXO4+VfDjSzzMqLSXfV36PBJCcNypcc8nVErZrzo0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Models.html",
+          "hash": "oJYf6UvRXYHi6XthGhT83++1ngWfT1fAUCRaGVsPmyI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.ViewModels.BaseViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.ViewModels.BaseViewModel.html",
+          "hash": "CZ7CjLRt2WkV79VixQsGI/BfgN0WCC+7mu19XlHfH6s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.ViewModels.CommandViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.ViewModels.CommandViewModel.html",
+          "hash": "8hfcASssrJOQWfY6zp5qR5YaxiDUU3CcBrwXGBSSmxY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.ViewModels.LoginViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.ViewModels.LoginViewModel.html",
+          "hash": "L2HekjW7eSkG2jUYkDoPrDL+EneejAodudLfRR1GWJc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.ViewModels.MainWindowViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.ViewModels.MainWindowViewModel.html",
+          "hash": "dvKztn+UW0UD0OIEUrUgXxyKGPijTu6R3Qnmg6+1mGs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.ViewModels.html",
+          "hash": "/uvgCATKTaZbOH5L7RY0jmyYc1sQ9sHMPGGu0109gHo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.AboutPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.AboutPage.html",
+          "hash": "4buNInszIeKw9BSdWJYjIyUqlRIMkBrZ+8yL4R4eZp8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.EquipsPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.EquipsPage.html",
+          "hash": "eg4U+evENXqOQ9cpmdtP2Wd6h0hGEzAj5gp3Ww+ZI/c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.HomePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.HomePage.html",
+          "hash": "g741awKbZMZ6L7uMV7y0Nu86CHzYxQHlZZv0hxaiAVs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.PorresPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.PorresPage.html",
+          "hash": "BGkgfSQL746Q2oqBjPY1i12GqnNLCYmmLLd9lyJ+OCM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.RecomanarPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.RecomanarPage.html",
+          "hash": "9jp/4h9xNQDlLZjIBQvdLqep4Z3tO1HpmW0TqE+sRWk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.SettingsPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.SettingsPage.html",
+          "hash": "9sho94krVb0Drcl9OF2Gw85CgoAapytPhCHyV7LzyCU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Pages.html",
+          "hash": "HLNl4pwXyYUVpozaaYzjxam5EiBxKf7jkxn79Te2bVA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Windows.LoginView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Windows.LoginView.html",
+          "hash": "LHVOHIWJGRVCyFJ2tvT9dcHC2ZzgjpydY/eUc8+SzEk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Windows.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Windows.MainWindow.html",
+          "hash": "g501FsJK4MNBtmB1apWqKzTgE3YTBNE5lDt7q7hD+d0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.Views.Windows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.Views.Windows.html",
+          "hash": "IAdPi7TZlGzCQhMCumwwKYl1IjKHS7OotPIhr0PIXOE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProjectePorres.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProjectePorres.html",
+          "hash": "kIYOJgf38g8GJs/fgAEfs4oZf3kjj76vbWenaHsPqNc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "1adnvWeNLfw1HkVFBzjjsQQ8QaTqaBrp1eceCc5Ao0Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "kUWxYwtKoSXJdugZViXoS6w3zm2yvqTD3uXOpkKcYhU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "KtCNyPJl9UH1yzlKkeiMq5TUuFcjr1bLeJMH3aleS5k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "zHKLMhTdj/BsKBLESQPPSa1U8cua4iyzyEok17nJm2Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 31,
+          "skipped_file_count": 31
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

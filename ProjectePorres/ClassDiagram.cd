@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProjectePorres.App">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Model.AdminModel">
+    <Position X="14.75" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\AdminModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Model.EquipModel">
+    <Position X="19" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAEAAAAAAAkAAAAAAAACCAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Models\EquipModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Model.PartitModel">
+    <Position X="19" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAEACYCAAAAAAAAYAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\PartitModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Model.PenyistaModel">
+    <Position X="17" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PenyistaModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Model.UsuariModel">
+    <Position X="16" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAABAEAACEAAAAAACAAKAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UsuariModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Data.ConfigContext">
+    <Position X="23.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QEAEAAAAAgBAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Data\ConfigContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Data.DatabaseContext">
+    <Position X="26" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEABEgAAAIBAACAAIAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Data\DatabaseContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Models.JugadorModel">
+    <Position X="14.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAIAEAAIAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\JugadorModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Models.PenyaModel">
+    <Position X="21" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PenyaModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Models.PorraModel">
+    <Position X="16.75" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgQAAACAAAAAQAAAAAABAAABAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\PorraModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Models.PuntuacionsModel">
+    <Position X="21.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAIEAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PuntuacionsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.AboutViewModel">
+    <Position X="3.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAADAAAEAAgAAAAAAAAAgAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.BaseViewModel">
+    <Position X="5.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.CommandViewModel" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>ViewModels\CommandViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.HomePageViewModel">
+    <Position X="8.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgAAgEQQAAAAAAAQAAAABQAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ViewModels\HomePageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.LoginViewModel">
+    <Position X="11.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQciAAAAByhAQoBAZABCEIAUgIUQAICACmI4AgDAAQg=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.MainWindowViewModel">
+    <Position X="0.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IIQCTQABAAAAAoBAECAAACGNoAAAEAAAQgBAUABEACg=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.SettingsViewModel">
+    <Position X="6" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAASIAbAAAIAAAAgABABAggAAAAAAAAQgAQAIAAAgAA=</HashCode>
+      <FileName>ViewModels\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.Views.Pages.AboutPage" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\AboutPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Pages.EquipsPage" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\EquipsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Pages.HomePage" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\HomePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Pages.PorresPage" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\PorresPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Pages.RecomanarPage" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\RecomanarPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Pages.SettingsPage" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\SettingsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Windows.LoginView" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="2" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\LoginView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.Views.Windows.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.EquipsViewModel">
+    <Position X="3.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAAAQBMIAAABABgJkAQAJgADDgBBCAjAAgIQCAAiAA=</HashCode>
+      <FileName>ViewModels\EquipsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectePorres.ViewModels.PorresViewModel">
+    <Position X="8.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAYAAAAAAAAAAAAAACAAABAQAAA=</HashCode>
+      <FileName>ViewModels\PorresViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
